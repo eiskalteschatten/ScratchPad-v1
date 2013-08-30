@@ -17,7 +17,6 @@
 		931DD3750D64822500EC42A5 /* Preferenced.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 931DD3730D64822500EC42A5 /* Preferenced.h */; };
 		931DD3760D64822500EC42A5 /* Preferenced.m in Sources */ = {isa = PBXBuildFile; fileRef = 931DD3740D64822500EC42A5 /* Preferenced.m */; };
 		93216AED0DFCA9C0004F254A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93216AEC0DFCA9C0004F254A /* Localized.strings */; };
-		93417151154470A900924DFE /* SearchNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = 93417150154470A900924DFE /* SearchNotes.m */; };
 		9355A2FB154055E900E2B2C9 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F5154055E900E2B2C9 /* BackButton.png */; };
 		9355A2FC154055E900E2B2C9 /* BackButtonDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F6154055E900E2B2C9 /* BackButtonDisabled.png */; };
 		9355A2FD154055E900E2B2C9 /* BackButtonPushed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F7154055E900E2B2C9 /* BackButtonPushed.png */; };
@@ -76,8 +75,6 @@
 		93216AEE0DFCA9C4004F254A /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localized.strings; sourceTree = "<group>"; };
 		93216AEF0DFCA9C6004F254A /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localized.strings; sourceTree = "<group>"; };
 		93216AF00DFCA9C9004F254A /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localized.strings; sourceTree = "<group>"; };
-		9341714F154470A900924DFE /* SearchNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchNotes.h; sourceTree = "<group>"; };
-		93417150154470A900924DFE /* SearchNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchNotes.m; sourceTree = "<group>"; };
 		9355A2F415404BCF00E2B2C9 /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ScratchPad.entitlements; sourceTree = "<group>"; };
 		9355A2F5154055E900E2B2C9 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
 		9355A2F6154055E900E2B2C9 /* BackButtonDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonDisabled.png; sourceTree = "<group>"; };
@@ -124,8 +121,6 @@
 				93A0CB010D6348670091D950 /* TextView.m */,
 				931DD3730D64822500EC42A5 /* Preferenced.h */,
 				931DD3740D64822500EC42A5 /* Preferenced.m */,
-				9341714F154470A900924DFE /* SearchNotes.h */,
-				93417150154470A900924DFE /* SearchNotes.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -300,7 +295,6 @@
 				93A0CADE0D6347A30091D950 /* Window.m in Sources */,
 				93A0CB030D6348670091D950 /* TextView.m in Sources */,
 				931DD3760D64822500EC42A5 /* Preferenced.m in Sources */,
-				93417151154470A900924DFE /* SearchNotes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

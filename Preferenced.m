@@ -275,17 +275,17 @@
         
         switch(sCode) {
             case NSAlertDefaultReturn:
+                if (!syncLoc || syncLoc == @"") {
+                    [self setDropBoxLoc:self];
+                    return;
+                }
+                
                 break;
             case NSAlertAlternateReturn:
                 [dropBoxLocationButton setEnabled:NO];
                 [syncDropBox setState: NSOffState];
                 return;
                 break;
-        }
-        
-        if (syncLoc == @"") {
-            [self setDropBoxLoc:self];
-            return;
         }
         
         NSFileManager *fileManager = [NSFileManager defaultManager];

@@ -12,7 +12,6 @@
 	[toolbar setDelegate:self];
 	[toolbar setAllowsUserCustomization:YES];
 	[toolbar setAutosavesConfiguration:YES];
-    [toolbar setDisplayMode: NSToolbarDisplayModeIconOnly];
 	[self setToolbar:toolbar];
 	
 	if ([pageNumber intValue] <= 1) {
@@ -68,13 +67,12 @@
 	
 	toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:@"goToPageNumber"];
 	
-    [[goToPageNumber cell] setPlaceholderString:NSLocalizedStringFromTable(@"Page #", @"Localized", @"Page #")];
     [toolbarItem setLabel:NSLocalizedStringFromTable(@"Go To Page", @"Localized", @"Go To Page toolbar label")];
     [toolbarItem setPaletteLabel:NSLocalizedStringFromTable(@"Go To Page Number", @"Localized", @"Go To Page toolbar palette label")];
     [toolbarItem setToolTip:NSLocalizedStringFromTable(@"Go to a specific page number", @"Localized", @"Go To Page toolbar item tooltip")];
     [toolbarItem setView:goToPageNumber];
-    //[toolbarItem setMinSize:NSMakeSize(27,22)];
-	//[toolbarItem setMaxSize:NSMakeSize(27,22)];
+    [toolbarItem setMinSize:NSMakeSize(27,22)];
+	[toolbarItem setMaxSize:NSMakeSize(27,22)];
 	
 	[items setObject:toolbarItem forKey:@"goToPageNumber"];
 	
@@ -117,20 +115,7 @@
 	
 	[items setObject:toolbarItem forKey:@"deleteNote"];
 	
-	[toolbarItem release];
-    
-    toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:@"searchBox"];
-	
-    [toolbarItem setLabel:NSLocalizedStringFromTable(@"Search", @"Localized", @"Search")];
-    [toolbarItem setPaletteLabel:NSLocalizedStringFromTable(@"Search", @"Localized", @"Search")];
-    [toolbarItem setToolTip:NSLocalizedStringFromTable(@"Search notes", @"Localized", @"Search notes")];
-    [toolbarItem setView:searchBox];
-    //[toolbarItem setMinSize:NSMakeSize(27,22)];
-	//[toolbarItem setMaxSize:NSMakeSize(27,22)];
-	
-	[items setObject:toolbarItem forKey:@"searchBox"];
-	
-	[toolbarItem release];
+	[toolbarItem release];	
 		
 	[items setObject:NSToolbarPrintItemIdentifier forKey:NSToolbarPrintItemIdentifier];
 	[items setObject:NSToolbarCustomizeToolbarItemIdentifier forKey:NSToolbarCustomizeToolbarItemIdentifier];
@@ -150,7 +135,7 @@
 }
 
 - (NSArray *) toolbarDefaultItemIdentifiers: (NSToolbar *) toolbar {
-	return [NSArray arrayWithObjects: @"navigateButtons", @"goToPageNumber", NSToolbarFlexibleSpaceItemIdentifier, @"searchBox", nil];//@"showRuler", NSToolbarShowColorsItemIdentifier, NSToolbarShowFontsItemIdentifier, nil];
+	return [NSArray arrayWithObjects: @"navigateButtons", @"goToPageNumber", NSToolbarFlexibleSpaceItemIdentifier, @"showRuler", NSToolbarShowColorsItemIdentifier, NSToolbarShowFontsItemIdentifier, nil];
 }
 
 - (void) toolbarWillAddItem: (NSNotification *) notification {
