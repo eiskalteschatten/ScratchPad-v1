@@ -1,0 +1,121 @@
+/* Export toolbar label */
+"Export" = "Export";
+
+/* Export toolbar item tooltip */
+"Export a page to a file" = "Export een pagina naar een bestand";
+
+/* Export toolbar palette label */
+"Export Page" = "Export Pagina";
+
+/* Go To Page toolbar item tooltip */
+"Go to a specific page number" = "Ga naar een specifiek paginanummer";
+
+/* Go To Page toolbar label */
+"Go To Page" = "Ga naar pagina";
+
+/* Go To Page toolbar palette label */
+"Go To Page Number" = "Ga naar paginanummer";
+
+/* Navigate toolbar label
+   Navigate toolbar palette label */
+"Navigate" = "Navigeren";
+
+/* Navigate toolbar item tooltip */
+"Navigate pages" = "Navigeer pagina's";
+
+/* Preferences toolbar item tooltip */
+"Opens the application preferences" = "Open de applicatie voorkeuren";
+
+/* Preferences toolbar palette label
+   Preferences toolbar label */
+"Preferences" = "Voorkeuren";
+
+/* Show Ruler toolbar label
+   Show Ruler toolbar palette label */
+"Ruler" = "Liniaal";
+
+/* Show Ruler toolbar item tooltip */
+"Show or hide the ruler" = "Toon of verberg de liniaal";
+
+/* Yes */
+"Yes" = "Ja";
+
+/* No */
+"No" = "Nee";
+
+/* Delete Page alert panel question */
+"Are you sure you want to delete this page?" = "Bent u zeker dat u deze pagina wilt verwijderen?";
+
+/* Delete Page toolbar label
+   Delete Page alert panel title
+   Delete Page toolbar palette label */
+"Delete Page" = "Verwijder pagina";
+
+/* Delete Page toolbar item tooltip */
+"Delete the page" = "Verwijder de pagina";
+
+/* Backup Created */
+"Backup Created" = "Backup gemaakt";
+
+/* Backup Success */
+"Your backup has successfully been created!" = "Uw backup is met succes gemaakt!";
+
+/* Backup Not Created */
+"Backup Not Created" = "Backup niet gemaakt";
+
+/* Backup Failure */
+"An error occurred and your backup was not created!" = "Een fout is opgetreden en uw backup is niet gemaakt!";
+
+/* Restore Backup */
+"Restore Backup" = "Backup terugzetten";
+
+/* Restore Backup alert panel question */
+"Are you sure you want to restore your backup and replace all of your current preferences and pages? All current preferences and pages will be lost." = "Bent u zeker dat u de backup wilt terugzetten en al uw huidige voorkeuren en pagina's wilt vervangen? Alle huidige voorkeuren en pagina's zullen verloren gaan.";
+
+/* Backup Restored */
+"Backup Restored" = "Backup teruggezet";
+
+/* Backup Restore Success */
+"Your backup has successfully been restored!" = "Uw backup is met succes teruggezet!";
+
+/* Backup Not Restored */
+"Backup Not Restored" = "Backup niet teruggezet";
+
+/* Backup Restore Failure */
+"An error occurred and your backup was not restored" = "Een fout is opgetreden en uw backup is niet teruggezet";
+
+/* Before enabling synchronization with Dropbox, it is highly recommended that you first make a backup of your ScratchPad files using the built-in backup feature. */
+"Before enabling synchronization with Dropbox, it is highly recommended that you first make a backup of your ScratchPad files using the built-in backup feature." = "Before enabling synchronization with Dropbox, it is highly recommended that you first make a backup of your ScratchPad files using the built-in backup feature.";
+
+/* Continue */
+"Continue" = "Continue";
+
+/* Problem with Dropbox */
+"Problem with Dropbox" = "Problem with Dropbox";
+
+/* There was a problem copying your preferences to Dropbox 
+ "There was a problem copying your preferences to Dropbox" = "There was a problem copying your preferences to Dropbox!";
+ 
+ /* There was a problem copying your notes to Dropbox
+ "There was a problem copying your notes to Dropbox" = "There was a problem copying your notes to Dropbox!";*/
+
+/* There was a problem with copying your ScratchPad files from Dropbox to your computer */
+"There was a problem with copying your ScratchPad files from Dropbox to your computer" = "There was a problem with copying your ScratchPad files from Dropbox to your computer!";
+
+/* There was a problem with copying your ScratchPad files to Dropbox */
+"There was a problem with copying your ScratchPad files to Dropbox" = "There was a problem with copying your ScratchPad files to Dropbox!";
+
+/* There was a problem with copying your ScratchPad files from Dropbox */
+"There was a problem with copying your ScratchPad files from Dropbox" = "There was a problem with copying your ScratchPad files from Dropbox!";
+
+/* ScratchPad has already been synchronized with this Dropbox account either on this computer or another. Please choose carefully how to proceed as all changes are permanent and CANNOT be undone. If you are unsure, click 'Cancel' and backup your ScratchPad files before continuing to void data loss. */
+"ScratchPad has already been synchronized with this Dropbox account either on this computer or another. Please choose carefully how to proceed as all changes are permanent and CANNOT be undone. If you are unsure, click 'Cancel' and backup your ScratchPad files before continuing to avoid data loss." = "ScratchPad has already been synchronized with this Dropbox account either on this computer or another. Please choose carefully how to proceed as all changes are permanent and CANNOT be undone. If you are unsure, click 'Cancel' and backup your ScratchPad files before continuing to avoid data loss.";
+
+/* Cancel */
+"Cancel" = "Cancel";
+
+/* Replace files on this computer */
+"Replace files on this computer" = "Replace files on this computer";
+
+/* Replace files on this Dropbox */
+"Replace files on Dropbox" = "Replace files on Dropbox";
