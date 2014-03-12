@@ -14,7 +14,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSView *mainView;
 @property (strong) NSViewController* currentViewController;
-@property (strong) IBOutlet NSViewController* textViewController;
+@property (strong) IBOutlet TextViewController* textViewController;
 
 - (void)setMainViewTo:(NSViewController *)controller;
 - (void)showTextView;

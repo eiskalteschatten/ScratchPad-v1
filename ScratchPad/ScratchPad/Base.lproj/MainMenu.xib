@@ -609,6 +609,19 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="Pages" id="Ghp-QW-He1">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Pages" id="5uf-fy-9OO">
+                        <items>
+                            <menuItem title="Show Pages" keyEquivalent="p" id="Ub7-9h-I4o">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="openPopover:" target="3C4-cg-gUx" id="1Fo-DA-7IT"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
                 <menuItem title="Window" id="19">
                     <menu key="submenu" title="Window" systemMenu="window" id="24">
                         <items>
@@ -692,7 +705,7 @@
                     <toolbarItem implicitItemIdentifier="386FC629-E6D6-42FF-B0E1-3D9C1E570FF6" label="Back/Forward" paletteLabel="Back/Forward" id="dAk-cP-W7L">
                         <nil key="toolTip"/>
                         <size key="minSize" width="46" height="26"/>
-                        <size key="maxSize" width="104" height="28"/>
+                        <size key="maxSize" width="53" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="Vrm-lY-lI2">
                             <rect key="frame" x="14" y="14" width="53" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -711,10 +724,10 @@
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="ED7DC850-8D46-4EB1-9184-40815BAB2E4C" label="Page Number" paletteLabel="Page Number" id="4wA-ty-i5h">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="41" height="22"/>
-                        <size key="maxSize" width="429" height="22"/>
+                        <size key="minSize" width="41" height="19"/>
+                        <size key="maxSize" width="55" height="22"/>
                         <textField key="view" verticalHuggingPriority="750" id="rLB-7B-mEH">
-                            <rect key="frame" x="14" y="14" width="51" height="22"/>
+                            <rect key="frame" x="12" y="14" width="55" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="NRW-aj-Mhi">
                                 <font key="font" metaFont="system"/>
@@ -726,17 +739,22 @@
                     <toolbarItem implicitItemIdentifier="9514AB3B-C8DA-4776-BA28-E5D0F0E0B633" label="Pages" paletteLabel="Pages" id="gGH-NJ-C9i">
                         <nil key="toolTip"/>
                         <size key="minSize" width="25" height="26"/>
-                        <size key="maxSize" width="104" height="28"/>
+                        <size key="maxSize" width="31" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="nIu-eP-K9u">
                             <rect key="frame" x="4" y="14" width="31" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="momentary" id="160-HY-ZEQ">
                                 <font key="font" metaFont="system"/>
                                 <segments>
-                                    <segment image="NSListViewTemplate" width="25"/>
+                                    <segment image="NSListViewTemplate" width="25">
+                                        <nil key="label"/>
+                                    </segment>
                                 </segments>
                             </segmentedCell>
                         </segmentedControl>
+                        <connections>
+                            <action selector="openPopover:" target="3C4-cg-gUx" id="D6C-Dh-ugg"/>
+                        </connections>
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
@@ -758,11 +776,23 @@
         <viewController id="Hlf-T9-adl" customClass="MainViewController">
             <connections>
                 <outlet property="mainView" destination="ZM2-i5-gEO" id="ldu-On-ejp"/>
-                <outlet property="textViewController" destination="kdp-MT-QrI" id="1Nh-0e-ot6"/>
+                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="pFW-eL-bix"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="BIW-eo-6yX"/>
                 <outlet property="window" destination="371" id="UT6-8Y-GkM"/>
             </connections>
         </viewController>
         <viewController id="kdp-MT-QrI" customClass="TextViewController"/>
+        <viewController id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
+            <connections>
+                <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
+                <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
+            </connections>
+        </viewController>
+        <popover behavior="t" id="ydK-7c-ecO">
+            <connections>
+                <outlet property="contentViewController" destination="3C4-cg-gUx" id="Ve0-dG-pAY"/>
+            </connections>
+        </popover>
     </objects>
     <resources>
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>
