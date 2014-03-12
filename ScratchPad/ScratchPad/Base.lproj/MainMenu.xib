@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -651,10 +651,22 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="487" height="508"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="487" height="508"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-i5-gEO">
+                        <rect key="frame" x="84" y="376" width="163" height="96"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZM2-i5-gEO" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="NAf-YU-jaK"/>
+                    <constraint firstAttribute="bottom" secondItem="ZM2-i5-gEO" secondAttribute="bottom" id="OKi-b0-oyg"/>
+                    <constraint firstAttribute="trailing" secondItem="ZM2-i5-gEO" secondAttribute="trailing" id="dwB-e4-Kfv"/>
+                    <constraint firstItem="ZM2-i5-gEO" firstAttribute="top" secondItem="372" secondAttribute="top" id="gRo-km-qNc"/>
+                </constraints>
             </view>
             <toolbar key="toolbar" implicitIdentifier="BECE9D84-6962-485A-89DF-9D97F7774D16" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="z3s-aa-mS9">
                 <allowedToolbarItems>
@@ -663,20 +675,98 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="eUG-ES-Lok"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="ydc-aM-E8T"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ids-hb-gdq"/>
+                    <toolbarItem implicitItemIdentifier="95809064-D2F3-4233-A355-FF7B33FB6900" label="Search" paletteLabel="Search" id="9Yo-DP-5DH">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="96" height="22"/>
+                        <size key="maxSize" width="152" height="22"/>
+                        <searchField key="view" verticalHuggingPriority="750" id="JOo-ml-gqV">
+                            <rect key="frame" x="0.0" y="14" width="152" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="VcT-Qg-qcJ">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                        </searchField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="386FC629-E6D6-42FF-B0E1-3D9C1E570FF6" label="Back/Forward" paletteLabel="Back/Forward" id="dAk-cP-W7L">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="46" height="26"/>
+                        <size key="maxSize" width="104" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="Vrm-lY-lI2">
+                            <rect key="frame" x="14" y="14" width="53" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="momentary" id="pjw-sQ-WkY">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSLeftFacingTriangleTemplate" width="23" enabled="NO">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="NSRightFacingTriangleTemplate" width="23" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="ED7DC850-8D46-4EB1-9184-40815BAB2E4C" label="Page Number" paletteLabel="Page Number" id="4wA-ty-i5h">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="41" height="22"/>
+                        <size key="maxSize" width="429" height="22"/>
+                        <textField key="view" verticalHuggingPriority="750" id="rLB-7B-mEH">
+                            <rect key="frame" x="14" y="14" width="51" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="NRW-aj-Mhi">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="9514AB3B-C8DA-4776-BA28-E5D0F0E0B633" label="Pages" paletteLabel="Pages" id="gGH-NJ-C9i">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="25" height="26"/>
+                        <size key="maxSize" width="104" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="nIu-eP-K9u">
+                            <rect key="frame" x="4" y="14" width="31" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="momentary" id="160-HY-ZEQ">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSListViewTemplate" width="25"/>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
-                    <toolbarItem reference="gMv-qj-v5e"/>
-                    <toolbarItem reference="qrO-cP-eQ3"/>
+                    <toolbarItem reference="dAk-cP-W7L"/>
+                    <toolbarItem reference="gGH-NJ-C9i"/>
+                    <toolbarItem reference="4wA-ty-i5h"/>
                     <toolbarItem reference="ids-hb-gdq"/>
-                    <toolbarItem reference="eUG-ES-Lok"/>
+                    <toolbarItem reference="9Yo-DP-5DH"/>
                 </defaultToolbarItems>
             </toolbar>
         </window>
-        <customObject id="494" customClass="spAppDelegate">
+        <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="mainViewController" destination="Hlf-T9-adl" id="cqC-PE-61h"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <viewController id="Hlf-T9-adl" customClass="MainViewController">
+            <connections>
+                <outlet property="mainView" destination="ZM2-i5-gEO" id="ldu-On-ejp"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="1Nh-0e-ot6"/>
+                <outlet property="window" destination="371" id="UT6-8Y-GkM"/>
+            </connections>
+        </viewController>
+        <viewController id="kdp-MT-QrI" customClass="TextViewController"/>
     </objects>
+    <resources>
+        <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>
+        <image name="NSListViewTemplate" width="11" height="10"/>
+        <image name="NSRightFacingTriangleTemplate" width="9" height="9"/>
+    </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  spAppDelegate.h
+//  AppDelegate.h
 //  ScratchPad
 //
 //  Created by Alex Seifert on 1/31/14.
@@ -7,10 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MainViewController.h"
 
-@interface spAppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (strong) IBOutlet MainViewController* mainViewController;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;

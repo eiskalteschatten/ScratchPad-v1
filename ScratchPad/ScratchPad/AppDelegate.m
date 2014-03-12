@@ -1,22 +1,21 @@
 //
-//  spAppDelegate.m
+//  AppDelegate.m
 //  ScratchPad
 //
 //  Created by Alex Seifert on 1/31/14.
 //  Copyright (c) 2014 Alex Seifert. All rights reserved.
 //
 
-#import "spAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation spAppDelegate
+@implementation AppDelegate
 
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [_mainViewController showTextView];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "Alex-Seifert.ScratchPad" in the user's Application Support directory.

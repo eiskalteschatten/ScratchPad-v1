@@ -11,7 +11,7 @@
 		93315D83189B1A87007EAC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93315D81189B1A87007EAC1F /* InfoPlist.strings */; };
 		93315D85189B1A87007EAC1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93315D84189B1A87007EAC1F /* main.m */; };
 		93315D89189B1A87007EAC1F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93315D87189B1A87007EAC1F /* Credits.rtf */; };
-		93315D8C189B1A87007EAC1F /* spAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93315D8B189B1A87007EAC1F /* spAppDelegate.m */; };
+		93315D8C189B1A87007EAC1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93315D8B189B1A87007EAC1F /* AppDelegate.m */; };
 		93315D8F189B1A87007EAC1F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93315D8D189B1A87007EAC1F /* MainMenu.xib */; };
 		93315D92189B1A87007EAC1F /* ScratchPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */; };
 		93315D94189B1A87007EAC1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93315D93189B1A87007EAC1F /* Images.xcassets */; };
@@ -19,6 +19,9 @@
 		93315D9C189B1A87007EAC1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93315D78189B1A87007EAC1F /* Cocoa.framework */; };
 		93315DA4189B1A87007EAC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93315DA2189B1A87007EAC1F /* InfoPlist.strings */; };
 		93315DA6189B1A87007EAC1F /* ScratchPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93315DA5189B1A87007EAC1F /* ScratchPadTests.m */; };
+		9331D3DF18D0914A001320E5 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9331D3DD18D0914A001320E5 /* TextViewController.m */; };
+		9331D3E018D0914A001320E5 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9331D3DE18D0914A001320E5 /* TextViewController.xib */; };
+		9331D3E418D0962C001320E5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9331D3E318D0962C001320E5 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +45,8 @@
 		93315D84189B1A87007EAC1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93315D86189B1A87007EAC1F /* ScratchPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScratchPad-Prefix.pch"; sourceTree = "<group>"; };
 		93315D88189B1A87007EAC1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		93315D8A189B1A87007EAC1F /* spAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spAppDelegate.h; sourceTree = "<group>"; };
-		93315D8B189B1A87007EAC1F /* spAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spAppDelegate.m; sourceTree = "<group>"; };
+		93315D8A189B1A87007EAC1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93315D8B189B1A87007EAC1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93315D8E189B1A87007EAC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		93315D91189B1A87007EAC1F /* ScratchPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScratchPad.xcdatamodel; sourceTree = "<group>"; };
 		93315D93189B1A87007EAC1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +56,11 @@
 		93315DA3189B1A87007EAC1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93315DA5189B1A87007EAC1F /* ScratchPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScratchPadTests.m; sourceTree = "<group>"; };
 		93315DAF189B1AC2007EAC1F /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ScratchPad.entitlements; sourceTree = "<group>"; };
+		9331D3DC18D0914A001320E5 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		9331D3DD18D0914A001320E5 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		9331D3DE18D0914A001320E5 /* TextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		9331D3E218D0962C001320E5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9331D3E318D0962C001320E5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +127,11 @@
 			isa = PBXGroup;
 			children = (
 				93315DAF189B1AC2007EAC1F /* ScratchPad.entitlements */,
-				93315D8A189B1A87007EAC1F /* spAppDelegate.h */,
-				93315D8B189B1A87007EAC1F /* spAppDelegate.m */,
+				93315D8A189B1A87007EAC1F /* AppDelegate.h */,
+				93315D8B189B1A87007EAC1F /* AppDelegate.m */,
+				9331D3E218D0962C001320E5 /* MainViewController.h */,
+				9331D3E318D0962C001320E5 /* MainViewController.m */,
+				9331D3E118D093D9001320E5 /* TextView */,
 				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
 				93315D93189B1A87007EAC1F /* Images.xcassets */,
 				93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */,
@@ -157,6 +168,16 @@
 				93315DA2189B1A87007EAC1F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9331D3E118D093D9001320E5 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				9331D3DC18D0914A001320E5 /* TextViewController.h */,
+				9331D3DD18D0914A001320E5 /* TextViewController.m */,
+				9331D3DE18D0914A001320E5 /* TextViewController.xib */,
+			);
+			name = TextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +224,8 @@
 		93315D6D189B1A87007EAC1F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = sp;
-				LastUpgradeCheck = 0500;
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alex Seifert";
 				TargetAttributes = {
 					93315D74189B1A87007EAC1F = {
@@ -247,6 +268,7 @@
 				93315D94189B1A87007EAC1F /* Images.xcassets in Resources */,
 				93315D89189B1A87007EAC1F /* Credits.rtf in Resources */,
 				93315D8F189B1A87007EAC1F /* MainMenu.xib in Resources */,
+				9331D3E018D0914A001320E5 /* TextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9331D3DF18D0914A001320E5 /* TextViewController.m in Sources */,
 				93315D92189B1A87007EAC1F /* ScratchPad.xcdatamodeld in Sources */,
 				93315D85189B1A87007EAC1F /* main.m in Sources */,
-				93315D8C189B1A87007EAC1F /* spAppDelegate.m in Sources */,
+				9331D3E418D0962C001320E5 /* MainViewController.m in Sources */,
+				93315D8C189B1A87007EAC1F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +429,7 @@
 				INFOPLIST_FILE = "ScratchPad/ScratchPad-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,7 +446,7 @@
 				INFOPLIST_FILE = "ScratchPad/ScratchPad-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -486,6 +510,7 @@
 				93315DAB189B1A87007EAC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93315DAC189B1A87007EAC1F /* Build configuration list for PBXNativeTarget "ScratchPadTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +519,7 @@
 				93315DAE189B1A87007EAC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
