@@ -26,7 +26,11 @@
                             <menuItem isSeparatorItem="YES" id="236">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Preferences…" keyEquivalent="," id="129"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="2Wp-Yl-lRw" id="1rr-JV-jBb"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="143">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
@@ -660,8 +664,9 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="ScratchPad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+        <window title="ScratchPad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="487" height="508"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
@@ -766,6 +771,16 @@
                 </defaultToolbarItems>
             </toolbar>
         </window>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="preferences" animationBehavior="default" id="2Wp-Yl-lRw">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="QcN-QE-oAr">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+        </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
                 <outlet property="mainViewController" destination="Hlf-T9-adl" id="cqC-PE-61h"/>
@@ -777,7 +792,7 @@
             <connections>
                 <outlet property="mainView" destination="ZM2-i5-gEO" id="ldu-On-ejp"/>
                 <outlet property="pageListViewController" destination="3C4-cg-gUx" id="pFW-eL-bix"/>
-                <outlet property="textViewController" destination="kdp-MT-QrI" id="BIW-eo-6yX"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="vz8-kt-J1G"/>
                 <outlet property="window" destination="371" id="UT6-8Y-GkM"/>
             </connections>
         </viewController>
