@@ -10,4 +10,8 @@
 
 @interface TextViewController : NSViewController
 
+@property (assign) IBOutlet NSTextView *textView;
+
+- (IBAction)toggleToolbar:(id)sender;
+
 @end

@@ -22,4 +22,15 @@
     return self;
 }
 
+- (IBAction)toggleToolbar:(id)sender {
+    if ([_textView usesInspectorBar]) {
+        [_textView setUsesInspectorBar:NO];
+        [sender setTitle:@"Show Editor Toolbar"];
+    }
+    else {
+        [_textView setUsesInspectorBar:YES];
+        [sender setTitle:@"Hide Editor Toolbar"];
+    }
+}
+
 @end
