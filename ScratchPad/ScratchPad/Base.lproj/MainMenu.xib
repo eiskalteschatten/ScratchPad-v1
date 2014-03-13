@@ -700,7 +700,7 @@
                         <searchField key="view" verticalHuggingPriority="750" id="JOo-ml-gqV">
                             <rect key="frame" x="0.0" y="14" width="152" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="VcT-Qg-qcJ">
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="VcT-Qg-qcJ">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -734,7 +734,7 @@
                         <textField key="view" verticalHuggingPriority="750" id="rLB-7B-mEH">
                             <rect key="frame" x="12" y="14" width="55" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="NRW-aj-Mhi">
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="NRW-aj-Mhi">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -791,8 +791,7 @@
         <viewController id="Hlf-T9-adl" customClass="MainViewController">
             <connections>
                 <outlet property="mainView" destination="ZM2-i5-gEO" id="ldu-On-ejp"/>
-                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="pFW-eL-bix"/>
-                <outlet property="textViewController" destination="kdp-MT-QrI" id="vz8-kt-J1G"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="B1C-KK-99D"/>
                 <outlet property="window" destination="371" id="UT6-8Y-GkM"/>
             </connections>
         </viewController>

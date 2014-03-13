@@ -23,7 +23,7 @@
 		9331D3E018D0914A001320E5 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9331D3DE18D0914A001320E5 /* TextViewController.xib */; };
 		9331D3E418D0962C001320E5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9331D3E318D0962C001320E5 /* MainViewController.m */; };
 		934A742918D0C41D0046DDBE /* PageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A742718D0C41D0046DDBE /* PageListViewController.m */; };
-		934A742A18D0C41D0046DDBE /* PageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934A742818D0C41D0046DDBE /* PageListViewController.xib */; };
+		93CDEF4718D25DBD002909D8 /* PageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CDEF4618D25DBD002909D8 /* PageListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		9331D3E318D0962C001320E5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		934A742618D0C41D0046DDBE /* PageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageListViewController.h; sourceTree = "<group>"; };
 		934A742718D0C41D0046DDBE /* PageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageListViewController.m; sourceTree = "<group>"; };
-		934A742818D0C41D0046DDBE /* PageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageListViewController.xib; sourceTree = "<group>"; };
+		93CDEF4618D25DBD002909D8 /* PageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,9 +189,9 @@
 		934A742B18D0C4200046DDBE /* PageList */ = {
 			isa = PBXGroup;
 			children = (
+				93CDEF4618D25DBD002909D8 /* PageListViewController.xib */,
 				934A742618D0C41D0046DDBE /* PageListViewController.h */,
 				934A742718D0C41D0046DDBE /* PageListViewController.m */,
-				934A742818D0C41D0046DDBE /* PageListViewController.xib */,
 			);
 			name = PageList;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 				93315D83189B1A87007EAC1F /* InfoPlist.strings in Resources */,
 				93315D94189B1A87007EAC1F /* Images.xcassets in Resources */,
 				93315D89189B1A87007EAC1F /* Credits.rtf in Resources */,
-				934A742A18D0C41D0046DDBE /* PageListViewController.xib in Resources */,
+				93CDEF4718D25DBD002909D8 /* PageListViewController.xib in Resources */,
 				93315D8F189B1A87007EAC1F /* MainMenu.xib in Resources */,
 				9331D3E018D0914A001320E5 /* TextViewController.xib in Resources */,
 			);

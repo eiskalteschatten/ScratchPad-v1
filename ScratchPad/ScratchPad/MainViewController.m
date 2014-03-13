@@ -33,9 +33,7 @@
     [_mainView addSubview:view];
     
     NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(view);
-    
     [_mainView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:viewsDictionary]];
-    
     [_mainView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|" options:0 metrics:nil views:viewsDictionary]];
     
     _currentViewController = controller;
