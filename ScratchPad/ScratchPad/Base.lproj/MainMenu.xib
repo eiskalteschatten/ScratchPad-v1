@@ -795,8 +795,8 @@
                 <outlet property="window" destination="371" id="UT6-8Y-GkM"/>
             </connections>
         </viewController>
-        <viewController id="kdp-MT-QrI" customClass="TextViewController"/>
-        <viewController id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
+        <viewController title="TextViewController" nibName="TextViewController" id="kdp-MT-QrI" customClass="TextViewController"/>
+        <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
             <connections>
                 <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
                 <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
