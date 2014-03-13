@@ -41,6 +41,8 @@
 
 - (void)showTextView {
     [self setMainViewTo:_textViewController];
+
+    [_window makeFirstResponder:[_textViewController textView]];
 }
 
 @end
