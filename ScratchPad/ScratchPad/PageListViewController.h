@@ -14,5 +14,6 @@
 @property (assign) IBOutlet NSPopover *popover;
 
 - (IBAction)openPopover:(id)sender;
+- (void)loadPages;
 
 @end
