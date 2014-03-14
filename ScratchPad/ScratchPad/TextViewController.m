@@ -33,4 +33,39 @@
     }
 }
 
+- (IBAction)toggleRichText:(id)sender {
+//    if ([_textView isRichText]) {
+//        [_textView setUsesInspectorBar:NO];
+//        [_textView setRichText:NO];
+//        [sender setTitle:@"Make Rich Text"];
+//    }
+//    else {
+//        [_textView setRichText:YES];
+//        [sender setTitle:@"Make Plain Text"];
+//    }
+    
+    NSTextView *view = _textView;
+    NSDictionary *textAttributes;
+    NSParagraphStyle *paragraphStyle;
+    
+    _isRichText = false;
+    
+    //if (!_isRichText && attachmentFlag) [self removeAttachments];
+    
+    [view setRichText:_isRichText];
+    [view setUsesRuler:_isRichText];    /* If NO, this correctly gets rid of the ruler if it was up */
+    //if (_isRichText && [[Preferences objectForKey:ShowRuler] boolValue])
+    //    [view setRulerVisible:YES];    /* Show ruler if rich, and desired */
+    [view setImportsGraphics:_isRichText];
+    
+    //textAttributes = [self defaultTextAttributes:_isRichText];
+    paragraphStyle = [textAttributes objectForKey:NSParagraphStyleAttributeName];
+    
+    //if ([textStorage length]) {
+    //    [textStorage setAttributes:textAttributes range: NSMakeRange(0, [textStorage length])];
+    //}
+    [view setTypingAttributes:textAttributes];
+    [view setDefaultParagraphStyle:paragraphStyle];
+}
+
 @end

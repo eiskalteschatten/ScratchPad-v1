@@ -14,6 +14,9 @@
 @property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;
 
+@property (assign) BOOL isRichText;
+
 - (IBAction)toggleToolbar:(id)sender;
+- (IBAction)toggleRichText:(id)sender;
 
 @end
