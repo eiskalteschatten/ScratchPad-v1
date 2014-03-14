@@ -10,6 +10,8 @@
 
 @interface TextViewController : NSViewController
 
+@property (assign) IBOutlet NSTextField *noteTitle;
+@property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;
 
 - (IBAction)toggleToolbar:(id)sender;

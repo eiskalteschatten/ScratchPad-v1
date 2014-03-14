@@ -7,6 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TextViewController">
             <connections>
+                <outlet property="noteDate" destination="oJN-HF-41X" id="VCJ-VE-x4J"/>
+                <outlet property="noteTitle" destination="rLq-2P-toH" id="s2z-fj-Y72"/>
                 <outlet property="textView" destination="Pay-fx-CXP" id="LCY-Yw-TSv"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
