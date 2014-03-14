@@ -26,4 +26,8 @@
     [_popover showRelativeToRect:[_popoverButton bounds] ofView:_popoverButton preferredEdge:NSMinYEdge];
 }
 
+- (void)loadPages {
+    
+}
+
 @end
