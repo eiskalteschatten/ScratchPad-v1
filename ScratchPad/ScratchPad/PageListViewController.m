@@ -85,12 +85,12 @@
     }
 }
 
-- (NSString *)getFirstNoteName {
-	return [indexTitles objectAtIndex:0];
-}
-
 - (NSString *)getNoteName:(NSInteger*)noteIndex {
 	return [indexTitles objectAtIndex:noteIndex];
+}
+
+- (NSString *)getNote:(NSInteger*)noteIndex {
+	return [indexPages objectAtIndex:noteIndex];
 }
 
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex {

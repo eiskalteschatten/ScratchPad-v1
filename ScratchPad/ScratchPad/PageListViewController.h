@@ -22,8 +22,8 @@
 
 - (IBAction)openPopover:(id)sender;
 - (void)loadPages;
-- (NSString *)getFirstNoteName;
 - (NSString *)getNoteName:(NSInteger*)noteIndex;
+- (NSString *)getNote:(NSInteger*)noteIndex;
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex;
 
 

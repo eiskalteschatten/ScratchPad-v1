@@ -27,10 +27,11 @@
 
 - (void)loadNote:(NSInteger*)noteIndex {
     NSString *noteName = [_pageListViewController getNoteName:noteIndex];
-    NSString *fileName = [noteName stringByAppendingString:@".rtfd"];
+    NSString *fileName = [_pageListViewController getNote:noteIndex];
     NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
 
     [_textView readRTFDFromFile:path];
+    [_noteTitle setStringValue:noteName];
     [_pageListViewController preparePageAfterLoad:noteIndex];
 }
 
