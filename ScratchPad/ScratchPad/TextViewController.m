@@ -26,12 +26,12 @@
 #pragma mark Note Actions
 
 - (void)loadNote:(NSInteger*)noteIndex {
-    NSString *noteName = [_pageListViewController getNoteName:noteIndex];
     NSString *fileName = [_pageListViewController getNote:noteIndex];
     NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
 
     [_textView readRTFDFromFile:path];
-    [_noteTitle setStringValue:noteName];
+    [_noteTitle setStringValue:[_pageListViewController getNoteName:noteIndex]];
+    [_noteDate setStringValue:[_pageListViewController getNoteDate:noteIndex]];
     [_pageListViewController preparePageAfterLoad:noteIndex];
 }
 

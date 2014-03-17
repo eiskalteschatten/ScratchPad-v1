@@ -19,11 +19,13 @@
 @property (retain, nonatomic) NSDictionary *indexPagesDict;
 @property (retain, nonatomic) NSMutableArray *indexPages;
 @property (retain, nonatomic) NSMutableArray *indexTitles;
+@property (retain, nonatomic) NSMutableArray *indexDates;
 
 - (IBAction)openPopover:(id)sender;
 - (void)loadPages;
 - (NSString *)getNoteName:(NSInteger*)noteIndex;
 - (NSString *)getNote:(NSInteger*)noteIndex;
+- (NSString *)getNoteDate:(NSInteger*)noteIndex;
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex;
 
 

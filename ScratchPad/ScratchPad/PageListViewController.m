@@ -17,6 +17,7 @@
 @synthesize indexPagesDict;
 @synthesize indexPages;
 @synthesize indexTitles;
+@synthesize indexDates;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,6 +31,7 @@
     indexPagesDict = [[NSDictionary alloc] init];
     indexPages = [[NSMutableArray alloc] init];
     indexTitles = [[NSMutableArray alloc] init];
+    indexDates = [[NSMutableArray alloc] init];
 
     [self loadPages];
 }
@@ -58,15 +60,20 @@
         while (anObject = [enumerator nextObject]) {
             if ([anObject isEqualToString:@".DS_Store"] == NO) {
                 NSString *title = [anObject stringByDeletingPathExtension];
+                
+                NSString *fullPath = [notesPath stringByAppendingString:anObject];
+                NSDictionary *attributes = [fileManager attributesOfItemAtPath:fullPath error:nil];
+                NSDate *date = [attributes fileModificationDate];
                
                 [indexPages addObject:anObject];
                 [indexTitles addObject:title];
+                [indexDates addObject:date];
                 [indexCount addObject:[NSString stringWithFormat:@"%i", i]];
                 i++;
             }
         }
         
-        indexPagesDict = [NSDictionary dictionaryWithObjects: [NSArray arrayWithObjects: indexCount, indexPages, indexTitles, nil] forKeys:[NSArray arrayWithObjects: @"Index", @"Notes", @"Titles", nil]];
+        indexPagesDict = [NSDictionary dictionaryWithObjects: [NSArray arrayWithObjects: indexCount, indexPages, indexTitles, indexDates, nil] forKeys:[NSArray arrayWithObjects: @"Index", @"Notes", @"Titles", @"Dates", nil]];
         
         NSString *error;
         NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:indexPagesDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
@@ -82,6 +89,7 @@
         indexPagesDict = [[NSDictionary alloc] initWithContentsOfFile:pFileName];
         indexPages = [NSMutableArray arrayWithArray:[indexPagesDict objectForKey:@"Notes"]];
         indexTitles = [indexPagesDict objectForKey:@"Titles"];
+        indexDates = [indexPagesDict objectForKey:@"Dates"];
     }
 }
 
@@ -91,6 +99,10 @@
 
 - (NSString *)getNote:(NSInteger*)noteIndex {
 	return [indexPages objectAtIndex:noteIndex];
+}
+
+- (NSString *)getNoteDate:(NSInteger*)noteIndex {
+	return [indexDates objectAtIndex:noteIndex];
 }
 
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex {
