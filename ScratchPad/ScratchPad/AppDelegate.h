@@ -7,18 +7,23 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Helper.h"
 #import "MainViewController.h"
+#import "TextViewController.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (strong) IBOutlet Helper *helper;
 @property (assign) IBOutlet NSWindow *window;
-@property (strong) IBOutlet MainViewController* mainViewController;
+@property (strong) IBOutlet MainViewController *mainViewController;
+@property (strong) IBOutlet TextViewController *textViewController;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:(id)sender;
+- (void)loadNote:(NSString*)noteName;
 - (BOOL)checkFirstRun;
 
 @end

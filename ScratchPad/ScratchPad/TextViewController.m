@@ -22,6 +22,33 @@
     return self;
 }
 
+#pragma mark -
+#pragma mark Note Actions
+
+- (void)loadNote:(NSString*)notePath {
+    [_textView readRTFDFromFile:notePath];
+}
+
+- (void)saveNote {
+
+}
+
+- (void)nextNote {
+    
+}
+
+- (void)prevNote {
+    
+}
+
+- (void)goToNote:(NSInteger*)indexNum {
+    
+}
+
+
+#pragma mark -
+#pragma mark TextView Actions
+
 - (IBAction)toggleToolbar:(id)sender {
     if ([_textView usesInspectorBar]) {
         [_textView setUsesInspectorBar:NO];

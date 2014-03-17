@@ -677,12 +677,12 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="ScratchPad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="371">
+        <window title="ScratchPad" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" frameAutosaveName="mainwindow" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="487" height="508"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="487" height="508"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -737,6 +737,9 @@
                                         <nil key="label"/>
                                     </segment>
                                 </segments>
+                                <connections>
+                                    <action selector="prevNextNote:" target="Hlf-T9-adl" id="aEw-ek-44b"/>
+                                </connections>
                             </segmentedCell>
                         </segmentedControl>
                     </toolbarItem>
@@ -788,7 +791,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="QcN-QE-oAr">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -796,21 +799,31 @@
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="helper" destination="CX9-DW-owT" id="fUi-ws-xPY"/>
                 <outlet property="mainViewController" destination="Hlf-T9-adl" id="cqC-PE-61h"/>
+                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="Phc-0D-ci8"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="iHx-iD-PYx"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
         <viewController id="Hlf-T9-adl" customClass="MainViewController">
             <connections>
+                <outlet property="helper" destination="CX9-DW-owT" id="ZKT-xU-zqF"/>
                 <outlet property="mainView" destination="ZM2-i5-gEO" id="ldu-On-ejp"/>
-                <outlet property="textViewController" destination="kdp-MT-QrI" id="B1C-KK-99D"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="w9e-Hr-A9O"/>
                 <outlet property="window" destination="371" id="UT6-8Y-GkM"/>
             </connections>
         </viewController>
-        <viewController title="TextViewController" nibName="TextViewController" id="kdp-MT-QrI" customClass="TextViewController"/>
+        <viewController title="TextViewController" nibName="TextViewController" id="kdp-MT-QrI" customClass="TextViewController">
+            <connections>
+                <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
+            </connections>
+        </viewController>
         <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
             <connections>
+                <outlet property="appDelegate" destination="494" id="pQE-Ge-8Sm"/>
+                <outlet property="helper" destination="CX9-DW-owT" id="Gcr-3Y-eUg"/>
                 <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
                 <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
             </connections>
@@ -820,6 +833,7 @@
                 <outlet property="contentViewController" destination="3C4-cg-gUx" id="Ve0-dG-pAY"/>
             </connections>
         </popover>
+        <customObject id="CX9-DW-owT" customClass="Helper"/>
     </objects>
     <resources>
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>

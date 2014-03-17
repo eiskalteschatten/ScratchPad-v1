@@ -16,6 +16,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [_mainViewController showTextView];
+    [self loadNote:@"Note 1"];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "Alex-Seifert.ScratchPad" in the user's Application Support directory.
@@ -170,6 +171,12 @@
     }
 
     return NSTerminateNow;
+}
+
+- (void)loadNote:(NSString*)noteName {
+	NSString *fileName = [noteName stringByAppendingString:@".rtfd"];
+    NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
+    [_textViewController loadNote:path];
 }
 
 - (BOOL)checkFirstRun {

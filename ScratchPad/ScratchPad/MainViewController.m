@@ -45,4 +45,23 @@
     [_window makeFirstResponder:[_textViewController textView]];
 }
 
+- (void)newTextView {
+    [self setMainViewTo:[_textViewController init]];
+    
+    [_window makeFirstResponder:[_textViewController textView]];
+}
+
+- (IBAction)prevNextNote:(id)sender {
+    [self newTextView];
+    
+    NSInteger clicked = [sender selectedSegment];
+    
+    if (clicked == 0) {
+        [_textViewController prevNote];
+    }
+    else {
+        [_textViewController nextNote];
+    }
+}
+
 @end

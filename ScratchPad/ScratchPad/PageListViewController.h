@@ -7,13 +7,22 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Helper.h"
 
 @interface PageListViewController : NSViewController
 
+@property (strong) IBOutlet Helper *helper;
 @property (assign) IBOutlet NSSegmentedControl *popoverButton;
 @property (assign) IBOutlet NSPopover *popover;
+@property (assign) IBOutlet NSTableView *pageList;
+
+@property (retain, nonatomic) NSDictionary *indexPagesDict;
+@property (retain, nonatomic) NSMutableArray *indexPages;
+@property (retain, nonatomic) NSMutableArray *indexTitles;
 
 - (IBAction)openPopover:(id)sender;
 - (void)loadPages;
+
+
 
 @end

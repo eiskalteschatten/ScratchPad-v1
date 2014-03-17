@@ -7,16 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Helper.h"
 #import "TextViewController.h"
 
 @interface MainViewController : NSViewController
 
+@property (strong) IBOutlet Helper *helper;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSView *mainView;
-@property (strong) NSViewController* currentViewController;
-@property (strong) IBOutlet TextViewController* textViewController;
+@property (strong) NSViewController *currentViewController;
+@property (strong) IBOutlet TextViewController *textViewController;
 
 - (void)setMainViewTo:(NSViewController *)controller;
 - (void)showTextView;
+- (void)newTextView;
+- (IBAction)prevNextNote:(id)sender;
 
 @end
