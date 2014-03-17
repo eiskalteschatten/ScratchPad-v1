@@ -801,7 +801,7 @@
             <connections>
                 <outlet property="helper" destination="CX9-DW-owT" id="fUi-ws-xPY"/>
                 <outlet property="mainViewController" destination="Hlf-T9-adl" id="cqC-PE-61h"/>
-                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="Phc-0D-ci8"/>
+                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="3nP-80-xC7"/>
                 <outlet property="textViewController" destination="kdp-MT-QrI" id="iHx-iD-PYx"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
@@ -818,6 +818,7 @@
         <viewController title="TextViewController" nibName="TextViewController" id="kdp-MT-QrI" customClass="TextViewController">
             <connections>
                 <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
+                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="NMX-EN-NJ6"/>
             </connections>
         </viewController>
         <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">

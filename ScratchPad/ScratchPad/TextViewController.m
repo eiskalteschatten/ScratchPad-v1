@@ -25,8 +25,13 @@
 #pragma mark -
 #pragma mark Note Actions
 
-- (void)loadNote:(NSString*)notePath {
-    [_textView readRTFDFromFile:notePath];
+- (void)loadNote:(NSInteger*)noteIndex {
+    NSString *noteName = [_pageListViewController getNoteName:noteIndex];
+    NSString *fileName = [noteName stringByAppendingString:@".rtfd"];
+    NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
+
+    [_textView readRTFDFromFile:path];
+    [_pageListViewController preparePageAfterLoad:noteIndex];
 }
 
 - (void)saveNote {
@@ -41,7 +46,7 @@
     
 }
 
-- (void)goToNote:(NSInteger*)indexNum {
+- (void)goToNote:(NSInteger*)noteIndex {
     
 }
 

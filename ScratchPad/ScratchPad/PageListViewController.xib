@@ -7,7 +7,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PageListViewController">
             <connections>
-                <outlet property="pageList" destination="9Vk-F9-KTu" id="8Ea-Em-gGz"/>
+                <outlet property="pageList" destination="9Vk-F9-KTu" id="Hh1-xs-2P1"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>

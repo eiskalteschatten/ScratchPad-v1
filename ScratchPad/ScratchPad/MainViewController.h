@@ -12,7 +12,7 @@
 
 @interface MainViewController : NSViewController
 
-@property (strong) IBOutlet Helper *helper;
+@property (assign) IBOutlet Helper *helper;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSView *mainView;
 @property (strong) NSViewController *currentViewController;

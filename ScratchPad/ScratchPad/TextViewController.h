@@ -8,21 +8,24 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Helper.h"
+#import "PageListViewController.h"
 
 @interface TextViewController : NSViewController
 
-@property (strong) IBOutlet Helper *helper;
+@property (strong) IBOutlet PageListViewController *pageListViewController;
+
+@property (assign) IBOutlet Helper *helper;
 @property (assign) IBOutlet NSTextField *noteTitle;
 @property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;
 
 @property (assign) BOOL isRichText;
 
-- (void)loadNote:(NSString*)notePath;
+- (void)loadNote:(NSInteger*)noteIndex;
 - (void)saveNote;
 - (void)nextNote;
 - (void)prevNote;
-- (void)goToNote:(NSInteger*)indexNum;
+- (void)goToNote:(NSInteger*)noteIndex;
 
 - (IBAction)toggleToolbar:(id)sender;
 - (IBAction)toggleRichText:(id)sender;

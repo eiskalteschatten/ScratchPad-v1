@@ -71,7 +71,7 @@
         NSString *error;
         NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:indexPagesDict format:NSPropertyListXMLFormat_v1_0 errorDescription:&error];
         
-        if(plistData) {
+        if (plistData) {
             [plistData writeToFile:pFileName atomically:YES];
         }
         else {
@@ -83,6 +83,19 @@
         indexPages = [NSMutableArray arrayWithArray:[indexPagesDict objectForKey:@"Notes"]];
         indexTitles = [indexPagesDict objectForKey:@"Titles"];
     }
+}
+
+- (NSString *)getFirstNoteName {
+	return [indexTitles objectAtIndex:0];
+}
+
+- (NSString *)getNoteName:(NSInteger*)noteIndex {
+	return [indexTitles objectAtIndex:noteIndex];
+}
+
+- (void)preparePageAfterLoad:(NSInteger*)noteIndex {
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:noteIndex];
+    [_pageList selectRowIndexes:indexSet byExtendingSelection:NO];
 }
 
 
