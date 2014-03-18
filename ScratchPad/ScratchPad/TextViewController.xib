@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="240" height="135"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView usesInspectorBar="YES" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Pay-fx-CXP">
+                            <textView usesInspectorBar="YES" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" linkDetection="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Pay-fx-CXP">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="135"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,14 +56,14 @@
                     <font key="titleFont" metaFont="system"/>
                 </box>
                 <box autoresizesSubviews="NO" ambiguous="YES" misplaced="YES" title="Box" boxType="custom" borderType="none" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="mTJ-wB-YUi">
-                    <rect key="frame" x="123" y="275" width="175" height="58"/>
+                    <rect key="frame" x="123" y="277" width="175" height="56"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <view key="contentView">
-                        <rect key="frame" x="0.0" y="0.0" width="175" height="58"/>
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="56"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJN-HF-41X">
-                                <rect key="frame" x="16" y="13" width="96" height="11"/>
+                                <rect key="frame" x="16" y="11" width="96" height="11"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" placeholderString="" drawsBackground="YES" id="k9n-To-CH2">
                                     <font key="font" metaFont="miniSystem"/>
@@ -72,7 +72,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rLq-2P-toH">
-                                <rect key="frame" x="16" y="26" width="96" height="25"/>
+                                <rect key="frame" x="16" y="24" width="96" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" focusRingType="none" placeholderString="Note Title" drawsBackground="YES" id="vyM-Ey-ft0">
                                     <font key="font" metaFont="system" size="17"/>
@@ -98,7 +98,7 @@
                 <constraint firstItem="dqC-jQ-hDB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="TFP-uy-xpV"/>
                 <constraint firstItem="HUP-IR-NJ9" firstAttribute="top" secondItem="dqC-jQ-hDB" secondAttribute="bottom" id="WRx-jQ-sLW"/>
                 <constraint firstAttribute="trailing" secondItem="mTJ-wB-YUi" secondAttribute="trailing" id="coH-de-oqo"/>
-                <constraint firstItem="dqC-jQ-hDB" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="59" id="glP-RM-aEf"/>
+                <constraint firstItem="dqC-jQ-hDB" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="56" id="glP-RM-aEf"/>
                 <constraint firstAttribute="trailing" secondItem="dqC-jQ-hDB" secondAttribute="trailing" id="lmT-L8-CLK"/>
                 <constraint firstItem="mTJ-wB-YUi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="nLu-pH-LoY"/>
                 <constraint firstAttribute="bottom" secondItem="HUP-IR-NJ9" secondAttribute="bottom" id="piT-5T-1a5"/>
