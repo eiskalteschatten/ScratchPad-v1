@@ -109,7 +109,22 @@
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:noteIndex];
     [_pageList selectRowIndexes:indexSet byExtendingSelection:NO];
     
+    NSInteger *pageNum;
+    
+    if (noteIndex) {
+       pageNum = noteIndex + 1;
+    }
+    else {
+       pageNum = 1;
+    }
+    
+    [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%i)", pageNum]];
+    
     _currentNoteIndex = noteIndex;
+}
+
+- (NSInteger *)geCurrentNote {
+	return _currentNoteIndex;
 }
 
 

@@ -12,6 +12,7 @@
 @interface PageListViewController : NSViewController
 
 @property (assign) IBOutlet Helper *helper;
+@property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSSegmentedControl *popoverButton;
 @property (assign) IBOutlet NSPopover *popover;
 @property (assign) IBOutlet NSTableView *pageList;
@@ -27,6 +28,7 @@
 - (NSString *)getNoteName:(NSInteger*)noteIndex;
 - (NSString *)getNote:(NSInteger*)noteIndex;
 - (NSString *)getNoteDate:(NSInteger*)noteIndex;
+- (NSInteger *)geCurrentNote;
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex;
 
 
