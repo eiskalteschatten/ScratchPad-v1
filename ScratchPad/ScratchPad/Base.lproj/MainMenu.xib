@@ -605,7 +605,7 @@
                 <menuItem title="View" id="295">
                     <menu key="submenu" title="View" id="296">
                         <items>
-                            <menuItem title="Show Editor Toolbar" id="HOv-BE-lPl">
+                            <menuItem title="Hide Editor Toolbar" id="HOv-BE-lPl">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="toggleToolbar:" target="kdp-MT-QrI" id="Wvd-3R-kIx"/>
@@ -681,14 +681,14 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="487" height="508"/>
+            <rect key="contentRect" x="335" y="390" width="653" height="467"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="487" height="508"/>
+                <rect key="frame" x="0.0" y="0.0" width="653" height="467"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-i5-gEO">
-                        <rect key="frame" x="84" y="376" width="163" height="96"/>
+                        <rect key="frame" x="84" y="335" width="163" height="96"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
                 </subviews>

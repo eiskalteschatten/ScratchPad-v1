@@ -32,7 +32,7 @@
     indexPages = [[NSMutableArray alloc] init];
     indexTitles = [[NSMutableArray alloc] init];
     indexDates = [[NSMutableArray alloc] init];
-
+    
     [self loadPages];
 }
 
@@ -108,6 +108,8 @@
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:noteIndex];
     [_pageList selectRowIndexes:indexSet byExtendingSelection:NO];
+    
+    _currentNoteIndex = noteIndex;
 }
 
 

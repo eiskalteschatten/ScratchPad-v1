@@ -20,6 +20,7 @@
 @property (retain, nonatomic) NSMutableArray *indexPages;
 @property (retain, nonatomic) NSMutableArray *indexTitles;
 @property (retain, nonatomic) NSMutableArray *indexDates;
+@property (assign) NSInteger *currentNoteIndex;
 
 - (IBAction)openPopover:(id)sender;
 - (void)loadPages;
