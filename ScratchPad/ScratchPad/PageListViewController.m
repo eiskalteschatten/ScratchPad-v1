@@ -153,7 +153,7 @@
     NSInteger selectedRow = [pageList selectedRow];
     
     if (selectedRow != -1) {
-        
+        //[[NSApp delegate] loadNote:selectedRow];
     }
     else {
         // No row was selected

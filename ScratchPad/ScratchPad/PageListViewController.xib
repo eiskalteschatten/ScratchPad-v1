@@ -8,7 +8,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="PageListViewController">
             <connections>
                 <outlet property="pageList" destination="9Vk-F9-KTu" id="lYW-4k-yU6"/>
-                <outlet property="pageListItem" destination="QnM-4k-v2w" id="18v-Dc-eQd"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -26,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="40" rowSizeStyle="automatic" viewBased="YES" id="9Vk-F9-KTu">
-                                <rect key="frame" x="0.0" y="0.0" width="326" height="301"/>
+                                <rect key="frame" x="0.0" y="0.0" width="212" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -133,7 +132,7 @@
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-bq-Fum">
                     <rect key="frame" x="272" y="306" width="46" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="roundRect" title="New" bezelStyle="roundedRect" image="EC8DAAEA-701E-4E54-8746-D98B9543D2C7" imagePosition="overlaps" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ey0-PT-b8Z">
+                    <buttonCell key="cell" type="roundRect" title="New" bezelStyle="roundedRect" image="4684A9B0-800E-4432-8450-5BDBA4939CCB" imagePosition="overlaps" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ey0-PT-b8Z">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="smallSystem"/>
                     </buttonCell>
@@ -146,10 +145,9 @@
                 <constraint firstItem="bPT-ja-izB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="zcF-yd-USI"/>
             </constraints>
         </customView>
-        <viewController id="QnM-4k-v2w" customClass="PageListItemViewController"/>
     </objects>
     <resources>
-        <image name="EC8DAAEA-701E-4E54-8746-D98B9543D2C7" width="1" height="1">
+        <image name="4684A9B0-800E-4432-8450-5BDBA4939CCB" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
