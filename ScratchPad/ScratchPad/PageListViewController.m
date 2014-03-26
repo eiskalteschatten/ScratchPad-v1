@@ -104,9 +104,6 @@
 }
 
 - (void)preparePageAfterLoad:(NSInteger)noteIndex {
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:noteIndex];
-    [pageList selectRowIndexes:indexSet byExtendingSelection:NO];
-    
     NSInteger pageNum;
     
     if (noteIndex) {
@@ -142,6 +139,9 @@
         [cellView.imageView setImage:[NSImage imageNamed:NSImageNameMultipleDocuments]];
         [cellView.textField setStringValue:indexTitles[row]];
         [cellView.subviews[2] setStringValue:[_helper formatDate:indexDates[row]]];
+        
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:[self getCurrentNote]];
+        [tableView selectRowIndexes:indexSet byExtendingSelection:NO];
         
         return cellView;
     }
