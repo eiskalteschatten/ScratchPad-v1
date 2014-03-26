@@ -135,8 +135,41 @@
     
     if ([identifier isEqualToString:@"MainCell"]) {
         NSTableCellView *cellView = [tableView makeViewWithIdentifier:@"MainCell" owner:self];
+   
+        NSString *titleSubString = indexTitles[row];
         
-        [cellView.imageView setImage:[NSImage imageNamed:NSImageNameMultipleDocuments]];
+        if ([indexTitles[row] length] > 10) {
+            titleSubString = [indexTitles[row] substringToIndex:10];
+        }
+        
+        NSString *path = [[_helper pathToNotes] stringByAppendingString:indexPages[row]];
+        
+        NSRect cFrame =[[_window contentView] frame];
+        NSTextView *textView = [[NSTextView alloc] initWithFrame:cFrame];
+        [textView readRTFDFromFile:path];
+        
+        NSSize size = NSMakeSize(35, 35);
+        
+        NSImage *textImg = [[NSImage alloc] initWithSize:[textView bounds].size];
+        [textImg setFlipped:NO];
+        [textImg setScalesWhenResized:YES];
+        [textImg lockFocus];
+        [textView drawRect:[textView bounds]];
+        [textImg unlockFocus];
+        [textImg setSize:size];
+        
+        NSImage* img = [[NSImage alloc] initWithSize:NSMakeSize(35,35)];
+        NSAffineTransform *transform = [NSAffineTransform transform];
+        [transform translateXBy:size.width/2 yBy:size.height/2];
+        [transform scaleXBy:1.0 yBy:-1.0];
+        [transform translateXBy:-size.width/2 yBy:-size.height/2];
+        
+        [img lockFocus];
+        [transform concat];
+        [textImg drawAtPoint:NSZeroPoint fromRect:NSZeroRect operation:NSCompositeCopy fraction:1.0];
+        [img unlockFocus];
+        
+        [cellView.imageView setImage:img];
         [cellView.textField setStringValue:indexTitles[row]];
         [cellView.subviews[2] setStringValue:[_helper formatDate:indexDates[row]]];
         

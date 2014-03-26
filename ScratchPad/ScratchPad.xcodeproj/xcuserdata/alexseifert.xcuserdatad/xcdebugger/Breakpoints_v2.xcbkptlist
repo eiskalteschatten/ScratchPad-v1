@@ -440,11 +440,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/PageListViewController.m"
-            timestampString = "417498420.165717"
+            timestampString = "417566297.985246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "-tableView:viewForTableColumn:row:"
             landmarkType = "5">
          </BreakpointContent>
@@ -456,11 +456,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/PageListViewController.m"
-            timestampString = "417498420.165717"
+            timestampString = "417566297.985246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "-tableView:viewForTableColumn:row:"
             landmarkType = "5">
          </BreakpointContent>
@@ -472,11 +472,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/PageListViewController.m"
-            timestampString = "417498761.241043"
+            timestampString = "417566297.985246"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "-tableViewSelectionDidChange:"
             landmarkType = "5">
          </BreakpointContent>
