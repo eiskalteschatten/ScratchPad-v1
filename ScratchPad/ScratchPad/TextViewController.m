@@ -31,7 +31,7 @@
 
     [_textView readRTFDFromFile:path];
     [_noteTitle setStringValue:[_pageListViewController getNoteName:noteIndex]];
-    [_noteDate setStringValue:[_pageListViewController getNoteDate:noteIndex]];
+    [_noteDate setStringValue:[_helper formatDate:[_pageListViewController getNoteDate:noteIndex]]];
     [_pageListViewController preparePageAfterLoad:noteIndex];
 }
 

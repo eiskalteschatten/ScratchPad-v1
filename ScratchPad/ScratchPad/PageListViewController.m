@@ -18,6 +18,7 @@
 @synthesize indexPages;
 @synthesize indexTitles;
 @synthesize indexDates;
+@synthesize pageList;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -67,7 +68,7 @@
                
                 [indexPages addObject:anObject];
                 [indexTitles addObject:title];
-                [indexDates addObject:date];
+                [indexDates addObject:[date description]];
                 [indexCount addObject:[NSString stringWithFormat:@"%i", i]];
                 i++;
             }
@@ -107,7 +108,7 @@
 
 - (void)preparePageAfterLoad:(NSInteger*)noteIndex {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:noteIndex];
-    [_pageList selectRowIndexes:indexSet byExtendingSelection:NO];
+    [pageList selectRowIndexes:indexSet byExtendingSelection:NO];
     
     NSInteger *pageNum;
     
@@ -123,7 +124,7 @@
     _currentNoteIndex = noteIndex;
 }
 
-- (NSInteger *)geCurrentNote {
+- (NSInteger *)getCurrentNote {
 	return _currentNoteIndex;
 }
 
@@ -132,16 +133,32 @@
 #pragma mark Table View Delagte methods
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return self.indexTitles.count;
+    return [indexTitles count];
 }
 
-- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    return [indexTitles objectAtIndex:row];
+- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    NSString *identifier = [tableColumn identifier];
+    
+    if ([identifier isEqualToString:@"MainCell"]) {
+        NSTableCellView *cellView = [tableView makeViewWithIdentifier:@"MainCell" owner:self];
+        
+        [cellView.imageView setImage:[NSImage imageNamed:NSImageNameMultipleDocuments]];
+        [cellView.textField setStringValue:indexTitles[row]];
+        [cellView.subviews[2] setStringValue:[_helper formatDate:indexDates[row]]];
+        
+        return cellView;
+    }
+    
+    return nil;
 }
 
-- (void)tableView:(NSTableView *)tableView setObjectValue:(id)object
-   forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    [indexTitles replaceObjectsAtIndexes:[NSIndexSet indexSetWithIndex:row] withObjects:[NSArray arrayWithObject:object]];
-}
+//- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+//    return [indexTitles objectAtIndex:row];
+//}
+//
+//- (void)tableView:(NSTableView *)tableView setObjectValue:(id)object
+//   forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+//    [indexTitles replaceObjectsAtIndexes:[NSIndexSet indexSetWithIndex:row] withObjects:[NSArray arrayWithObject:object]];
+//}
 
 @end

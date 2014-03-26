@@ -12,5 +12,6 @@
 
 - (NSString *)pathToLibrary;
 - (NSString *)pathToNotes;
+- (NSString *)formatDate:(NSString*)rawDate;
 
 @end

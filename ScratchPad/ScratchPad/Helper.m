@@ -36,4 +36,16 @@
 	return folder;
 }
 
+- (NSString *)formatDate:(NSString*)rawDate {
+    NSDate *date = [[NSDate alloc] initWithString:rawDate];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterLongStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    NSString *dateString = [dateFormatter stringFromDate:date];
+   	
+	return dateString;
+}
+
 @end
