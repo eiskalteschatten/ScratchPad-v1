@@ -82,9 +82,6 @@
         if (plistData) {
             [plistData writeToFile:pFileName atomically:YES];
         }
-        else {
-            NSLog(error);
-        }
     }
     else {
         indexPagesDict = [[NSDictionary alloc] initWithContentsOfFile:pFileName];
@@ -94,23 +91,23 @@
     }
 }
 
-- (NSString *)getNoteName:(NSInteger*)noteIndex {
+- (NSString *)getNoteName:(NSInteger)noteIndex {
 	return [indexTitles objectAtIndex:noteIndex];
 }
 
-- (NSString *)getNote:(NSInteger*)noteIndex {
+- (NSString *)getNote:(NSInteger)noteIndex {
 	return [indexPages objectAtIndex:noteIndex];
 }
 
-- (NSString *)getNoteDate:(NSInteger*)noteIndex {
+- (NSString *)getNoteDate:(NSInteger)noteIndex {
 	return [indexDates objectAtIndex:noteIndex];
 }
 
-- (void)preparePageAfterLoad:(NSInteger*)noteIndex {
+- (void)preparePageAfterLoad:(NSInteger)noteIndex {
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:noteIndex];
     [pageList selectRowIndexes:indexSet byExtendingSelection:NO];
     
-    NSInteger *pageNum;
+    NSInteger pageNum;
     
     if (noteIndex) {
        pageNum = noteIndex + 1;
@@ -119,12 +116,12 @@
        pageNum = 1;
     }
     
-    [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%i)", pageNum]];
+    [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%ld)", (long)pageNum]];
     
     _currentNoteIndex = noteIndex;
 }
 
-- (NSInteger *)getCurrentNote {
+- (NSInteger)getCurrentNote {
 	return _currentNoteIndex;
 }
 
@@ -151,14 +148,5 @@
     
     return nil;
 }
-
-//- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-//    return [indexTitles objectAtIndex:row];
-//}
-//
-//- (void)tableView:(NSTableView *)tableView setObjectValue:(id)object
-//   forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-//    [indexTitles replaceObjectsAtIndexes:[NSIndexSet indexSetWithIndex:row] withObjects:[NSArray arrayWithObject:object]];
-//}
 
 @end
