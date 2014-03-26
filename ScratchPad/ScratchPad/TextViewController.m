@@ -25,7 +25,7 @@
 #pragma mark -
 #pragma mark Note Actions
 
-- (void)loadNote:(NSInteger*)noteIndex {
+- (void)loadNote:(NSInteger)noteIndex {
     NSString *fileName = [_pageListViewController getNote:noteIndex];
     NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
 
@@ -47,7 +47,7 @@
     
 }
 
-- (void)goToNote:(NSInteger*)noteIndex {
+- (void)goToNote:(NSInteger)noteIndex {
     
 }
 

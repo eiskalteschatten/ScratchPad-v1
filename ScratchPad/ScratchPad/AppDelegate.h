@@ -25,7 +25,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:(id)sender;
-- (void)loadNote:(NSInteger*)noteIndex;
+- (void)loadNote:(NSInteger)noteIndex;
 - (BOOL)checkFirstRun;
 
 @end

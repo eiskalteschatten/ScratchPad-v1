@@ -135,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				93315DAF189B1AC2007EAC1F /* ScratchPad.entitlements */,
+				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
 				93315D8A189B1A87007EAC1F /* AppDelegate.h */,
 				93315D8B189B1A87007EAC1F /* AppDelegate.m */,
 				9322260E18D5121900A43D5D /* Helper.h */,
@@ -142,7 +143,6 @@
 				9331D3E218D0962C001320E5 /* MainViewController.h */,
 				9331D3E318D0962C001320E5 /* MainViewController.m */,
 				9331D3E118D093D9001320E5 /* TextView */,
-				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
 				934A742B18D0C4200046DDBE /* PageList */,
 				93315D93189B1A87007EAC1F /* Images.xcassets */,
 				93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */,

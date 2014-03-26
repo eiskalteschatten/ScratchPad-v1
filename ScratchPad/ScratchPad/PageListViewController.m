@@ -149,4 +149,15 @@
     return nil;
 }
 
+- (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
+    NSInteger selectedRow = [pageList selectedRow];
+    
+    if (selectedRow != -1) {
+        
+    }
+    else {
+        // No row was selected
+    }
+}
+
 @end

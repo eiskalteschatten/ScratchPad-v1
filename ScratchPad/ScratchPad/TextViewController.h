@@ -21,11 +21,11 @@
 
 @property (assign) BOOL isRichText;
 
-- (void)loadNote:(NSInteger*)noteIndex;
+- (void)loadNote:(NSInteger)noteIndex;
 - (void)saveNote;
 - (void)nextNote;
 - (void)prevNote;
-- (void)goToNote:(NSInteger*)noteIndex;
+- (void)goToNote:(NSInteger)noteIndex;
 
 - (IBAction)toggleToolbar:(id)sender;
 - (IBAction)toggleRichText:(id)sender;

@@ -174,7 +174,7 @@
     return NSTerminateNow;
 }
 
-- (void)loadNote:(NSInteger*)noteIndex {
+- (void)loadNote:(NSInteger)noteIndex {
     [_textViewController loadNote:noteIndex];
 }
 
