@@ -33,6 +33,13 @@
     [_noteTitle setStringValue:[_pageListViewController getNoteName:noteIndex]];
     [_noteDate setStringValue:[_helper formatDate:[_pageListViewController getNoteDate:noteIndex]]];
     [_pageListViewController preparePageAfterLoad:noteIndex];
+    
+    if (noteIndex != 0) {
+        [_backForwardButtons setEnabled:true forSegment:0];
+    }
+    else {
+        [_backForwardButtons setEnabled:false forSegment:0];
+    }
 }
 
 - (void)loadBlankNote:(NSInteger)noteIndex {
@@ -64,8 +71,6 @@
     else {
         [self loadNote:nextNote];
     }
-    
-    [_backForwardButtons setEnabled:true forSegment:0];
 }
 
 - (void)prevNote {
@@ -81,10 +86,6 @@
         }
         else {
             [self loadNote:nextNote];
-        }
-        
-        if (nextNote == 0) {
-            [_backForwardButtons setEnabled:false forSegment:0];
         }
     }
 }
@@ -107,13 +108,6 @@
     }
     else {
         [self loadNote:pageNum];
-    }
-    
-    if (pageNum != 0) {
-        [_backForwardButtons setEnabled:true forSegment:0];
-    }
-    else {
-        [_backForwardButtons setEnabled:false forSegment:0];
     }
 }
 
