@@ -52,28 +52,6 @@
 }
 
 - (void)saveNote {
-    NSInteger currentNote = [_noteController getCurrentNote];
-    NSInteger numOfNotes = [_noteController getNumberOfNotes];
-    NSString *noteName = [_noteTitle stringValue];
-    NSString *noteDate = [[NSDate date] description];
-    NSString *fileName;
-    long note = currentNote + 1;
-    
-    if ([noteName isEqual: @""]) {
-        noteName = [NSString stringWithFormat:@"Note %li", note];
-    }
-    
-    if (numOfNotes <= currentNote) {
-        fileName = [NSString stringWithFormat:@"Note %li", note];
-        fileName = [fileName stringByAppendingString:@".rtfd"];
-
-        [_noteController setNewIndex:currentNote];
-    }
-    else {
-        fileName = [_noteController getNote:currentNote];
-    }
-    
-    NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
 	bool isGarbage = [self noteGarbageCollector];
     
     if (isGarbage == YES) {
@@ -82,15 +60,38 @@
 //		}
 	}
 	else {
-		[_textView writeRTFDToFile:path atomically:NO];
-	}
-    
-    [_noteController setNoteName:noteName index:currentNote];
-    [_noteController setNote:fileName index:currentNote];
-    [_noteController setNoteDate:noteDate index:currentNote];
-    [_noteController saveDictionary];
-    
-	[_window setDocumentEdited: NO];
+        NSInteger currentNote = [_noteController getCurrentNote];
+        NSInteger numOfNotes = [_noteController getNumberOfNotes];
+        NSString *noteName = [_noteTitle stringValue];
+        NSString *noteDate = [[NSDate date] description];
+        NSString *fileName;
+        long note = currentNote + 1;
+
+        if ([noteName isEqual: @""]) {
+            noteName = [NSString stringWithFormat:@"Note %li", note];
+        }
+
+        if (numOfNotes <= currentNote) {
+            fileName = [NSString stringWithFormat:@"Note %li", note];
+            fileName = [fileName stringByAppendingString:@".rtfd"];
+
+            [_noteController setNewIndex:currentNote];
+        }
+        else {
+            fileName = [_noteController getNote:currentNote];
+        }
+
+        NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
+
+        [_textView writeRTFDToFile:path atomically:NO];
+
+        [_noteController setNoteName:noteName index:currentNote];
+        [_noteController setNote:fileName index:currentNote];
+        [_noteController setNoteDate:noteDate index:currentNote];
+        [_noteController saveDictionary];
+
+        [_window setDocumentEdited: NO];
+    }
 }
 
 - (IBAction)saveNoteAction:(id)sender {
