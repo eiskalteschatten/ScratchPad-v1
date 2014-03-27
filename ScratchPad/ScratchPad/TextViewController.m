@@ -57,9 +57,8 @@
 
 - (IBAction)newNote:(id)sender {
     NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
-    NSInteger nextNote = numOfNotes + 1;
     
-    [self loadBlankNote:nextNote];
+    [self loadBlankNote:numOfNotes];
 }
 
 - (void)nextNote {

@@ -9,8 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "Helper.h"
 
-@class AppDelegate;
-
 @interface PageListViewController : NSViewController
 
 @property (assign) IBOutlet Helper *helper;
@@ -24,8 +22,6 @@
 @property (retain, nonatomic) NSMutableArray *indexTitles;
 @property (retain, nonatomic) NSMutableArray *indexDates;
 
-@property (retain, nonatomic) AppDelegate *appDelegate;
-
 - (IBAction)openPopover:(id)sender;
 - (void)loadPages;
 - (NSString *)getNoteName:(NSInteger)noteIndex;
@@ -33,6 +29,7 @@
 - (NSString *)getNoteDate:(NSInteger)noteIndex;
 - (NSInteger)getNumberOfNotes;
 - (void)preparePageAfterLoad:(NSInteger)noteIndex;
+- (IBAction)newNote:(id)sender;
 
 
 @end

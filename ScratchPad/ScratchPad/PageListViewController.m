@@ -7,7 +7,6 @@
 //
 
 #import "PageListViewController.h"
-#import "AppDelegate.h"
 
 @interface PageListViewController ()
 
@@ -124,6 +123,10 @@
     [pageList reloadData];
 }
 
+- (IBAction)newNote:(id)sender {
+    [_popover close];
+}
+
 
 #pragma mark -
 #pragma mark Table View Delagte methods
@@ -188,7 +191,7 @@
     NSInteger selectedRow = [pageList selectedRow];
     
     if (selectedRow != -1) {
-        [_appDelegate loadNote:selectedRow];
+//        [_appDelegate loadNote:selectedRow];
     }
     else {
         // No row was selected
