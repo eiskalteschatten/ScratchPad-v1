@@ -32,6 +32,7 @@
 }
 
 - (IBAction)openPopover:(id)sender {
+    [_textViewController saveNote];
     [_popover showRelativeToRect:[_popoverButton bounds] ofView:_popoverButton preferredEdge:NSMinYEdge];
     [pageList reloadData];
 }

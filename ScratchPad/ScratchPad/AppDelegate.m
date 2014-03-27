@@ -178,8 +178,4 @@
     [_textViewController loadNote:noteIndex];
 }
 
-- (BOOL)checkFirstRun {
-    return true;
-}
-
 @end

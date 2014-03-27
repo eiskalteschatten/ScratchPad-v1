@@ -14,6 +14,7 @@
 
 @property (assign) IBOutlet Helper *helper;
 @property (assign) IBOutlet NoteController *noteController;
+@property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField *noteTitle;
 @property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;
@@ -24,6 +25,8 @@
 - (void)loadNote:(NSInteger)noteIndex;
 - (void)loadBlankNote:(NSInteger)noteIndex;
 - (void)saveNote;
+- (IBAction)saveNoteAction:(id)sender;
+- (bool)noteGarbageCollector;
 - (IBAction)newNote:(id)sender;
 - (void)nextNote;
 - (void)prevNote;

@@ -35,6 +35,7 @@
     [_noteController setCurrentNote:noteIndex];
     
     [self enableDisableBackButton:noteIndex];
+    [_textView setSelectedRange:(NSRange){0, 0}];
 }
 
 - (void)loadBlankNote:(NSInteger)noteIndex {
@@ -47,10 +48,39 @@
     [_noteController setCurrentNote:noteIndex];
     
     [self enableDisableBackButton:noteIndex];
+    [_textView setSelectedRange:(NSRange){0, 0}];
 }
 
 - (void)saveNote {
+    NSInteger currentNote = [_noteController getCurrentNote];
+    NSString *fileName = [_noteController getNote:currentNote];
+    NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
+	bool isGarbage = [self noteGarbageCollector];
+    
+    if (isGarbage == YES) {
+//		if ([fileManager fileExistsAtPath: path] == YES) {
+//			[fileManager removeFileAtPath: path handler: nil];
+//		}
+	}
+	else {
+		[_textView writeRTFDToFile: path atomically:NO];
+	}
+    
+	[_window setDocumentEdited: NO];
+}
 
+- (IBAction)saveNoteAction:(id)sender {
+    [self saveNote];
+}
+
+- (bool)noteGarbageCollector {
+	NSInteger textEditor = [[_textView textStorage] length];
+	
+	if (textEditor == 0) {
+		return YES;
+	}
+	
+	return NO;
 }
 
 - (IBAction)newNote:(id)sender {
@@ -169,6 +199,13 @@
     //}
     [view setTypingAttributes:textAttributes];
     [view setDefaultParagraphStyle:paragraphStyle];
+}
+
+#pragma mark -
+#pragma mark TextView Delegate Actions
+
+- (void) textDidChange: (NSNotification *) notification {
+	[_window setDocumentEdited: YES];
 }
 
 @end

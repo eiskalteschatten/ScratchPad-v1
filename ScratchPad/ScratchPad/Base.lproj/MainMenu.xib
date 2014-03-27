@@ -101,7 +101,7 @@
                             </menuItem>
                             <menuItem title="Save…" keyEquivalent="s" id="75">
                                 <connections>
-                                    <action selector="saveDocument:" target="-1" id="362"/>
+                                    <action selector="saveNoteAction:" target="kdp-MT-QrI" id="ufN-fT-OVa"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Revert to Saved" id="112">
@@ -834,6 +834,7 @@ CA
                 <outlet property="backForwardButtons" destination="Vrm-lY-lI2" id="qoF-72-den"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
                 <outlet property="noteController" destination="wOG-Ix-3mK" id="1u3-Ld-ONv"/>
+                <outlet property="window" destination="371" id="33G-QL-CeE"/>
             </connections>
         </viewController>
         <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
