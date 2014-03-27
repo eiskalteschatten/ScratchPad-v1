@@ -18,14 +18,16 @@
 @property (assign) IBOutlet NSTextField *noteTitle;
 @property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;
+@property (assign) IBOutlet NSSegmentedControl *backForwardButtons;
 
 @property (assign) BOOL isRichText;
 
 - (void)loadNote:(NSInteger)noteIndex;
+- (void)loadBlankNote:(NSInteger)noteIndex;
 - (void)saveNote;
 - (void)nextNote;
 - (void)prevNote;
-- (void)goToNote:(NSInteger)noteIndex;
+- (IBAction)goToNote:(id)sender;
 
 - (IBAction)toggleToolbar:(id)sender;
 - (IBAction)toggleRichText:(id)sender;

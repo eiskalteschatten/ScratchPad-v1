@@ -35,20 +35,86 @@
     [_pageListViewController preparePageAfterLoad:noteIndex];
 }
 
+- (void)loadBlankNote:(NSInteger)noteIndex {
+    NSDate *date = [NSDate date];
+    NSString *now = [_helper formatDate:[date description]];
+    
+    [_textView setString:@""];
+    [_noteTitle setStringValue:@""];
+    [_noteDate setStringValue:now];
+    [_pageListViewController preparePageAfterLoad:noteIndex];
+    
+    [_helper setCurrentNote:noteIndex];
+}
+
 - (void)saveNote {
 
 }
 
 - (void)nextNote {
+    NSInteger currentNote = [_helper getCurrentNote];
+    NSInteger nextNote = currentNote + 1;
+    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
     
+    [self saveNote];
+    
+    if (nextNote >= numOfNotes) {
+        [self loadBlankNote:nextNote];
+    }
+    else {
+        [self loadNote:nextNote];
+    }
+    
+    [_backForwardButtons setEnabled:true forSegment:0];
 }
 
 - (void)prevNote {
+    NSInteger currentNote = [_helper getCurrentNote];
+    NSInteger nextNote = currentNote - 1;
+    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
     
+    [self saveNote];
+    
+    if (nextNote >= 0) {
+        if (nextNote >= numOfNotes) {
+            [self loadBlankNote:nextNote];
+        }
+        else {
+            [self loadNote:nextNote];
+        }
+        
+        if (nextNote == 0) {
+            [_backForwardButtons setEnabled:false forSegment:0];
+        }
+    }
 }
 
-- (void)goToNote:(NSInteger)noteIndex {
+- (IBAction)goToNote:(id)sender {
+    NSInteger pageNum = [[sender stringValue] integerValue];
+    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
     
+    [self saveNote];
+    
+    if (pageNum > 0) {
+        pageNum--;
+    }
+    else if (pageNum < 0) {
+        pageNum = 0;
+    }
+    
+    if (pageNum > numOfNotes) {
+        [self loadBlankNote:pageNum];
+    }
+    else {
+        [self loadNote:pageNum];
+    }
+    
+    if (pageNum != 0) {
+        [_backForwardButtons setEnabled:true forSegment:0];
+    }
+    else {
+        [_backForwardButtons setEnabled:false forSegment:0];
+    }
 }
 
 

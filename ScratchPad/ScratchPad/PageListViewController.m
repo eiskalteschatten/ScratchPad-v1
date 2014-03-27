@@ -103,6 +103,10 @@
 	return [indexDates objectAtIndex:noteIndex];
 }
 
+- (NSInteger)getNumberOfNotes {
+	return [indexPages count];
+}
+
 - (void)preparePageAfterLoad:(NSInteger)noteIndex {
     NSInteger pageNum;
     
@@ -115,11 +119,8 @@
     
     [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%ld)", (long)pageNum]];
     
-    _currentNoteIndex = noteIndex;
-}
-
-- (NSInteger)getCurrentNote {
-	return _currentNoteIndex;
+    [_helper setCurrentNote: noteIndex];
+    [pageList reloadData];
 }
 
 
@@ -158,7 +159,7 @@
         [textImg unlockFocus];
         [textImg setSize:size];
         
-        NSImage* img = [[NSImage alloc] initWithSize:NSMakeSize(35,35)];
+        NSImage* img = [[NSImage alloc] initWithSize:size];
         NSAffineTransform *transform = [NSAffineTransform transform];
         [transform translateXBy:size.width/2 yBy:size.height/2];
         [transform scaleXBy:1.0 yBy:-1.0];
@@ -173,7 +174,7 @@
         [cellView.textField setStringValue:indexTitles[row]];
         [cellView.subviews[2] setStringValue:[_helper formatDate:indexDates[row]]];
         
-        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:[self getCurrentNote]];
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:[_helper getCurrentNote]];
         [tableView selectRowIndexes:indexSet byExtendingSelection:NO];
         
         return cellView;

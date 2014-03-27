@@ -10,8 +10,12 @@
 
 @interface Helper : NSObject
 
+@property (nonatomic) NSInteger currentNoteIndex;
+
 - (NSString *)pathToLibrary;
 - (NSString *)pathToNotes;
 - (NSString *)formatDate:(NSString*)rawDate;
+- (void)setCurrentNote:(NSInteger)noteIndex;
+- (NSInteger)getCurrentNote;
 
 @end

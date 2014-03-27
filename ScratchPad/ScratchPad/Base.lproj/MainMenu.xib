@@ -760,11 +760,14 @@ CA
                         <textField key="view" verticalHuggingPriority="750" id="rLB-7B-mEH">
                             <rect key="frame" x="12" y="14" width="55" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="NRW-aj-Mhi">
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="NRW-aj-Mhi">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
+                            <connections>
+                                <action selector="goToNote:" target="kdp-MT-QrI" id="F2n-UX-NbH"/>
+                            </connections>
                         </textField>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="9514AB3B-C8DA-4776-BA28-E5D0F0E0B633" label="Pages" paletteLabel="Pages" id="gGH-NJ-C9i">
@@ -827,13 +830,13 @@ CA
         </viewController>
         <viewController title="TextViewController" nibName="TextViewController" id="kdp-MT-QrI" customClass="TextViewController">
             <connections>
+                <outlet property="backForwardButtons" destination="Vrm-lY-lI2" id="qoF-72-den"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
                 <outlet property="pageListViewController" destination="3C4-cg-gUx" id="NMX-EN-NJ6"/>
             </connections>
         </viewController>
         <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
             <connections>
-                <outlet property="appDelegate" destination="494" id="pQE-Ge-8Sm"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="Gcr-3Y-eUg"/>
                 <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
                 <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
