@@ -28,6 +28,9 @@
 - (void)saveNote;
 - (IBAction)saveNoteAction:(id)sender;
 - (bool)noteGarbageCollector;
+- (void)deleteCurrentNote;
+- (IBAction)deleteNoteAction:(id)sender;
+- (void)deleteNoteByIndex:(NSInteger)index;
 - (IBAction)newNote:(id)sender;
 - (IBAction)nextNote:(id)sender;
 - (IBAction)prevNote:(id)sender;

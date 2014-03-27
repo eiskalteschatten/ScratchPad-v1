@@ -42,6 +42,10 @@
     [_textViewController newNote:self];
 }
 
+- (IBAction)deleteNote:(id)sender {
+    [_textViewController deleteNoteByIndex:_selectedNote];
+}
+
 
 #pragma mark -
 #pragma mark Table View Delagte methods
@@ -109,10 +113,10 @@
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)aNotification {
-    NSInteger selectedRow = [pageList selectedRow];
+    _selectedNote = [pageList selectedRow];
     
-    if (selectedRow != -1) {
-        [_textViewController loadNote:selectedRow];
+    if (_selectedNote != -1) {
+        [_textViewController loadNote:_selectedNote];
     }
     else {
         // No row was selected

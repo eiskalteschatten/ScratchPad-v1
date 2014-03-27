@@ -24,9 +24,10 @@
 @property (retain, nonatomic) NSMutableArray *indexPages;
 @property (retain, nonatomic) NSMutableArray *indexTitles;
 @property (retain, nonatomic) NSMutableArray *indexDates;
+@property (nonatomic) NSInteger selectedNote;
 
 - (IBAction)openPopover:(id)sender;
 - (IBAction)newNote:(id)sender;
-
+- (IBAction)deleteNote:(id)sender;
 
 @end

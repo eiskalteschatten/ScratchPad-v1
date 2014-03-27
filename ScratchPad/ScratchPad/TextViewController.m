@@ -54,12 +54,7 @@
 - (void)saveNote {
 	bool isGarbage = [self noteGarbageCollector];
     
-    if (isGarbage == YES) {
-//		if ([fileManager fileExistsAtPath: path] == YES) {
-//			[fileManager removeFileAtPath: path handler: nil];
-//		}
-	}
-	else {
+    if (isGarbage == NO) {
         NSInteger currentNote = [_noteController getCurrentNote];
         NSInteger numOfNotes = [_noteController getNumberOfNotes];
         NSString *noteName = [_noteTitle stringValue];
@@ -106,6 +101,19 @@
 	}
 	
 	return NO;
+}
+
+- (void)deleteCurrentNote {
+    NSInteger currentNote = [_noteController getCurrentNote];
+    [self deleteNoteByIndex:currentNote];
+}
+
+- (IBAction)deleteNoteAction:(id)sender {
+    [self deleteCurrentNote];
+}
+
+- (void)deleteNoteByIndex:(NSInteger)index {
+    
 }
 
 - (IBAction)newNote:(id)sender {
