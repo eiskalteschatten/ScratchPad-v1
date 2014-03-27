@@ -89,7 +89,7 @@
     [self loadBlankNote:numOfNotes];
 }
 
-- (void)nextNote {
+- (IBAction)nextNote:(id)sender {
     NSInteger currentNote = [_noteController getCurrentNote];
     NSInteger nextNote = currentNote + 1;
     NSInteger numOfNotes = [_noteController getNumberOfNotes];
@@ -104,7 +104,7 @@
     }
 }
 
-- (void)prevNote {
+- (IBAction)prevNote:(id)sender {
     NSInteger currentNote = [_noteController getCurrentNote];
     NSInteger nextNote = currentNote - 1;
     NSInteger numOfNotes = [_noteController getNumberOfNotes];

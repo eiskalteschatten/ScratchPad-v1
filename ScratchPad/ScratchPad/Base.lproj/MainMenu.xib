@@ -640,6 +640,26 @@ CA
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Pages" id="5uf-fy-9OO">
                         <items>
+                            <menuItem title="Previous Page" keyEquivalent="" id="jHW-nW-y65">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="prevNote:" target="kdp-MT-QrI" id="mbt-Qq-DFy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Next Page" keyEquivalent="" id="j7Z-U3-G1s">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="nextNote:" target="kdp-MT-QrI" id="XoM-5d-cWU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wLA-26-2Dp"/>
+                            <menuItem title="Go to Page Number..." id="HWp-Vy-NvE">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="makeKeyAndOrderFront:" target="bn2-Wk-9p7" id="U7W-rg-nKT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ZgA-K5-LI4"/>
                             <menuItem title="Show Pages" keyEquivalent="p" id="Ub7-9h-I4o">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                 <connections>
@@ -859,6 +879,30 @@ CA
                 <outlet property="window" destination="371" id="pED-rP-wBl"/>
             </connections>
         </customObject>
+        <window title="Go To Page" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="gotopage" animationBehavior="default" id="bn2-Wk-9p7" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES" nonactivatingPanel="YES" HUD="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="75" y="104" width="129" height="49"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <view key="contentView" id="t7n-H5-GdP">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5vI-tU-89r">
+                        <rect key="frame" x="11" y="13" width="107" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Page #" drawsBackground="YES" id="KrB-iP-iMM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="goToNote:" target="kdp-MT-QrI" id="cPy-JU-0qE"/>
+                        </connections>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
     </objects>
     <resources>
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>

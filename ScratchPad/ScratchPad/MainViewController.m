@@ -49,10 +49,10 @@
     NSInteger clicked = [sender selectedSegment];
     
     if (clicked == 0) {
-        [_textViewController prevNote];
+        [_textViewController prevNote:self];
     }
     else {
-        [_textViewController nextNote];
+        [_textViewController nextNote:self];
     }
 }
 

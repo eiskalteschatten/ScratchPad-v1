@@ -269,7 +269,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "-nextNote"
+            landmarkName = "-nextNote:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -285,7 +285,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "116"
             endingLineNumber = "116"
-            landmarkName = "-prevNote"
+            landmarkName = "-prevNote:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

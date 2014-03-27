@@ -28,8 +28,8 @@
 - (IBAction)saveNoteAction:(id)sender;
 - (bool)noteGarbageCollector;
 - (IBAction)newNote:(id)sender;
-- (void)nextNote;
-- (void)prevNote;
+- (IBAction)nextNote:(id)sender;
+- (IBAction)prevNote:(id)sender;
 - (IBAction)goToNote:(id)sender;
 - (void)enableDisableBackButton:(NSInteger)noteIndex;
 
