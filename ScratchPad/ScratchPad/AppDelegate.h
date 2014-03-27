@@ -28,6 +28,5 @@
 
 - (IBAction)saveAction:(id)sender;
 - (void)loadNote:(NSInteger)noteIndex;
-- (BOOL)checkFirstRun;
 
 @end

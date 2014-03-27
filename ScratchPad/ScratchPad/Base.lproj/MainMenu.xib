@@ -832,6 +832,9 @@ CA
                     <toolbarItem reference="9Yo-DP-5DH"/>
                 </defaultToolbarItems>
             </toolbar>
+            <connections>
+                <outlet property="delegate" destination="9ZN-gJ-hDN" id="10p-51-vZo"/>
+            </connections>
         </window>
         <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="preferences" animationBehavior="default" id="2Wp-Yl-lRw">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
@@ -878,7 +881,7 @@ CA
                 <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
                 <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
                 <outlet property="textViewController" destination="kdp-MT-QrI" id="XxH-ZS-3MR"/>
-                <outlet property="window" destination="371" id="gTc-Rc-7Go"/>
+                <outlet property="window" destination="371" id="gdL-6k-dgQ"/>
             </connections>
         </viewController>
         <popover behavior="t" id="ydK-7c-ecO">
@@ -886,6 +889,11 @@ CA
                 <outlet property="contentViewController" destination="3C4-cg-gUx" id="Ve0-dG-pAY"/>
             </connections>
         </popover>
+        <viewController id="9ZN-gJ-hDN" customClass="MainWindowViewController">
+            <connections>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="a8G-UK-uv6"/>
+            </connections>
+        </viewController>
         <customObject id="CX9-DW-owT" customClass="Helper"/>
         <customObject id="wOG-Ix-3mK" customClass="NoteController">
             <connections>

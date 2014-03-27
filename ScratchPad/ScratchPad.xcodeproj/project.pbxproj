@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930A76AC18E4CDD000D4E046 /* MainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */; };
 		9322261018D5121900A43D5D /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9322260F18D5121900A43D5D /* Helper.m */; };
 		93315D79189B1A87007EAC1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93315D78189B1A87007EAC1F /* Cocoa.framework */; };
 		93315D83189B1A87007EAC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93315D81189B1A87007EAC1F /* InfoPlist.strings */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930A76AA18E4CDD000D4E046 /* MainWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowViewController.h; sourceTree = "<group>"; };
+		930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowViewController.m; sourceTree = "<group>"; };
 		9322260E18D5121900A43D5D /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		9322260F18D5121900A43D5D /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; wrapsLines = 0; };
 		93315D75189B1A87007EAC1F /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +73,7 @@
 		934A742618D0C41D0046DDBE /* PageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageListViewController.h; sourceTree = "<group>"; };
 		934A742718D0C41D0046DDBE /* PageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageListViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		93B4BB8418E3B44E00C43245 /* NoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteController.h; sourceTree = "<group>"; };
-		93B4BB8518E3B44E00C43245 /* NoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteController.m; sourceTree = "<group>"; };
+		93B4BB8518E3B44E00C43245 /* NoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		93CDEF4618D25DBD002909D8 /* PageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,13 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				93315DAF189B1AC2007EAC1F /* ScratchPad.entitlements */,
-				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
+				934788AC18E4CE7300041EDE /* MainWindow */,
 				93315D8A189B1A87007EAC1F /* AppDelegate.h */,
 				93315D8B189B1A87007EAC1F /* AppDelegate.m */,
 				9322260E18D5121900A43D5D /* Helper.h */,
 				9322260F18D5121900A43D5D /* Helper.m */,
-				9331D3E218D0962C001320E5 /* MainViewController.h */,
-				9331D3E318D0962C001320E5 /* MainViewController.m */,
 				93B4BB8418E3B44E00C43245 /* NoteController.h */,
 				93B4BB8518E3B44E00C43245 /* NoteController.m */,
 				9331D3E118D093D9001320E5 /* TextView */,
@@ -194,6 +195,18 @@
 				9331D3DE18D0914A001320E5 /* TextViewController.xib */,
 			);
 			name = TextView;
+			sourceTree = "<group>";
+		};
+		934788AC18E4CE7300041EDE /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
+				930A76AA18E4CDD000D4E046 /* MainWindowViewController.h */,
+				930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */,
+				9331D3E218D0962C001320E5 /* MainViewController.h */,
+				9331D3E318D0962C001320E5 /* MainViewController.m */,
+			);
+			name = MainWindow;
 			sourceTree = "<group>";
 		};
 		934A742B18D0C4200046DDBE /* PageList */ = {
@@ -317,6 +330,7 @@
 				9331D3DF18D0914A001320E5 /* TextViewController.m in Sources */,
 				93315D92189B1A87007EAC1F /* ScratchPad.xcdatamodeld in Sources */,
 				93315D85189B1A87007EAC1F /* main.m in Sources */,
+				930A76AC18E4CDD000D4E046 /* MainWindowViewController.m in Sources */,
 				9331D3E418D0962C001320E5 /* MainViewController.m in Sources */,
 				9322261018D5121900A43D5D /* Helper.m in Sources */,
 				93B4BB8618E3B44E00C43245 /* NoteController.m in Sources */,

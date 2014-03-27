@@ -47,7 +47,7 @@
 #pragma mark Table View Delagte methods
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return [_noteController numberOfNotes];
+    return [_noteController getNumberOfNotes];
 }
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
