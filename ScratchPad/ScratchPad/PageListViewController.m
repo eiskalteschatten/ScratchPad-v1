@@ -38,6 +38,7 @@
 
 - (IBAction)newNote:(id)sender {
     [_popover close];
+    [_textViewController newNote:self];
 }
 
 
@@ -110,7 +111,7 @@
     NSInteger selectedRow = [pageList selectedRow];
     
     if (selectedRow != -1) {
-//        [_appDelegate loadNote:selectedRow];
+        [_textViewController loadNote:selectedRow];
     }
     else {
         // No row was selected

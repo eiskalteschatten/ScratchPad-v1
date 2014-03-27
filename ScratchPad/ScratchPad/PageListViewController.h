@@ -9,11 +9,13 @@
 #import <Cocoa/Cocoa.h>
 #import "Helper.h"
 #import "NoteController.h"
+#import "TextViewController.h"
 
 @interface PageListViewController : NSViewController
 
 @property (assign) IBOutlet Helper *helper;
 @property (assign) IBOutlet NoteController *noteController;
+@property (assign) IBOutlet TextViewController *textViewController;
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSSegmentedControl *popoverButton;
 @property (assign) IBOutlet NSPopover *popover;

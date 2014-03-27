@@ -842,6 +842,7 @@ CA
                 <outlet property="noteController" destination="wOG-Ix-3mK" id="e4F-dP-bUB"/>
                 <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
                 <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
+                <outlet property="textViewController" destination="kdp-MT-QrI" id="XxH-ZS-3MR"/>
                 <outlet property="window" destination="371" id="gTc-Rc-7Go"/>
             </connections>
         </viewController>

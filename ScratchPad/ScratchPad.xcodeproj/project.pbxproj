@@ -199,9 +199,9 @@
 		934A742B18D0C4200046DDBE /* PageList */ = {
 			isa = PBXGroup;
 			children = (
-				93CDEF4618D25DBD002909D8 /* PageListViewController.xib */,
 				934A742618D0C41D0046DDBE /* PageListViewController.h */,
 				934A742718D0C41D0046DDBE /* PageListViewController.m */,
+				93CDEF4618D25DBD002909D8 /* PageListViewController.xib */,
 			);
 			name = PageList;
 			sourceTree = "<group>";
