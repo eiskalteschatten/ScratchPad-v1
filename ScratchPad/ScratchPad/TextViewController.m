@@ -142,6 +142,15 @@
     }
 }
 
+- (IBAction)goToFirstNote:(id)sender {
+    [self loadNote:0];
+}
+
+- (IBAction)goToLastNote:(id)sender {
+    NSInteger numOfNotes = [_noteController getNumberOfNotes] - 1;
+    [self loadNote:numOfNotes];
+}
+
 - (void)enableDisableBackButton:(NSInteger)noteIndex {
     if (noteIndex != 0) {
         [_backForwardButtons setEnabled:true forSegment:0];

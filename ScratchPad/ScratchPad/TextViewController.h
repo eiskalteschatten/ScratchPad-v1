@@ -31,6 +31,8 @@
 - (IBAction)nextNote:(id)sender;
 - (IBAction)prevNote:(id)sender;
 - (IBAction)goToNote:(id)sender;
+- (IBAction)goToFirstNote:(id)sender;
+- (IBAction)goToLastNote:(id)sender;
 - (void)enableDisableBackButton:(NSInteger)noteIndex;
 
 - (IBAction)toggleToolbar:(id)sender;

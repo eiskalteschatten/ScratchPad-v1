@@ -653,6 +653,19 @@ CA
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="wLA-26-2Dp"/>
+                            <menuItem title="Go to First Page" keyEquivalent="" id="XFU-dv-rdw">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="goToFirstNote:" target="kdp-MT-QrI" id="N17-Ha-w1O"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Go to Last Page" keyEquivalent="" id="TuD-Z7-Jvb">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="goToLastNote:" target="kdp-MT-QrI" id="vjh-2w-exC"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="gIU-vu-wqy"/>
                             <menuItem title="Go to Page Number..." id="HWp-Vy-NvE">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
