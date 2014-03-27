@@ -21,6 +21,8 @@
 @property (retain, nonatomic) NSMutableArray *indexTitles;
 @property (retain, nonatomic) NSMutableArray *indexDates;
 
+@property (assign) IBOutlet NSWindow *window;
+
 - (void)loadPages;
 - (void)setCurrentNote:(NSInteger)noteIndex;
 - (NSInteger)getCurrentNote;

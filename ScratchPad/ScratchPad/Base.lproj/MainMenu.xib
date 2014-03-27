@@ -834,7 +834,6 @@ CA
                 <outlet property="backForwardButtons" destination="Vrm-lY-lI2" id="qoF-72-den"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
                 <outlet property="noteController" destination="wOG-Ix-3mK" id="1u3-Ld-ONv"/>
-                <outlet property="pageListViewController" destination="3C4-cg-gUx" id="NMX-EN-NJ6"/>
             </connections>
         </viewController>
         <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
@@ -855,6 +854,7 @@ CA
         <customObject id="wOG-Ix-3mK" customClass="NoteController">
             <connections>
                 <outlet property="helper" destination="CX9-DW-owT" id="hFS-vy-XfL"/>
+                <outlet property="window" destination="371" id="pED-rP-wBl"/>
             </connections>
         </customObject>
     </objects>

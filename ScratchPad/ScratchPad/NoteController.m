@@ -78,6 +78,14 @@
 
 - (void)setCurrentNote:(NSInteger)noteIndex {
     _currentNoteIndex = noteIndex;
+    
+    NSInteger pageNum = 1;
+    
+    if (noteIndex) {
+        pageNum = noteIndex + 1;
+    }
+    
+    [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%ld)", (long)pageNum]];
 }
 
 - (NSInteger)getCurrentNote {

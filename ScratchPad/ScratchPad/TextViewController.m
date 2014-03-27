@@ -32,7 +32,7 @@
     [_textView readRTFDFromFile:path];
     [_noteTitle setStringValue:[_noteController getNoteName:noteIndex]];
     [_noteDate setStringValue:[_helper formatDate:[_noteController getNoteDate:noteIndex]]];
-    [_pageListViewController preparePageAfterLoad:noteIndex];
+    [_noteController setCurrentNote:noteIndex];
     
     [self enableDisableBackButton:noteIndex];
 }
@@ -44,8 +44,6 @@
     [_textView setString:@""];
     [_noteTitle setStringValue:@""];
     [_noteDate setStringValue:now];
-    [_pageListViewController preparePageAfterLoad:noteIndex];
-    
     [_noteController setCurrentNote:noteIndex];
     
     [self enableDisableBackButton:noteIndex];

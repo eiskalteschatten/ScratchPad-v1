@@ -15,6 +15,9 @@
 @implementation PageListViewController
 
 @synthesize pageList;
+@synthesize indexPages;
+@synthesize indexTitles;
+@synthesize indexDates;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,18 +33,6 @@
 
 - (IBAction)openPopover:(id)sender {
     [_popover showRelativeToRect:[_popoverButton bounds] ofView:_popoverButton preferredEdge:NSMinYEdge];
-}
-
-- (void)preparePageAfterLoad:(NSInteger)noteIndex {
-    NSInteger pageNum = 1;
-    
-    if (noteIndex) {
-       pageNum = noteIndex + 1;
-    }
-    
-    [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%ld)", (long)pageNum]];
-    
-    [_noteController setCurrentNote: noteIndex];
     [pageList reloadData];
 }
 
@@ -63,9 +54,9 @@
     if ([identifier isEqualToString:@"MainCell"]) {
         NSTableCellView *cellView = [tableView makeViewWithIdentifier:@"MainCell" owner:self];
         
-        NSMutableArray *indexPages = [_noteController getPages];
-        NSMutableArray *indexTitles = [_noteController getTitles];
-        NSMutableArray *indexDates = [_noteController getDates];
+        indexPages = [_noteController getPages];
+        indexTitles = [_noteController getTitles];
+        indexDates = [_noteController getDates];
    
         NSString *titleSubString = indexTitles[row];
         
@@ -104,7 +95,9 @@
         [cellView.textField setStringValue:indexTitles[row]];
         [cellView.subviews[2] setStringValue:[_helper formatDate:indexDates[row]]];
         
-        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:[_noteController getCurrentNote]];
+        NSInteger currentNote = [_noteController getCurrentNote];
+        
+        NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:currentNote];
         [tableView selectRowIndexes:indexSet byExtendingSelection:NO];
         
         return cellView;

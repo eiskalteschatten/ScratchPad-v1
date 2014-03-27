@@ -19,8 +19,11 @@
 @property (assign) IBOutlet NSPopover *popover;
 @property (assign) IBOutlet NSTableView *pageList;
 
+@property (retain, nonatomic) NSMutableArray *indexPages;
+@property (retain, nonatomic) NSMutableArray *indexTitles;
+@property (retain, nonatomic) NSMutableArray *indexDates;
+
 - (IBAction)openPopover:(id)sender;
-- (void)preparePageAfterLoad:(NSInteger)noteIndex;
 - (IBAction)newNote:(id)sender;
 
 
