@@ -27,7 +27,6 @@
 - (NSString *)getNoteName:(NSInteger)noteIndex;
 - (NSString *)getNote:(NSInteger)noteIndex;
 - (NSString *)getNoteDate:(NSInteger)noteIndex;
-- (NSInteger)getNumberOfNotes;
 - (void)preparePageAfterLoad:(NSInteger)noteIndex;
 - (IBAction)newNote:(id)sender;
 

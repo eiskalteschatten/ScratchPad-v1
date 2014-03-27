@@ -11,11 +11,14 @@
 @interface Helper : NSObject
 
 @property (nonatomic) NSInteger currentNoteIndex;
+@property (nonatomic) NSInteger numberOfNotes;
 
 - (NSString *)pathToLibrary;
 - (NSString *)pathToNotes;
 - (NSString *)formatDate:(NSString*)rawDate;
 - (void)setCurrentNote:(NSInteger)noteIndex;
 - (NSInteger)getCurrentNote;
+- (void)setNumberOfNotes:(NSInteger)numOfNotes;
+- (NSInteger)getNumberOfNotes;
 
 @end

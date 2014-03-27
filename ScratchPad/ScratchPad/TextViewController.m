@@ -56,7 +56,7 @@
 }
 
 - (IBAction)newNote:(id)sender {
-    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
+    NSInteger numOfNotes = [_helper getNumberOfNotes];
     
     [self loadBlankNote:numOfNotes];
 }
@@ -64,7 +64,7 @@
 - (void)nextNote {
     NSInteger currentNote = [_helper getCurrentNote];
     NSInteger nextNote = currentNote + 1;
-    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
+    NSInteger numOfNotes = [_helper getNumberOfNotes];
     
     [self saveNote];
     
@@ -79,7 +79,7 @@
 - (void)prevNote {
     NSInteger currentNote = [_helper getCurrentNote];
     NSInteger nextNote = currentNote - 1;
-    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
+    NSInteger numOfNotes = [_helper getNumberOfNotes];
     
     [self saveNote];
     
@@ -95,7 +95,7 @@
 
 - (IBAction)goToNote:(id)sender {
     NSInteger pageNum = [[sender stringValue] integerValue];
-    NSInteger numOfNotes = [_pageListViewController getNumberOfNotes];
+    NSInteger numOfNotes = [_helper getNumberOfNotes];
     
     [self saveNote];
     

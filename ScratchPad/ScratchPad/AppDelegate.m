@@ -16,7 +16,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [_mainViewController showTextView];
-    
+
     [self loadNote:0];
 }
 

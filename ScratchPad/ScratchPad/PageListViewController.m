@@ -89,6 +89,8 @@
         indexTitles = [indexPagesDict objectForKey:@"Titles"];
         indexDates = [indexPagesDict objectForKey:@"Dates"];
     }
+    
+    [_helper setNumberOfNotes:[indexPages count]];
 }
 
 - (NSString *)getNoteName:(NSInteger)noteIndex {
@@ -103,18 +105,11 @@
 	return [indexDates objectAtIndex:noteIndex];
 }
 
-- (NSInteger)getNumberOfNotes {
-	return [indexPages count];
-}
-
 - (void)preparePageAfterLoad:(NSInteger)noteIndex {
-    NSInteger pageNum;
+    NSInteger pageNum = 1;
     
     if (noteIndex) {
        pageNum = noteIndex + 1;
-    }
-    else {
-       pageNum = 1;
     }
     
     [_window setTitle: [NSString stringWithFormat:@"ScratchPad (%ld)", (long)pageNum]];
