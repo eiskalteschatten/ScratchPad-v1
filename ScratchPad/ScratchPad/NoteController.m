@@ -34,6 +34,11 @@
     
     if ([fileManager fileExistsAtPath: pFileName] == NO) {
         NSString *notesPath = [_helper pathToNotes];
+        NSString *backupNotesPath = [library stringByAppendingString:@"Notes-2.0-Backup/"];
+        
+        if ([fileManager fileExistsAtPath: backupNotesPath] == NO) {
+            [fileManager copyItemAtPath:notesPath toPath:backupNotesPath error:nil];
+        }
         
         NSArray *rawnotes = [fileManager contentsOfDirectoryAtPath:notesPath error:nil];
         rawnotes = [rawnotes sortedArrayUsingSelector:@selector(localizedStandardCompare:)];
