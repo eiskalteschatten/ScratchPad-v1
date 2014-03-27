@@ -19,6 +19,7 @@
 @property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;
 @property (assign) IBOutlet NSSegmentedControl *backForwardButtons;
+@property (assign) IBOutlet NSMenuItem *previousNoteMenuItem;
 
 @property (assign) BOOL isRichText;
 

@@ -640,7 +640,7 @@ CA
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Pages" id="5uf-fy-9OO">
                         <items>
-                            <menuItem title="Previous Page" keyEquivalent="" id="jHW-nW-y65">
+                            <menuItem title="Previous Page" enabled="NO" keyEquivalent="" id="jHW-nW-y65">
                                 <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                 <connections>
                                     <action selector="prevNote:" target="kdp-MT-QrI" id="mbt-Qq-DFy"/>
@@ -867,6 +867,7 @@ CA
                 <outlet property="backForwardButtons" destination="Vrm-lY-lI2" id="qoF-72-den"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
                 <outlet property="noteController" destination="wOG-Ix-3mK" id="1u3-Ld-ONv"/>
+                <outlet property="previousNoteMenuItem" destination="jHW-nW-y65" id="fJI-sI-1oS"/>
                 <outlet property="window" destination="371" id="33G-QL-CeE"/>
             </connections>
         </viewController>

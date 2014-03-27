@@ -154,9 +154,13 @@
 - (void)enableDisableBackButton:(NSInteger)noteIndex {
     if (noteIndex != 0) {
         [_backForwardButtons setEnabled:true forSegment:0];
+        [_previousNoteMenuItem setEnabled:true];
+        [_previousNoteMenuItem setAction:@selector(prevNote:)];
     }
     else {
         [_backForwardButtons setEnabled:false forSegment:0];
+        [_previousNoteMenuItem setEnabled:false];
+        [_previousNoteMenuItem setAction:nil];
     }
 }
 
