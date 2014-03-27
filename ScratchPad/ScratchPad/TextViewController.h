@@ -25,9 +25,11 @@
 - (void)loadNote:(NSInteger)noteIndex;
 - (void)loadBlankNote:(NSInteger)noteIndex;
 - (void)saveNote;
+- (IBAction)newNote:(id)sender;
 - (void)nextNote;
 - (void)prevNote;
 - (IBAction)goToNote:(id)sender;
+- (void)enableDisableBackButton:(NSInteger)noteIndex;
 
 - (IBAction)toggleToolbar:(id)sender;
 - (IBAction)toggleRichText:(id)sender;

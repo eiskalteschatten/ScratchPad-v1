@@ -7,6 +7,7 @@
 //
 
 #import "PageListViewController.h"
+#import "AppDelegate.h"
 
 @interface PageListViewController ()
 
@@ -187,7 +188,7 @@
     NSInteger selectedRow = [pageList selectedRow];
     
     if (selectedRow != -1) {
-        //[[NSApp delegate] loadNote:selectedRow];
+        [_appDelegate loadNote:selectedRow];
     }
     else {
         // No row was selected

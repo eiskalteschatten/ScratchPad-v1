@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "Helper.h"
 
+@class AppDelegate;
+
 @interface PageListViewController : NSViewController
 
 @property (assign) IBOutlet Helper *helper;
@@ -21,6 +23,8 @@
 @property (retain, nonatomic) NSMutableArray *indexPages;
 @property (retain, nonatomic) NSMutableArray *indexTitles;
 @property (retain, nonatomic) NSMutableArray *indexDates;
+
+@property (retain, nonatomic) AppDelegate *appDelegate;
 
 - (IBAction)openPopover:(id)sender;
 - (void)loadPages;

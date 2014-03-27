@@ -20,7 +20,6 @@
 
 - (void)setMainViewTo:(NSViewController *)controller;
 - (void)showTextView;
-- (void)newTextView;
 - (IBAction)prevNextNote:(id)sender;
 
 @end
