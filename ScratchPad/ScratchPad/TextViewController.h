@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Helper.h"
+#import "NoteController.h"
 #import "PageListViewController.h"
 
 @interface TextViewController : NSViewController
@@ -15,6 +16,7 @@
 @property (strong) IBOutlet PageListViewController *pageListViewController;
 
 @property (assign) IBOutlet Helper *helper;
+@property (assign) IBOutlet NoteController *noteController;
 @property (assign) IBOutlet NSTextField *noteTitle;
 @property (assign) IBOutlet NSTextField *noteDate;
 @property (assign) IBOutlet NSTextView *textView;

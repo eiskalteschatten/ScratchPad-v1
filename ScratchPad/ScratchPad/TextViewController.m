@@ -26,12 +26,12 @@
 #pragma mark Note Actions
 
 - (void)loadNote:(NSInteger)noteIndex {
-    NSString *fileName = [_pageListViewController getNote:noteIndex];
+    NSString *fileName = [_noteController getNote:noteIndex];
     NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
 
     [_textView readRTFDFromFile:path];
-    [_noteTitle setStringValue:[_pageListViewController getNoteName:noteIndex]];
-    [_noteDate setStringValue:[_helper formatDate:[_pageListViewController getNoteDate:noteIndex]]];
+    [_noteTitle setStringValue:[_noteController getNoteName:noteIndex]];
+    [_noteDate setStringValue:[_helper formatDate:[_noteController getNoteDate:noteIndex]]];
     [_pageListViewController preparePageAfterLoad:noteIndex];
     
     [self enableDisableBackButton:noteIndex];
@@ -46,7 +46,7 @@
     [_noteDate setStringValue:now];
     [_pageListViewController preparePageAfterLoad:noteIndex];
     
-    [_helper setCurrentNote:noteIndex];
+    [_noteController setCurrentNote:noteIndex];
     
     [self enableDisableBackButton:noteIndex];
 }
@@ -56,15 +56,15 @@
 }
 
 - (IBAction)newNote:(id)sender {
-    NSInteger numOfNotes = [_helper getNumberOfNotes];
+    NSInteger numOfNotes = [_noteController getNumberOfNotes];
     
     [self loadBlankNote:numOfNotes];
 }
 
 - (void)nextNote {
-    NSInteger currentNote = [_helper getCurrentNote];
+    NSInteger currentNote = [_noteController getCurrentNote];
     NSInteger nextNote = currentNote + 1;
-    NSInteger numOfNotes = [_helper getNumberOfNotes];
+    NSInteger numOfNotes = [_noteController getNumberOfNotes];
     
     [self saveNote];
     
@@ -77,9 +77,9 @@
 }
 
 - (void)prevNote {
-    NSInteger currentNote = [_helper getCurrentNote];
+    NSInteger currentNote = [_noteController getCurrentNote];
     NSInteger nextNote = currentNote - 1;
-    NSInteger numOfNotes = [_helper getNumberOfNotes];
+    NSInteger numOfNotes = [_noteController getNumberOfNotes];
     
     [self saveNote];
     
@@ -95,7 +95,7 @@
 
 - (IBAction)goToNote:(id)sender {
     NSInteger pageNum = [[sender stringValue] integerValue];
-    NSInteger numOfNotes = [_helper getNumberOfNotes];
+    NSInteger numOfNotes = [_noteController getNumberOfNotes];
     
     [self saveNote];
     

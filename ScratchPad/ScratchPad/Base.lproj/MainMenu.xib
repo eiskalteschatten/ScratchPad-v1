@@ -814,6 +814,7 @@ CA
             <connections>
                 <outlet property="helper" destination="CX9-DW-owT" id="fUi-ws-xPY"/>
                 <outlet property="mainViewController" destination="Hlf-T9-adl" id="cqC-PE-61h"/>
+                <outlet property="noteController" destination="wOG-Ix-3mK" id="fWU-hZ-Zpc"/>
                 <outlet property="pageListViewController" destination="3C4-cg-gUx" id="3nP-80-xC7"/>
                 <outlet property="textViewController" destination="kdp-MT-QrI" id="iHx-iD-PYx"/>
                 <outlet property="window" destination="371" id="532"/>
@@ -832,12 +833,14 @@ CA
             <connections>
                 <outlet property="backForwardButtons" destination="Vrm-lY-lI2" id="qoF-72-den"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="dY6-wg-V7J"/>
+                <outlet property="noteController" destination="wOG-Ix-3mK" id="1u3-Ld-ONv"/>
                 <outlet property="pageListViewController" destination="3C4-cg-gUx" id="NMX-EN-NJ6"/>
             </connections>
         </viewController>
         <viewController title="PageListViewController" nibName="PageListViewController" id="3C4-cg-gUx" userLabel="Popover View Controller" customClass="PageListViewController">
             <connections>
                 <outlet property="helper" destination="CX9-DW-owT" id="Gcr-3Y-eUg"/>
+                <outlet property="noteController" destination="wOG-Ix-3mK" id="e4F-dP-bUB"/>
                 <outlet property="popover" destination="ydK-7c-ecO" id="AxR-nG-fo6"/>
                 <outlet property="popoverButton" destination="nIu-eP-K9u" id="MKq-7O-4Tb"/>
                 <outlet property="window" destination="371" id="gTc-Rc-7Go"/>
@@ -849,6 +852,11 @@ CA
             </connections>
         </popover>
         <customObject id="CX9-DW-owT" customClass="Helper"/>
+        <customObject id="wOG-Ix-3mK" customClass="NoteController">
+            <connections>
+                <outlet property="helper" destination="CX9-DW-owT" id="hFS-vy-XfL"/>
+            </connections>
+        </customObject>
     </objects>
     <resources>
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>

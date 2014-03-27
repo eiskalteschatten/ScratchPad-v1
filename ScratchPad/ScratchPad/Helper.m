@@ -48,20 +48,4 @@
 	return dateString;
 }
 
-- (void)setCurrentNote:(NSInteger)noteIndex {
-    _currentNoteIndex = noteIndex;
-}
-
-- (NSInteger)getCurrentNote {
-	return _currentNoteIndex;
-}
-
-- (void)setNumberOfNotes:(NSInteger)numOfNotes {
-    _numberOfNotes = numOfNotes;
-}
-
-- (NSInteger)getNumberOfNotes {
-	return _numberOfNotes;
-}
-
 @end
