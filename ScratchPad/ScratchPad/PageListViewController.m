@@ -47,6 +47,11 @@
     [pageList reloadData];
 }
 
+- (IBAction)renameNote:(id)sender {
+    [_popover close];
+    [_textViewController renameNoteByIndex:[sender tag]];
+}
+
 
 #pragma mark -
 #pragma mark Table View Delagte methods
@@ -104,6 +109,9 @@
         
         NSMenuItem *deleteButton = [cellView.subviews[3] itemAtIndex:1];
         [deleteButton setTag:row];
+        
+        NSMenuItem *renameButton = [cellView.subviews[3] itemAtIndex:2];
+        [renameButton setTag:row];
         
         NSInteger currentNote = [_noteController getCurrentNote];
         

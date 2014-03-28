@@ -113,6 +113,15 @@
     }
 }
 
+- (IBAction)renameNoteAction:(id)sender {
+    [_window makeFirstResponder:_noteTitle];
+}
+
+- (void)renameNoteByIndex:(NSInteger)index {
+    [self loadNote:index];
+    [_window makeFirstResponder:_noteTitle];
+}
+
 - (IBAction)newNote:(id)sender {
     NSInteger numOfNotes = [_noteController getNumberOfNotes];
     

@@ -29,5 +29,6 @@
 - (IBAction)openPopover:(id)sender;
 - (IBAction)newNote:(id)sender;
 - (IBAction)deleteNote:(id)sender;
+- (IBAction)renameNote:(id)sender;
 
 @end
