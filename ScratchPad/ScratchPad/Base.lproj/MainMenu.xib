@@ -111,12 +111,12 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="vvP-7K-UDb"/>
-                            <menuItem title="Rename Note" keyEquivalent="R" id="bhz-ud-RRs">
+                            <menuItem title="Rename Page" keyEquivalent="R" id="bhz-ud-RRs">
                                 <connections>
                                     <action selector="renameNoteAction:" target="kdp-MT-QrI" id="KMk-xM-mfF"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Delete Note" id="n2X-cj-gpf">
+                            <menuItem title="Delete Page" id="n2X-cj-gpf">
                                 <string key="keyEquivalent" base64-UTF8="YES">
 CA
 </string>
