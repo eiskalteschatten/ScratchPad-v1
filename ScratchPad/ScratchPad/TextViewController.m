@@ -116,7 +116,11 @@
     [_noteController deleteNoteByIndex:index];
     [_noteController saveDictionary];
     
-    [self loadNote:index];
+    NSInteger currentNote = [_noteController getCurrentNote];
+
+    if (currentNote == index) {
+        [self loadNote:index];
+    }
 }
 
 - (IBAction)newNote:(id)sender {

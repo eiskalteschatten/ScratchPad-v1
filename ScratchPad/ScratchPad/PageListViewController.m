@@ -43,7 +43,8 @@
 }
 
 - (IBAction)deleteNote:(id)sender {
-    [_textViewController deleteNoteByIndex:_selectedNote];
+    [_textViewController deleteNoteByIndex:[sender tag]];
+    [pageList reloadData];
 }
 
 
@@ -100,6 +101,9 @@
         [cellView.imageView setImage:img];
         [cellView.textField setStringValue:indexTitles[row]];
         [cellView.subviews[2] setStringValue:[_helper formatDate:indexDates[row]]];
+        
+        NSMenuItem *deleteButton = [cellView.subviews[3] itemAtIndex:1];
+        [deleteButton setTag:row];
         
         NSInteger currentNote = [_noteController getCurrentNote];
         
