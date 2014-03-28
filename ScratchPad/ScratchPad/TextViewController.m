@@ -113,7 +113,10 @@
 }
 
 - (void)deleteNoteByIndex:(NSInteger)index {
+    [_noteController deleteNoteByIndex:index];
+    [_noteController saveDictionary];
     
+    [self loadNote:index];
 }
 
 - (IBAction)newNote:(id)sender {

@@ -86,6 +86,13 @@
     indexCount = [indexPagesDict objectForKey:@"Index"];
 }
 
+- (void)refreshDictionary {
+    [indexPagesDict setObject:indexTitles forKey:@"Titles"];
+    [indexPagesDict setObject:indexPages forKey:@"Notes"];
+    [indexPagesDict setObject:indexDates forKey:@"Dates"];
+    [indexPagesDict setObject:indexCount forKey:@"Index"];
+}
+
 - (void)setCurrentNote:(NSInteger)noteIndex {
     _currentNoteIndex = noteIndex;
     
@@ -170,6 +177,23 @@
         [plistData writeToFile:pFileName atomically:YES];
     }
 }
+
+- (void)deleteNoteByIndex:(NSInteger)index {
+    NSString *fileName = [self getNote:index];
+    NSString *path = [[_helper pathToNotes] stringByAppendingString:fileName];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    [indexTitles removeObjectAtIndex:index];
+    [indexPages removeObjectAtIndex:index];
+    [indexDates removeObjectAtIndex:index];
+    [indexCount removeObjectAtIndex:index];
+    
+    [self refreshDictionary];
+    
+    [fileManager removeItemAtPath:path error:nil];
+}
+
+
 
 - (NSMutableArray *)getPages {
     return indexPages;

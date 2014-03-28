@@ -26,6 +26,7 @@
 
 - (void)loadPages;
 - (void)refreshNoteArrays;
+- (void)refreshDictionary;
 - (void)setCurrentNote:(NSInteger)noteIndex;
 - (NSInteger)getCurrentNote;
 - (NSInteger)getNumberOfNotes;
@@ -37,6 +38,7 @@
 - (void)setNoteDate:(NSString*)noteDate index:(NSInteger)noteIndex;
 - (void)setNewIndex:(NSInteger)noteIndex;
 - (void)saveDictionary;
+- (void)deleteNoteByIndex:(NSInteger)index;
 - (NSMutableArray *)getPages;
 - (NSMutableArray *)getTitles;
 - (NSMutableArray *)getDates;
