@@ -52,9 +52,9 @@
 }
 
 - (void)saveNote {
-	bool isGarbage = [self noteGarbageCollector];
-    
-    if (isGarbage == NO) {
+	NSInteger textEditorLength = [[_textView textStorage] length];
+	
+	if (textEditorLength > 0) {
         NSInteger currentNote = [_noteController getCurrentNote];
         NSInteger numOfNotes = [_noteController getNumberOfNotes];
         NSString *noteName = [_noteTitle stringValue];
@@ -91,16 +91,6 @@
 
 - (IBAction)saveNoteAction:(id)sender {
     [self saveNote];
-}
-
-- (bool)noteGarbageCollector {
-	NSInteger textEditor = [[_textView textStorage] length];
-	
-	if (textEditor == 0) {
-		return YES;
-	}
-	
-	return NO;
 }
 
 - (void)deleteCurrentNote {
