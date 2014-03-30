@@ -108,6 +108,17 @@ CA
                                     <action selector="deleteNoteAction:" target="kdp-MT-QrI" id="CkL-sX-t2H"/>
                                 </connections>
                             </menuItem>
+                            <menuItem isSeparatorItem="YES" id="k6o-lK-Qpq"/>
+                            <menuItem title="Export Page..." id="bD0-3n-8YA">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="FAK-74-c0o"/>
+                            <menuItem title="Create Backup..." id="W87-FE-8ym">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Restore Backup..." id="E72-qm-x8F">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="74">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
@@ -811,6 +822,12 @@ CA
                             <action selector="openPopover:" target="3C4-cg-gUx" id="D6C-Dh-ugg"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="DEE8433E-0C25-41A1-BE7C-6314262AC3AB" label="Delete Page" paletteLabel="Delete Page" tag="-1" image="deletepage" id="JAC-SS-gge">
+                        <connections>
+                            <action selector="deleteNoteAction:" target="kdp-MT-QrI" id="q8O-Eq-Evt"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="DAC7FA15-5A1B-47CE-BF16-3EF25BFBDC79" label="Export Page" paletteLabel="Export Page" tag="-1" image="exportNote" id="4AZ-CE-o67"/>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="dAk-cP-W7L"/>
@@ -918,5 +935,7 @@ CA
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>
         <image name="NSListViewTemplate" width="11" height="10"/>
         <image name="NSRightFacingTriangleTemplate" width="9" height="9"/>
+        <image name="deletepage" width="32" height="32"/>
+        <image name="exportNote" width="32" height="32"/>
     </resources>
 </document>

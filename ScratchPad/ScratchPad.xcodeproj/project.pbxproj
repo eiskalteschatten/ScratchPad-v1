@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		930A76AC18E4CDD000D4E046 /* MainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */; };
+		93202F8C18E87D9D0004B29D /* deletepage.tif in Resources */ = {isa = PBXBuildFile; fileRef = 93202F8A18E87D9D0004B29D /* deletepage.tif */; };
+		93202F8D18E87D9D0004B29D /* exportNote.tif in Resources */ = {isa = PBXBuildFile; fileRef = 93202F8B18E87D9D0004B29D /* exportNote.tif */; };
 		9322261018D5121900A43D5D /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9322260F18D5121900A43D5D /* Helper.m */; };
 		93315D79189B1A87007EAC1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93315D78189B1A87007EAC1F /* Cocoa.framework */; };
 		93315D83189B1A87007EAC1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93315D81189B1A87007EAC1F /* InfoPlist.strings */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		930A76AA18E4CDD000D4E046 /* MainWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowViewController.h; sourceTree = "<group>"; };
 		930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowViewController.m; sourceTree = "<group>"; };
+		93202F8A18E87D9D0004B29D /* deletepage.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = deletepage.tif; sourceTree = "<group>"; };
+		93202F8B18E87D9D0004B29D /* exportNote.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = exportNote.tif; sourceTree = "<group>"; };
 		9322260E18D5121900A43D5D /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		9322260F18D5121900A43D5D /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; wrapsLines = 0; };
 		93315D75189B1A87007EAC1F /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93202F8918E87D8A0004B29D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				93202F8A18E87D9D0004B29D /* deletepage.tif */,
+				93202F8B18E87D9D0004B29D /* exportNote.tif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		93315D6C189B1A87007EAC1F = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +173,7 @@
 		93315D7F189B1A87007EAC1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93202F8918E87D8A0004B29D /* Images */,
 				93315D80189B1A87007EAC1F /* ScratchPad-Info.plist */,
 				93315D81189B1A87007EAC1F /* InfoPlist.strings */,
 				93315D84189B1A87007EAC1F /* main.m */,
@@ -308,7 +322,9 @@
 				93315D89189B1A87007EAC1F /* Credits.rtf in Resources */,
 				93CDEF4718D25DBD002909D8 /* PageListViewController.xib in Resources */,
 				93315D8F189B1A87007EAC1F /* MainMenu.xib in Resources */,
+				93202F8C18E87D9D0004B29D /* deletepage.tif in Resources */,
 				9331D3E018D0914A001320E5 /* TextViewController.xib in Resources */,
+				93202F8D18E87D9D0004B29D /* exportNote.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

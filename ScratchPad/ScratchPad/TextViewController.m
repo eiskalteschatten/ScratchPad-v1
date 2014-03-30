@@ -103,14 +103,16 @@
 }
 
 - (void)deleteNoteByIndex:(NSInteger)index {
-    [_noteController deleteNoteByIndex:index];
-    [_noteController saveDictionary];
-    
-    NSInteger currentNote = [_noteController getCurrentNote];
-
-    if (currentNote == index) {
-        [self loadNote:index];
-    }
+    if (NSRunAlertPanel(NSLocalizedStringFromTable(@"Delete Page", @"Localized", @"Delete Page alert panel title"), NSLocalizedStringFromTable(@"Are you sure you want to delete this page?", @"Localized", @"Delete Page alert panel question"), NSLocalizedStringFromTable(@"No", @"Localized", @"No"), NSLocalizedStringFromTable(@"Yes", @"Localized", @"Yes"), nil) == NSAlertAlternateReturn) {
+        [_noteController deleteNoteByIndex:index];
+        [_noteController saveDictionary];
+        
+        NSInteger currentNote = [_noteController getCurrentNote];
+        
+        if (currentNote == index) {
+            [self loadNote:index];
+        }
+	}
 }
 
 - (IBAction)renameNoteAction:(id)sender {
