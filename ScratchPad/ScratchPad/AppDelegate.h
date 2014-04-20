@@ -28,5 +28,6 @@
 
 - (IBAction)saveAction:(id)sender;
 - (void)loadNote:(NSInteger)noteIndex;
+- (IBAction)createBackup:(id)sender;
 
 @end

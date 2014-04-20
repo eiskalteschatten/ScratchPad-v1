@@ -178,4 +178,25 @@
     [_textViewController loadNote:noteIndex];
 }
 
+- (IBAction)createBackup:(id)sender {
+	NSOpenPanel *panel = [NSOpenPanel openPanel];
+	
+	[panel setCanChooseDirectories: YES];
+	[panel setCanChooseFiles: NO];
+	[panel setAllowsMultipleSelection: NO];
+	
+	if ([panel runModal] == NSOKButton) {
+		NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString *library = [_helper pathToLibrary];
+        NSString *backupPath = [[[panel URL] path] stringByAppendingPathComponent: @"ScratchPad/"];
+        
+		if ([fileManager copyItemAtPath:library toPath:backupPath error:nil]) {
+			NSRunAlertPanel(NSLocalizedStringFromTable(@"Backup Created", @"Localized", @"Backup Created"), NSLocalizedStringFromTable(@"Your backup has successfully been created!", @"Localized", @"Backup Success"), @"OK", nil, nil);
+		}
+		else {
+			NSRunAlertPanel(NSLocalizedStringFromTable(@"Backup Not Created", @"Localized", @"Backup Not Created"), NSLocalizedStringFromTable(@"An error occurred and your backup was not created!", @"Localized", @"Backup Failure"), @"OK", nil, nil);
+		}
+	}
+}
+
 @end

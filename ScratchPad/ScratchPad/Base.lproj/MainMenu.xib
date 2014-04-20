@@ -118,6 +118,9 @@ CA
                             <menuItem isSeparatorItem="YES" id="FAK-74-c0o"/>
                             <menuItem title="Create Backup..." id="W87-FE-8ym">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="createBackup:" target="494" id="1nu-xD-3Ms"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Restore Backup..." id="E72-qm-x8F">
                                 <modifierMask key="keyEquivalentModifierMask"/>
