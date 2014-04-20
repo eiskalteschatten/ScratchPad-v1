@@ -199,4 +199,21 @@
 	}
 }
 
+- (IBAction)openWebsite:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://scratchpad.alexseifert.com"]];
+}
+
+- (IBAction)openFeedback:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://scratchpad.alexseifert.com/feedback/"]];
+}
+
+- (IBAction)openGithub:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/eiskalteschatten/scratchpad"]];
+}
+
+- (IBAction)openReleaseNotes:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://scratchpad.alexseifert.com/developer/release-notes/"]];
+}
+
+
 @end

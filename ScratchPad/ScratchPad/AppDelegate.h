@@ -30,4 +30,9 @@
 - (void)loadNote:(NSInteger)noteIndex;
 - (IBAction)createBackup:(id)sender;
 
+- (IBAction)openWebsite:(id)sender;
+- (IBAction)openFeedback:(id)sender;
+- (IBAction)openGithub:(id)sender;
+- (IBAction)openReleaseNotes:(id)sender;
+
 @end
