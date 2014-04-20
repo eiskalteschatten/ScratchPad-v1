@@ -248,11 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-goToNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -264,11 +264,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "-nextNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -280,11 +280,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "-prevNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -376,11 +376,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "-enableDisableBackButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -424,11 +424,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "-goToNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -440,11 +440,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "-nextNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -488,11 +488,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-nextNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -504,11 +504,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "-nextNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -520,11 +520,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "192"
-            endingLineNumber = "192"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "-goToLastNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -536,11 +536,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/TextViewController.m"
-            timestampString = "417889845.178694"
+            timestampString = "419682738.684381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "-goToLastNote:"
             landmarkType = "5">
          </BreakpointContent>
@@ -670,6 +670,22 @@
             startingLineNumber = "57"
             endingLineNumber = "57"
             landmarkName = "-saveNote"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScratchPad/TextViewController.m"
+            timestampString = "419682738.684381"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "-exportNote:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -93,6 +93,17 @@
     [self saveNote];
 }
 
+- (IBAction)exportNote:(id)sender {
+    NSSavePanel *panel = [NSSavePanel savePanel];
+	[panel setAllowedFileTypes:[NSArray arrayWithObjects:@"rtfd",nil]];
+	[panel setNameFieldStringValue:[_noteTitle stringValue]];
+    
+	if ([panel runModal] == NSOKButton) {
+        NSString *path = [[panel URL] path];
+		[_textView writeRTFDToFile:path atomically:YES];
+	}
+}
+
 - (void)deleteCurrentNote {
     NSInteger currentNote = [_noteController getCurrentNote];
     [self deleteNoteByIndex:currentNote];

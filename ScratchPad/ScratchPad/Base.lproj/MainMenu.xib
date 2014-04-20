@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -111,6 +111,9 @@ CA
                             <menuItem isSeparatorItem="YES" id="k6o-lK-Qpq"/>
                             <menuItem title="Export Page..." id="bD0-3n-8YA">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="exportNote:" target="kdp-MT-QrI" id="eaD-4o-TiS"/>
+                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="FAK-74-c0o"/>
                             <menuItem title="Create Backup..." id="W87-FE-8ym">
@@ -724,7 +727,7 @@ CA
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="653" height="467"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="653" height="467"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -827,7 +830,11 @@ CA
                             <action selector="deleteNoteAction:" target="kdp-MT-QrI" id="q8O-Eq-Evt"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="DAC7FA15-5A1B-47CE-BF16-3EF25BFBDC79" label="Export Page" paletteLabel="Export Page" tag="-1" image="exportNote" id="4AZ-CE-o67"/>
+                    <toolbarItem implicitItemIdentifier="DAC7FA15-5A1B-47CE-BF16-3EF25BFBDC79" label="Export Page" paletteLabel="Export Page" tag="-1" image="exportNote" id="4AZ-CE-o67">
+                        <connections>
+                            <action selector="exportNote:" target="kdp-MT-QrI" id="vF6-m1-xCD"/>
+                        </connections>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="dAk-cP-W7L"/>
@@ -845,7 +852,7 @@ CA
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" id="QcN-QE-oAr">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -910,7 +917,7 @@ CA
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES" nonactivatingPanel="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="75" y="104" width="129" height="49"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" id="t7n-H5-GdP">
                 <rect key="frame" x="0.0" y="0.0" width="129" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
