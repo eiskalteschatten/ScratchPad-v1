@@ -15,4 +15,10 @@
 @property (assign) IBOutlet NSWindow *mainWindow;
 @property (assign) IBOutlet NSWindow *prefWindow;
 
+@property (assign) IBOutlet NSButton *floatAboveWindows;
+
+@property (assign) NSUserDefaults *standardDefaults;
+
+- (void)importOldPreferences;
+
 @end

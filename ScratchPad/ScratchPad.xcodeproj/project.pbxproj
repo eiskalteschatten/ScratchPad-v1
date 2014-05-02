@@ -166,6 +166,8 @@
 				93B4BB8518E3B44E00C43245 /* NoteController.m */,
 				9331D3E118D093D9001320E5 /* TextView */,
 				934A742B18D0C4200046DDBE /* PageList */,
+				93759ACB191451AB00B38F19 /* PreferencesViewController.h */,
+				93759ACC191451AB00B38F19 /* PreferencesViewController.m */,
 				93315D93189B1A87007EAC1F /* Images.xcassets */,
 				93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */,
 				93315D7F189B1A87007EAC1F /* Supporting Files */,
@@ -218,8 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
-				93759ACB191451AB00B38F19 /* PreferencesViewController.h */,
-				93759ACC191451AB00B38F19 /* PreferencesViewController.m */,
 				930A76AA18E4CDD000D4E046 /* MainWindowViewController.h */,
 				930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */,
 				9331D3E218D0962C001320E5 /* MainViewController.h */,

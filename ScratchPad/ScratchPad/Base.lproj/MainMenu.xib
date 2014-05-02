@@ -1440,6 +1440,7 @@ IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
         </window>
         <viewController id="9ei-EC-63w" customClass="PreferencesViewController">
             <connections>
+                <outlet property="floatAboveWindows" destination="97N-l3-eGo" id="KdY-OW-UQW"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="zMD-Hh-fVB"/>
                 <outlet property="mainWindow" destination="371" id="Ced-Eb-S3k"/>
                 <outlet property="prefWindow" destination="2Wp-Yl-lRw" id="IGx-M7-rJf"/>

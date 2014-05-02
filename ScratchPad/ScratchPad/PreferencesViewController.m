@@ -22,4 +22,108 @@
     return self;
 }
 
+- (void)awakeFromNib {
+    _standardDefaults = [NSUserDefaults standardUserDefaults];
+    
+    //bool imported = [_standardDefaults boolForKey:@"oldPreferencesImported"];
+    bool imported = NO;
+    
+    if (imported == NO) {
+        [self importOldPreferences];
+    }
+    
+    // FLOAT ABOVE WINDOWS
+    
+    bool floatWindow = [_standardDefaults boolForKey:@"floatAboveWindows"];
+    
+    if (floatWindow) {
+        [_mainWindow setLevel: NSPopUpMenuWindowLevel];
+        [_floatAboveWindows setState:NSOnState];
+    }
+    else {
+        [_floatAboveWindows setState:NSOffState];
+    }
+}
+
+- (void)importOldPreferences {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *library = [_helper pathToLibrary];
+    library = [library stringByAppendingString:@"Preferences/"];
+    
+    // FLOAT ABOVE WINDOWS
+    
+    NSString *pFileName = [library stringByAppendingPathComponent: @"FloatAboveWindows.txt"];
+    bool floatWindow;
+    
+    if ([fileManager fileExistsAtPath: pFileName] == NO) {
+        floatWindow = [[NSString stringWithContentsOfFile:pFileName encoding: NSUTF8StringEncoding error:nil] boolValue];
+    }
+    else {
+        floatWindow = NO;
+    }
+    
+    [_standardDefaults setBool:floatWindow forKey:@"floatAboveWindows"];
+    
+    // REMEMBER PAGE NUMBER
+    
+    pFileName = [library stringByAppendingPathComponent: @"RememberPageNumber.txt"];
+    NSString *rememberPage;
+    NSInteger rememberPageInt = 0;
+    
+    if ([fileManager fileExistsAtPath: pFileName] == NO) {
+        rememberPage = [NSString stringWithContentsOfFile:pFileName encoding: NSUTF8StringEncoding error:nil];
+        
+        if (![rememberPage isEqual:@"NO"]) {
+            rememberPageInt = [rememberPage integerValue];
+        }
+    }
+    else {
+        rememberPageInt = 1;
+    }
+    
+    [_standardDefaults setInteger:rememberPageInt forKey:@"rememberPageNumber"];
+    
+    // SYNC DROPBOX
+    
+    pFileName = [library stringByAppendingPathComponent: @"SyncDropBox.txt"];
+    bool syncDropBox;
+    
+    if ([fileManager fileExistsAtPath: pFileName] == NO) {
+        syncDropBox = [[NSString stringWithContentsOfFile:pFileName encoding: NSUTF8StringEncoding error:nil] boolValue];
+    }
+    else {
+        syncDropBox = NO;
+    }
+    
+    [_standardDefaults setBool:floatWindow forKey:@"syncDropBox"];
+    
+    // DROPBOX LOCATION
+    
+    pFileName = [library stringByAppendingPathComponent: @"SyncDropBoxLocation.txt"];
+    NSString *dropBoxLocation = @"";
+    
+    if ([fileManager fileExistsAtPath: pFileName] == NO) {
+        dropBoxLocation = [NSString stringWithContentsOfFile:pFileName encoding: NSUTF8StringEncoding error:nil];
+    }
+    
+    [_standardDefaults setObject:dropBoxLocation forKey:@"dropBoxLocation"];
+    
+    // TRANSPARENCY
+    
+    pFileName = [library stringByAppendingPathComponent: @"Transparency.txt"];
+    NSInteger transparency;
+    
+    if ([fileManager fileExistsAtPath: pFileName] == NO) {
+        transparency = [[NSString stringWithContentsOfFile:pFileName encoding: NSUTF8StringEncoding error:nil] integerValue];
+    }
+    else {
+        transparency = 100;
+    }
+    
+    [_standardDefaults setInteger:transparency forKey:@"transparency"];
+    
+    [_standardDefaults setBool:YES forKey:@"oldPreferencesImported"];
+    [_standardDefaults synchronize];
+}
+
 @end
