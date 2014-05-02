@@ -27,6 +27,7 @@
 		9331D3E018D0914A001320E5 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9331D3DE18D0914A001320E5 /* TextViewController.xib */; };
 		9331D3E418D0962C001320E5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9331D3E318D0962C001320E5 /* MainViewController.m */; };
 		934A742918D0C41D0046DDBE /* PageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A742718D0C41D0046DDBE /* PageListViewController.m */; };
+		93759ACD191451AB00B38F19 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93759ACC191451AB00B38F19 /* PreferencesViewController.m */; };
 		93B4BB8618E3B44E00C43245 /* NoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B4BB8518E3B44E00C43245 /* NoteController.m */; };
 		93CDEF4718D25DBD002909D8 /* PageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CDEF4618D25DBD002909D8 /* PageListViewController.xib */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,8 @@
 		9331D3E318D0962C001320E5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		934A742618D0C41D0046DDBE /* PageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageListViewController.h; sourceTree = "<group>"; };
 		934A742718D0C41D0046DDBE /* PageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageListViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		93759ACB191451AB00B38F19 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		93759ACC191451AB00B38F19 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		93B4BB8418E3B44E00C43245 /* NoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteController.h; sourceTree = "<group>"; };
 		93B4BB8518E3B44E00C43245 /* NoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		93CDEF4618D25DBD002909D8 /* PageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageListViewController.xib; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				93315D8D189B1A87007EAC1F /* MainMenu.xib */,
+				93759ACB191451AB00B38F19 /* PreferencesViewController.h */,
+				93759ACC191451AB00B38F19 /* PreferencesViewController.m */,
 				930A76AA18E4CDD000D4E046 /* MainWindowViewController.h */,
 				930A76AB18E4CDD000D4E046 /* MainWindowViewController.m */,
 				9331D3E218D0962C001320E5 /* MainViewController.h */,
@@ -350,6 +355,7 @@
 				9331D3E418D0962C001320E5 /* MainViewController.m in Sources */,
 				9322261018D5121900A43D5D /* Helper.m in Sources */,
 				93B4BB8618E3B44E00C43245 /* NoteController.m in Sources */,
+				93759ACD191451AB00B38F19 /* PreferencesViewController.m in Sources */,
 				93315D8C189B1A87007EAC1F /* AppDelegate.m in Sources */,
 				934A742918D0C41D0046DDBE /* PageListViewController.m in Sources */,
 			);

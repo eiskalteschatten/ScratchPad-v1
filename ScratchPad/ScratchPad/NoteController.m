@@ -193,8 +193,6 @@
     [fileManager removeItemAtPath:path error:nil];
 }
 
-
-
 - (NSMutableArray *)getPages {
     return indexPages;
 }
