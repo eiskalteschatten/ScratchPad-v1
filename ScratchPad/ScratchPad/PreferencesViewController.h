@@ -17,6 +17,7 @@
 @property (assign) IBOutlet NSWindow *mainWindow;
 @property (assign) IBOutlet NSWindow *prefWindow;
 
+@property (assign) IBOutlet NSMenuItem *floatAboveWindowsMenu;
 @property (assign) IBOutlet NSButton *floatAboveWindows;
 @property (assign) IBOutlet NSButton *rememberPageNumber;
 
@@ -25,6 +26,6 @@
 - (IBAction)setFloatOption:(id)sender;
 - (IBAction)setRememberPageNumberOption:(id)sender;
 
-- (void)importOldPreferences;
+- (void)importOldPreferencesAndSetDefaults;
 
 @end

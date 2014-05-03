@@ -629,6 +629,9 @@ CA
                             <menuItem isSeparatorItem="YES" id="XxC-R5-Pwf"/>
                             <menuItem title="Float above other windows" id="bhU-1i-PRe">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="setFloatOption:" target="9ei-EC-63w" id="L1u-RQ-ka6"/>
+                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="jkz-oI-b9N"/>
                             <menuItem title="Show Toolbar" keyEquivalent="t" id="297">
@@ -1448,6 +1451,7 @@ IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
         <viewController id="9ei-EC-63w" customClass="PreferencesViewController">
             <connections>
                 <outlet property="floatAboveWindows" destination="97N-l3-eGo" id="KdY-OW-UQW"/>
+                <outlet property="floatAboveWindowsMenu" destination="bhU-1i-PRe" id="d0M-ze-q5u"/>
                 <outlet property="helper" destination="CX9-DW-owT" id="zMD-Hh-fVB"/>
                 <outlet property="mainWindow" destination="371" id="Ced-Eb-S3k"/>
                 <outlet property="noteController" destination="wOG-Ix-3mK" id="xft-al-2XM"/>

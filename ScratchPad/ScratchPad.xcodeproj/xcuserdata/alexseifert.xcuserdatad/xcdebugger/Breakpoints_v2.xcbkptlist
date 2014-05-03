@@ -708,16 +708,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScratchPad/PreferencesViewController.m"
-            timestampString = "420805912.261671"
+            timestampString = "420807249.832065"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-importOldPreferences"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-importOldPreferencesAndSetDefaults"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

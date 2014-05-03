@@ -29,7 +29,7 @@
     //bool imported = NO;
     
     if (imported == NO) {
-        [self importOldPreferences];
+        [self importOldPreferencesAndSetDefaults];
     }
     
     // FLOAT ABOVE WINDOWS
@@ -39,9 +39,11 @@
     if (floatWindow) {
         [_mainWindow setLevel: NSPopUpMenuWindowLevel];
         [_floatAboveWindows setState:NSOnState];
+        [_floatAboveWindowsMenu setState:NSOnState];
     }
     else {
         [_floatAboveWindows setState:NSOffState];
+        [_floatAboveWindowsMenu setState:NSOffState];
     }
     
     // REMEMBER PAGE NUMBER
@@ -57,12 +59,18 @@
 }
 
 - (IBAction)setFloatOption:(id)sender {
-	if ([sender state] == NSOnState) {
+    bool floatWindow = [_standardDefaults boolForKey:@"floatAboveWindows"];
+    
+	if (!floatWindow) {
 		[_mainWindow setLevel: NSPopUpMenuWindowLevel];
+        [_floatAboveWindowsMenu setState:NSOnState];
+        [_floatAboveWindows setState:NSOnState];
         [_standardDefaults setBool:YES forKey:@"floatAboveWindows"];
 	}
 	else {
 		[_mainWindow setLevel: NSNormalWindowLevel];
+        [_floatAboveWindowsMenu setState:NSOffState];
+        [_floatAboveWindows setState:NSOffState];
         [_standardDefaults setBool:NO forKey:@"floatAboveWindows"];
 	}
     
@@ -81,7 +89,7 @@
     [_standardDefaults synchronize];
 }
 
-- (void)importOldPreferences {
+- (void)importOldPreferencesAndSetDefaults {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *library = [_helper pathToLibrary];
     library = [library stringByAppendingString:@"Preferences/"];
