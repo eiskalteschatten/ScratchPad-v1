@@ -8,10 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "TextViewController.h"
+#import "NoteController.h"
 
 @interface MainWindowViewController : NSViewController
 
 @property (assign) IBOutlet NSWindow *window;
 @property (strong) IBOutlet TextViewController *textViewController;
+@property (assign) IBOutlet NoteController *noteController;
 
 @end

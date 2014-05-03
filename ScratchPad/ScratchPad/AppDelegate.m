@@ -16,8 +16,17 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [_mainViewController showTextView];
+    
+    NSUserDefaults *standardDefaults;
+    standardDefaults = [NSUserDefaults standardUserDefaults];
+    NSInteger rememberPageInt = [standardDefaults integerForKey:@"rememberPageNumber"];
 
-    [self loadNote:0];
+    if (rememberPageInt != -1) {
+        [self loadNote:rememberPageInt];
+    }
+    else {
+        [self loadNote:0];
+    }
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "Alex-Seifert.ScratchPad" in the user's Application Support directory.

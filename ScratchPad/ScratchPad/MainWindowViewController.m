@@ -16,7 +16,18 @@
 
 - (void)windowWillClose:(NSNotification *)aNotification {
 	[_textViewController saveNote];
-    //	[mainWindow writeRememberPageNumber];
+    
+
+    NSUserDefaults *standardDefaults;
+    standardDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSInteger rememberPageInt = [standardDefaults integerForKey:@"rememberPageNumber"];
+    
+    if (rememberPageInt != -1) {
+        NSInteger rememberPageInt = [_noteController getCurrentNote];
+        [standardDefaults setInteger:rememberPageInt forKey:@"rememberPageNumber"];
+        [standardDefaults synchronize];
+    }
 	
 	[[NSApplication sharedApplication] terminate: self];
 }

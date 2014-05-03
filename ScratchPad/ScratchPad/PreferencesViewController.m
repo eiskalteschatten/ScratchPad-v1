@@ -25,8 +25,8 @@
 - (void)awakeFromNib {
     _standardDefaults = [NSUserDefaults standardUserDefaults];
     
-    //bool imported = [_standardDefaults boolForKey:@"oldPreferencesImported"];
-    bool imported = NO;
+    bool imported = [_standardDefaults boolForKey:@"oldPreferencesImported"];
+    //bool imported = NO;
     
     if (imported == NO) {
         [self importOldPreferences];
@@ -43,6 +43,42 @@
     else {
         [_floatAboveWindows setState:NSOffState];
     }
+    
+    // REMEMBER PAGE NUMBER
+    
+    NSInteger rememberPageInt = [_standardDefaults integerForKey:@"rememberPageNumber"];
+    
+    if (rememberPageInt != -1) {
+        [_rememberPageNumber setState:NSOnState];
+    }
+    else {
+        [_rememberPageNumber setState:NSOffState];
+    }
+}
+
+- (IBAction)setFloatOption:(id)sender {
+	if ([sender state] == NSOnState) {
+		[_mainWindow setLevel: NSPopUpMenuWindowLevel];
+        [_standardDefaults setBool:YES forKey:@"floatAboveWindows"];
+	}
+	else {
+		[_mainWindow setLevel: NSNormalWindowLevel];
+        [_standardDefaults setBool:NO forKey:@"floatAboveWindows"];
+	}
+    
+    [_standardDefaults synchronize];
+}
+
+- (IBAction)setRememberPageNumberOption:(id)sender {
+	if ([sender state] == NSOnState) {
+        NSInteger rememberPageInt = [_noteController getCurrentNote];
+        [_standardDefaults setInteger:rememberPageInt forKey:@"rememberPageNumber"];
+	}
+	else {
+        [_standardDefaults setInteger:-1 forKey:@"rememberPageNumber"];
+	}
+    
+    [_standardDefaults synchronize];
 }
 
 - (void)importOldPreferences {
@@ -68,7 +104,7 @@
     
     pFileName = [library stringByAppendingPathComponent: @"RememberPageNumber.txt"];
     NSString *rememberPage;
-    NSInteger rememberPageInt = 0;
+    NSInteger rememberPageInt = -1;
     
     if ([fileManager fileExistsAtPath: pFileName] == NO) {
         rememberPage = [NSString stringWithContentsOfFile:pFileName encoding: NSUTF8StringEncoding error:nil];
