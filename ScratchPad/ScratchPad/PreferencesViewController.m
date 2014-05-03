@@ -56,7 +56,22 @@
     else {
         [_rememberPageNumber setState:NSOffState];
     }
+    
+    // TRANSPARENCY
+    
+    NSInteger transparency = [_standardDefaults integerForKey:@"transparency"];
+    float f = transparency / 100.0;
+	
+    [_mainWindow setOpaque: NO];
+    [_mainWindow setAlphaValue: f];
+    [_mainWindow update];
+	
+    [_transparencySlider setFloatValue:transparency];
+    [_transparencyText setIntegerValue:transparency];
 }
+
+#pragma mark -
+#pragma mark Window Float Options
 
 - (IBAction)setFloatOption:(id)sender {
     bool floatWindow = [_standardDefaults boolForKey:@"floatAboveWindows"];
@@ -77,6 +92,9 @@
     [_standardDefaults synchronize];
 }
 
+#pragma mark -
+#pragma mark Remember Page Number Functions
+
 - (IBAction)setRememberPageNumberOption:(id)sender {
 	if ([sender state] == NSOnState) {
         NSInteger rememberPageInt = [_noteController getCurrentNote];
@@ -88,6 +106,28 @@
     
     [_standardDefaults synchronize];
 }
+
+#pragma mark -
+#pragma mark Transparency Functions
+
+- (IBAction)changeTransparency:(id)sender {
+	float f = [sender floatValue];
+	
+	f = f / 100;
+	
+	[_mainWindow setOpaque: NO];
+	[_mainWindow setAlphaValue: f];
+	[_mainWindow update];
+	
+	[_transparencySlider setFloatValue: [sender floatValue]];
+	[_transparencyText setIntValue: [sender intValue]];
+    
+    [_standardDefaults setInteger:[sender intValue] forKey:@"transparency"];
+    [_standardDefaults synchronize];
+}
+
+#pragma mark -
+#pragma mark Import Old Prefernces and Set Defaults
 
 - (void)importOldPreferencesAndSetDefaults {
     NSFileManager *fileManager = [NSFileManager defaultManager];

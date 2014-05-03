@@ -982,6 +982,9 @@ CA
                                             <rect key="frame" x="120" y="78" width="163" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="aPk-AU-ZQS"/>
+                                            <connections>
+                                                <action selector="changeTransparency:" target="9ei-EC-63w" id="O5W-Wa-Llm"/>
+                                            </connections>
                                         </slider>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkG-Ec-oML">
                                             <rect key="frame" x="289" y="77" width="36" height="22"/>
@@ -991,6 +994,9 @@ CA
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <action selector="changeTransparency:" target="9ei-EC-63w" id="SCp-bG-ucz"/>
+                                            </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WMB-qL-A6Q">
                                             <rect key="frame" x="331" y="80" width="13" height="17"/>
@@ -1457,6 +1463,8 @@ IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
                 <outlet property="noteController" destination="wOG-Ix-3mK" id="xft-al-2XM"/>
                 <outlet property="prefWindow" destination="2Wp-Yl-lRw" id="IGx-M7-rJf"/>
                 <outlet property="rememberPageNumber" destination="gMR-cx-Trd" id="hjV-PR-Bb3"/>
+                <outlet property="transparencySlider" destination="THi-IL-8Re" id="MEC-Aq-o0E"/>
+                <outlet property="transparencyText" destination="rkG-Ec-oML" id="jVR-6M-k6f"/>
             </connections>
         </viewController>
     </objects>

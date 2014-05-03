@@ -20,11 +20,14 @@
 @property (assign) IBOutlet NSMenuItem *floatAboveWindowsMenu;
 @property (assign) IBOutlet NSButton *floatAboveWindows;
 @property (assign) IBOutlet NSButton *rememberPageNumber;
+@property (assign) IBOutlet NSSlider *transparencySlider;
+@property (assign) IBOutlet NSTextField *transparencyText;
 
 @property (assign) NSUserDefaults *standardDefaults;
 
 - (IBAction)setFloatOption:(id)sender;
 - (IBAction)setRememberPageNumberOption:(id)sender;
+- (IBAction)changeTransparency:(id)sender;
 
 - (void)importOldPreferencesAndSetDefaults;
 
