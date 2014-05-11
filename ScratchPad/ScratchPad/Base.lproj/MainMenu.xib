@@ -125,6 +125,17 @@ CA
                             <menuItem title="Restore Backup..." id="E72-qm-x8F">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
+                            <menuItem isSeparatorItem="YES" id="Z8m-pa-eNe"/>
+                            <menuItem title="Share" id="LGC-HL-7Um">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Share" id="Hzq-zv-taH">
+                                    <items>
+                                        <menuItem title="Item" id="L3U-90-swS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="74">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
@@ -802,7 +813,7 @@ CA
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ids-hb-gdq"/>
                     <toolbarItem implicitItemIdentifier="95809064-D2F3-4233-A355-FF7B33FB6900" label="Search" paletteLabel="Search" id="9Yo-DP-5DH">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="96" height="22"/>
+                        <size key="minSize" width="150" height="22"/>
                         <size key="maxSize" width="152" height="22"/>
                         <searchField key="view" verticalHuggingPriority="750" id="JOo-ml-gqV">
                             <rect key="frame" x="0.0" y="14" width="152" height="22"/>
@@ -874,6 +885,23 @@ CA
                             <action selector="openPopover:" target="3C4-cg-gUx" id="D6C-Dh-ugg"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="BF9A3F11-5409-4CCF-994B-DCD00E62F0F1" label="Share" paletteLabel="Share" id="RJO-CE-wm1">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="25" height="26"/>
+                        <size key="maxSize" width="31" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="0p0-DV-Vk8">
+                            <rect key="frame" x="3" y="14" width="31" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="momentary" id="sbz-5m-rsh">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSShareTemplate" width="25">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
                     <toolbarItem implicitItemIdentifier="DEE8433E-0C25-41A1-BE7C-6314262AC3AB" label="Delete Page" paletteLabel="Delete Page" tag="-1" image="deletepage" id="JAC-SS-gge">
                         <connections>
                             <action selector="deleteNoteAction:" target="kdp-MT-QrI" id="q8O-Eq-Evt"/>
@@ -890,6 +918,7 @@ CA
                     <toolbarItem reference="gGH-NJ-C9i"/>
                     <toolbarItem reference="4wA-ty-i5h"/>
                     <toolbarItem reference="ids-hb-gdq"/>
+                    <toolbarItem reference="RJO-CE-wm1"/>
                     <toolbarItem reference="9Yo-DP-5DH"/>
                 </defaultToolbarItems>
             </toolbar>
@@ -1586,6 +1615,7 @@ IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>
         <image name="NSListViewTemplate" width="11" height="10"/>
         <image name="NSRightFacingTriangleTemplate" width="9" height="9"/>
+        <image name="NSShareTemplate" width="18" height="16"/>
         <image name="deletepage" width="32" height="32"/>
         <image name="exportNote" width="32" height="32"/>
     </resources>
