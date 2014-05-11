@@ -1010,7 +1010,7 @@ CA
                                         <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="THi-IL-8Re">
                                             <rect key="frame" x="127" y="165" width="163" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="aPk-AU-ZQS"/>
+                                            <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="aPk-AU-ZQS"/>
                                             <connections>
                                                 <action selector="changeTransparency:" target="9ei-EC-63w" id="O5W-Wa-Llm"/>
                                             </connections>
@@ -1068,7 +1068,7 @@ CA
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Daily" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="VuL-qC-sYv" id="akc-ND-wGl">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="menu"/>
                                                 <menu key="menu" title="OtherViews" id="hbg-lz-adL">
                                                     <items>
                                                         <menuItem title="Daily" state="on" id="VuL-qC-sYv"/>
