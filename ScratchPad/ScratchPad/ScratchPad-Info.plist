@@ -30,6 +30,10 @@
 	<string>Copyright © 2007-2014 Alex Seifert. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
+	<key>SUFeedURL</key>
+	<string>http://scratchpad.alexseifert.com/ScratchPadUpdates.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
