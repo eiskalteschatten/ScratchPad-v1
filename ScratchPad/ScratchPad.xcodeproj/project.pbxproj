@@ -17,7 +17,6 @@
 		93315D89189B1A87007EAC1F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93315D87189B1A87007EAC1F /* Credits.rtf */; };
 		93315D8C189B1A87007EAC1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93315D8B189B1A87007EAC1F /* AppDelegate.m */; };
 		93315D8F189B1A87007EAC1F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93315D8D189B1A87007EAC1F /* MainMenu.xib */; };
-		93315D92189B1A87007EAC1F /* ScratchPad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */; };
 		93315D94189B1A87007EAC1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93315D93189B1A87007EAC1F /* Images.xcassets */; };
 		93315D9B189B1A87007EAC1F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93315D9A189B1A87007EAC1F /* XCTest.framework */; };
 		93315D9C189B1A87007EAC1F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93315D78189B1A87007EAC1F /* Cocoa.framework */; };
@@ -62,7 +61,6 @@
 		93315D8A189B1A87007EAC1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93315D8B189B1A87007EAC1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93315D8E189B1A87007EAC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		93315D91189B1A87007EAC1F /* ScratchPad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScratchPad.xcdatamodel; sourceTree = "<group>"; };
 		93315D93189B1A87007EAC1F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93315D99189B1A87007EAC1F /* ScratchPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93315D9A189B1A87007EAC1F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -169,7 +167,6 @@
 				93759ACB191451AB00B38F19 /* PreferencesViewController.h */,
 				93759ACC191451AB00B38F19 /* PreferencesViewController.m */,
 				93315D93189B1A87007EAC1F /* Images.xcassets */,
-				93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */,
 				93315D7F189B1A87007EAC1F /* Supporting Files */,
 			);
 			path = ScratchPad;
@@ -349,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9331D3DF18D0914A001320E5 /* TextViewController.m in Sources */,
-				93315D92189B1A87007EAC1F /* ScratchPad.xcdatamodeld in Sources */,
 				93315D85189B1A87007EAC1F /* main.m in Sources */,
 				930A76AC18E4CDD000D4E046 /* MainWindowViewController.m in Sources */,
 				9331D3E418D0962C001320E5 /* MainViewController.m in Sources */,
@@ -586,19 +582,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		93315D90189B1A87007EAC1F /* ScratchPad.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				93315D91189B1A87007EAC1F /* ScratchPad.xcdatamodel */,
-			);
-			currentVersion = 93315D91189B1A87007EAC1F /* ScratchPad.xcdatamodel */;
-			path = ScratchPad.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 93315D6D189B1A87007EAC1F /* Project object */;
 }
