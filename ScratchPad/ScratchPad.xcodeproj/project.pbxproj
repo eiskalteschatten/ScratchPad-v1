@@ -29,6 +29,7 @@
 		9351CE4B1928179B00AA4DF0 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 9351CE4A1928179B00AA4DF0 /* dsa_pub.pem */; };
 		9354D08F19281B1800FD1F6F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9354D08E19281B1800FD1F6F /* Sparkle.framework */; };
 		9354D09119281B2D00FD1F6F /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9354D08E19281B1800FD1F6F /* Sparkle.framework */; };
+		9356FEEE1B0763CF00CD63CA /* DropboxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9356FEED1B0763CF00CD63CA /* DropboxController.m */; };
 		93759ACD191451AB00B38F19 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93759ACC191451AB00B38F19 /* PreferencesViewController.m */; };
 		93B4BB8618E3B44E00C43245 /* NoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B4BB8518E3B44E00C43245 /* NoteController.m */; };
 		93CDEF4718D25DBD002909D8 /* PageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93CDEF4618D25DBD002909D8 /* PageListViewController.xib */; };
@@ -93,6 +94,8 @@
 		934A742718D0C41D0046DDBE /* PageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageListViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		9351CE4A1928179B00AA4DF0 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		9354D08E19281B1800FD1F6F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		9356FEEC1B0763CF00CD63CA /* DropboxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxController.h; sourceTree = "<group>"; };
+		9356FEED1B0763CF00CD63CA /* DropboxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxController.m; sourceTree = "<group>"; };
 		93759ACB191451AB00B38F19 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
 		93759ACC191451AB00B38F19 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		93B4BB8418E3B44E00C43245 /* NoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteController.h; sourceTree = "<group>"; };
@@ -184,8 +187,7 @@
 				93B4BB8518E3B44E00C43245 /* NoteController.m */,
 				9331D3E118D093D9001320E5 /* TextView */,
 				934A742B18D0C4200046DDBE /* PageList */,
-				93759ACB191451AB00B38F19 /* PreferencesViewController.h */,
-				93759ACC191451AB00B38F19 /* PreferencesViewController.m */,
+				9356FEEB1B0763A800CD63CA /* Preferences */,
 				93315D93189B1A87007EAC1F /* Images.xcassets */,
 				93315D7F189B1A87007EAC1F /* Supporting Files */,
 			);
@@ -254,6 +256,17 @@
 				93CDEF4618D25DBD002909D8 /* PageListViewController.xib */,
 			);
 			name = PageList;
+			sourceTree = "<group>";
+		};
+		9356FEEB1B0763A800CD63CA /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				93759ACB191451AB00B38F19 /* PreferencesViewController.h */,
+				93759ACC191451AB00B38F19 /* PreferencesViewController.m */,
+				9356FEEC1B0763CF00CD63CA /* DropboxController.h */,
+				9356FEED1B0763CF00CD63CA /* DropboxController.m */,
+			);
+			name = Preferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9356FEEE1B0763CF00CD63CA /* DropboxController.m in Sources */,
 				9331D3DF18D0914A001320E5 /* TextViewController.m in Sources */,
 				93315D85189B1A87007EAC1F /* main.m in Sources */,
 				930A76AC18E4CDD000D4E046 /* MainWindowViewController.m in Sources */,

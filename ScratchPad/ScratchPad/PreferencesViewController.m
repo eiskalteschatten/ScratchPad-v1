@@ -179,7 +179,7 @@
         syncDropBox = NO;
     }
     
-    [_standardDefaults setBool:floatWindow forKey:@"syncDropBox"];
+    [_standardDefaults setBool:syncDropBox forKey:@"syncDropBox"];
     
     // DROPBOX LOCATION
     

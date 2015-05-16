@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -1200,6 +1200,9 @@ CA
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="chooseLocation:" target="gHO-8Y-NIk" id="bvs-FJ-Lgl"/>
+                                            </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-BD-4Ew">
                                             <rect key="frame" x="22" y="104" width="339" height="17"/>
@@ -1222,6 +1225,7 @@ CA
                     <constraint firstItem="hdy-w9-hRb" firstAttribute="leading" secondItem="QcN-QE-oAr" secondAttribute="leading" constant="-1" id="nzH-mB-2vF"/>
                 </constraints>
             </view>
+            <point key="canvasLocation" x="149.5" y="150"/>
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
@@ -1580,7 +1584,7 @@ SE9MREVSIE9SIE9USEVSIFBBUlRZIEhBUyBCRUVOIEFEVklTRUQgT0YgVEhFClBPU1NJQklMSVRZIE9G
 IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
 </mutableString>
                                             <attributes>
-                                                <font key="NSFont" metaFont="toolTip"/>
+                                                <font key="NSFont" metaFont="smallSystem"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                             </attributes>
                                         </fragment>
@@ -1624,6 +1628,13 @@ IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
             </connections>
         </viewController>
         <customObject id="Mwp-I9-Syl" customClass="SUUpdater"/>
+        <customObject id="gHO-8Y-NIk" customClass="DropboxController">
+            <connections>
+                <outlet property="dropBoxCheck" destination="DiF-1K-aTE" id="nIS-fL-h61"/>
+                <outlet property="helper" destination="CX9-DW-owT" id="83G-jz-Z6L"/>
+                <outlet property="locationField" destination="NOh-BD-4Ew" id="0WE-Hr-EWZ"/>
+            </connections>
+        </customObject>
         <userDefaultsController representsSharedInstance="YES" id="EoU-al-IjQ"/>
     </objects>
     <resources>
