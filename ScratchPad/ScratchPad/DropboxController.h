@@ -17,7 +17,12 @@
 @property (assign) IBOutlet NSTextField *locationField;
 
 @property (assign) NSUserDefaults *standardDefaults;
+@property (retain, nonatomic) NSString *dropBoxLocation;
 
+- (IBAction)toggleDropBox:(id)sender;
 - (IBAction)chooseLocation:(id)sender;
+- (void)moveNotesToDropBox;
+- (void)turnEverythingOn;
+- (void)turnEverythingOff;
 
 @end
