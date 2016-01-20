@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>39835AE2-14FA-4F3E-A91E-1ECDDA4B5C1F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ScratchPad</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>21F7B3309B6138E45BAF3D793FF136D5B41ABA99</key>
 		<string>https://github.com/eiskalteschatten/scratchpad.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ScratchPad/ScratchPad.xcodeproj</string>
+	<string>ScratchPad/ScratchPad.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>21F7B3309B6138E45BAF3D793FF136D5B41ABA99</key>
