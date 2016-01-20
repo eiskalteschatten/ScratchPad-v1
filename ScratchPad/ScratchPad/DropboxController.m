@@ -29,7 +29,6 @@
 - (IBAction)toggleDropBox:(id)sender {
     if ([sender state] == NSOnState) {
         [self turnEverythingOn];
-        [self moveNotesToDropBox];
     }
     else {
         [self turnEverythingOff];
@@ -46,20 +45,20 @@
     if ([panel runModal] == NSOKButton) {
         _dropBoxLocation = [[panel URL] path];
         [self turnEverythingOn];
-        [self moveNotesToDropBox];
+
+//        [self moveNotesToDropBox];
     }
 }
 
 - (void)moveNotesToDropBox {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *library = [_helper pathToLibrary];
-    NSString *moveToLocation = [_dropBoxLocation stringByAppendingString:@"Scratchpad/"];
     
-    if ([fileManager copyItemAtPath:library toPath:moveToLocation error:nil]) {
-        // Moved!
+    if ([fileManager copyItemAtPath:library toPath:_dropBoxLocation error:nil]) {
+        NSRunAlertPanel(NSLocalizedStringFromTable(@"Backup Created", @"Localized", @"Backup Created"), NSLocalizedStringFromTable(@"Your backup has successfully been created!", @"Localized", @"Backup Success"), @"OK", nil, nil);
     }
     else {
-        // Error!
+        NSRunAlertPanel(NSLocalizedStringFromTable(@"Backup Not Created", @"Localized", @"Backup Not Created"), NSLocalizedStringFromTable(@"An error occurred and your backup was not created!", @"Localized", @"Backup Failure"), @"OK", nil, nil);
     }
 }
 
