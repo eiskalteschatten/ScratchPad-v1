@@ -17,12 +17,6 @@
 		931DD3750D64822500EC42A5 /* Preferenced.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 931DD3730D64822500EC42A5 /* Preferenced.h */; };
 		931DD3760D64822500EC42A5 /* Preferenced.m in Sources */ = {isa = PBXBuildFile; fileRef = 931DD3740D64822500EC42A5 /* Preferenced.m */; };
 		93216AED0DFCA9C0004F254A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93216AEC0DFCA9C0004F254A /* Localized.strings */; };
-		9355A2FB154055E900E2B2C9 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F5154055E900E2B2C9 /* BackButton.png */; };
-		9355A2FC154055E900E2B2C9 /* BackButtonDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F6154055E900E2B2C9 /* BackButtonDisabled.png */; };
-		9355A2FD154055E900E2B2C9 /* BackButtonPushed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F7154055E900E2B2C9 /* BackButtonPushed.png */; };
-		9355A2FE154055E900E2B2C9 /* ForwardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F8154055E900E2B2C9 /* ForwardButton.png */; };
-		9355A2FF154055E900E2B2C9 /* ForwardButtonDisabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2F9154055E900E2B2C9 /* ForwardButtonDisabled.png */; };
-		9355A300154055E900E2B2C9 /* ForwardButtonPushed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9355A2FA154055E900E2B2C9 /* ForwardButtonPushed.png */; };
 		937022FE1541E86100AA3F0F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937022FD1541E86100AA3F0F /* Sparkle.framework */; };
 		9390F21D0D84B62500953FEC /* showruler.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9390F21C0D84B62500953FEC /* showruler.tiff */; };
 		93A0CADD0D6347A30091D950 /* Window.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93A0CADB0D6347A30091D950 /* Window.h */; };
@@ -76,12 +70,6 @@
 		93216AEF0DFCA9C6004F254A /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localized.strings; sourceTree = "<group>"; };
 		93216AF00DFCA9C9004F254A /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localized.strings; sourceTree = "<group>"; };
 		9355A2F415404BCF00E2B2C9 /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ScratchPad.entitlements; sourceTree = "<group>"; };
-		9355A2F5154055E900E2B2C9 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
-		9355A2F6154055E900E2B2C9 /* BackButtonDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonDisabled.png; sourceTree = "<group>"; };
-		9355A2F7154055E900E2B2C9 /* BackButtonPushed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButtonPushed.png; sourceTree = "<group>"; };
-		9355A2F8154055E900E2B2C9 /* ForwardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForwardButton.png; sourceTree = "<group>"; };
-		9355A2F9154055E900E2B2C9 /* ForwardButtonDisabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForwardButtonDisabled.png; sourceTree = "<group>"; };
-		9355A2FA154055E900E2B2C9 /* ForwardButtonPushed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ForwardButtonPushed.png; sourceTree = "<group>"; };
 		937022FD1541E86100AA3F0F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		9390F21C0D84B62500953FEC /* showruler.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = showruler.tiff; sourceTree = "<group>"; };
 		93A0CADB0D6347A30091D950 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
@@ -179,12 +167,6 @@
 			children = (
 				93A12B2D15420C3B00EC0E6B /* Icon3.icns */,
 				93A12B2B1541EB2600EC0E6B /* dsa_pub.pem */,
-				9355A2F5154055E900E2B2C9 /* BackButton.png */,
-				9355A2F6154055E900E2B2C9 /* BackButtonDisabled.png */,
-				9355A2F7154055E900E2B2C9 /* BackButtonPushed.png */,
-				9355A2F8154055E900E2B2C9 /* ForwardButton.png */,
-				9355A2F9154055E900E2B2C9 /* ForwardButtonDisabled.png */,
-				9355A2FA154055E900E2B2C9 /* ForwardButtonPushed.png */,
 				93216AEC0DFCA9C0004F254A /* Localized.strings */,
 				931279000D774CAF002732D6 /* exportNote.tif */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -272,12 +254,6 @@
 				9390F21D0D84B62500953FEC /* showruler.tiff in Resources */,
 				93BC53EF0DFCA474009A2895 /* deletepage.tif in Resources */,
 				93216AED0DFCA9C0004F254A /* Localized.strings in Resources */,
-				9355A2FB154055E900E2B2C9 /* BackButton.png in Resources */,
-				9355A2FC154055E900E2B2C9 /* BackButtonDisabled.png in Resources */,
-				9355A2FD154055E900E2B2C9 /* BackButtonPushed.png in Resources */,
-				9355A2FE154055E900E2B2C9 /* ForwardButton.png in Resources */,
-				9355A2FF154055E900E2B2C9 /* ForwardButtonDisabled.png in Resources */,
-				9355A300154055E900E2B2C9 /* ForwardButtonPushed.png in Resources */,
 				93A12B2C1541EB2600EC0E6B /* dsa_pub.pem in Resources */,
 				93A12B2E15420C3B00EC0E6B /* Icon3.icns in Resources */,
 			);
@@ -394,6 +370,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -405,6 +382,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;

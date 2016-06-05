@@ -8,8 +8,6 @@
     IBOutlet id navigateButtons;
     IBOutlet id pageNumber;
     IBOutlet id totalPages;
-	IBOutlet id navForward;
-    IBOutlet id navBack;
     IBOutlet id navBackMenu;
     IBOutlet id navForwardMenu;
     IBOutlet id goToPageNumber;
@@ -28,6 +26,7 @@
 - (IBAction)customizeToolbar:(id)sender;
 - (float)ToolbarHeightForWindow;
 
+- (IBAction)navigate:(id)sender;
 - (IBAction)navBack:(id)sender;
 - (IBAction)navForward:(id)sender;
 - (IBAction)navToPageNumber:(id)sender;

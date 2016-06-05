@@ -15,13 +15,11 @@
 	[self setToolbar:toolbar];
 	
 	if ([pageNumber intValue] <= 1) {
-		[navBack setImage:[NSImage imageNamed:@"BackButtonDisabled"]];
-		[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonDisabled"]];
+		[navigateButtons setEnabled:NO forSegment:0];
 		[navBackMenu setEnabled:NO];
 	}
 	else {
-		[navBack setImage:[NSImage imageNamed:@"BackButton"]];
-		[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonPushed"]];
+		[navigateButtons setEnabled:YES forSegment:0];
 		[navBackMenu setEnabled:YES];
 	}
 	
@@ -161,37 +159,41 @@
 #pragma mark -
 #pragma mark Toolbar Actions
 
+- (IBAction)navigate:(id)sender {
+    NSInteger clicked = [sender selectedSegment];
+    
+    if (clicked == 0) {
+        [self navBack:sender];
+    }
+    else {
+        [self navForward:sender];
+    }
+}
+
 - (IBAction)navBack:(id)sender {
-	if ([navBack image] != [NSImage imageNamed:@"BackButtonDisabled"]) {
-		[self saveNote: self];
-	
-		int pageNum = [pageNumber intValue];
-		
-		if (pageNum != 1) {
-			pageNum = pageNum - 1;
-			[pageNumber setIntValue: pageNum];
-			[self setTitle: [NSString stringWithFormat:@"ScratchPad (%i)", pageNum]];
-	
-			NSString *path = [self pathToOpenNote];
-	
-			if ([self doesNoteExist] == YES) {
-				[textView readRTFDFromFile:path];
-			}
-			else {
-				[textView setString: @""];
-			}
-			if (pageNum <= 1) {
-				[navBack setImage:[NSImage imageNamed:@"BackButtonDisabled"]];
-				[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonDisabled"]];
-				[navBackMenu setEnabled:NO];
-			}
-		}
-		else {	
-			[navBack setImage:[NSImage imageNamed:@"BackButtonDisabled"]];
-			[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonDisabled"]];
-			[navBackMenu setEnabled:NO];
-		}
-	}
+    [self saveNote: self];
+
+    int pageNum = [pageNumber intValue];
+    
+    if (pageNum != 1) {
+        pageNum = pageNum - 1;
+        [pageNumber setIntValue: pageNum];
+        [self setTitle: [NSString stringWithFormat:@"ScratchPad (%i)", pageNum]];
+
+        NSString *path = [self pathToOpenNote];
+
+        if ([self doesNoteExist] == YES) {
+            [textView readRTFDFromFile:path];
+        }
+        else {
+            [textView setString: @""];
+        }
+        
+        if (pageNum <= 1) {
+            [sender setEnabled:NO forSegment:0];
+            [navBackMenu setEnabled:NO];
+        }
+    }
 }
 
 - (IBAction)navForward:(id)sender {
@@ -211,8 +213,7 @@
 		[textView setString: @""];
 	}
 	
-	[navBack setImage:[NSImage imageNamed:@"BackButton"]];
-	[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonPushed"]];
+    [sender setEnabled:YES forSegment:0];
 	[navBackMenu setEnabled:YES];
 }
 
@@ -314,13 +315,11 @@
 		}
 		
 		if (iPageNum <= 1) {
-			[navBack setImage:[NSImage imageNamed:@"BackButtonDisabled"]];
-			[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonDisabled"]];
+			[navigateButtons setEnabled:NO forSegment:0];
 			[navBackMenu setEnabled:NO];
 		}
 		else {
-			[navBack setImage:[NSImage imageNamed:@"BackButton"]];
-			[navBack setAlternateImage:[NSImage imageNamed:@"BackButtonPushed"]];
+			[navigateButtons setEnabled:YES forSegment:0];
 			[navBackMenu setEnabled:YES];
 		}
 		
