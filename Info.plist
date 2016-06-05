@@ -29,8 +29,8 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>http://scratchpad.alexseifert.com/ScratchPadUpdates.xml</string>
+	<string>https://www.alexseifert.com/app-updates/ScratchPad.xml</string>
 	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
+	<string>scratchpad.pem</string>
 </dict>
 </plist>
