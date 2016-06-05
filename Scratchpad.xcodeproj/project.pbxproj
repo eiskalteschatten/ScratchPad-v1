@@ -11,9 +11,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		931279010D774CAF002732D6 /* exportNote.tif in Resources */ = {isa = PBXBuildFile; fileRef = 931279000D774CAF002732D6 /* exportNote.tif */; };
 		9315F4920D1ACEB0004FD7F8 /* Scratched.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315F4900D1ACEB0004FD7F8 /* Scratched.m */; };
-		9315F4EB0D1AD044004FD7F8 /* pref-general.png in Resources */ = {isa = PBXBuildFile; fileRef = 9315F4EA0D1AD044004FD7F8 /* pref-general.png */; };
 		931DD3750D64822500EC42A5 /* Preferenced.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 931DD3730D64822500EC42A5 /* Preferenced.h */; };
 		931DD3760D64822500EC42A5 /* Preferenced.m in Sources */ = {isa = PBXBuildFile; fileRef = 931DD3740D64822500EC42A5 /* Preferenced.m */; };
 		93216AED0DFCA9C0004F254A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93216AEC0DFCA9C0004F254A /* Localized.strings */; };
@@ -26,8 +24,6 @@
 		93A12B2A1541E88100EC0E6B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 937022FD1541E86100AA3F0F /* Sparkle.framework */; };
 		93A12B2C1541EB2600EC0E6B /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 93A12B2B1541EB2600EC0E6B /* dsa_pub.pem */; };
 		93A12B2E15420C3B00EC0E6B /* Icon3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93A12B2D15420C3B00EC0E6B /* Icon3.icns */; };
-		93BC53EF0DFCA474009A2895 /* deletepage.tif in Resources */ = {isa = PBXBuildFile; fileRef = 93BC53EE0DFCA474009A2895 /* deletepage.tif */; };
-		93BE76B90D65F1C0006BEB3E /* gear.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 93BE76B80D65F1C0006BEB3E /* gear.tiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,10 +53,8 @@
 		32CA4F630368D1EE00C91783 /* Scratchpad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scratchpad_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		931279000D774CAF002732D6 /* exportNote.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = exportNote.tif; sourceTree = "<group>"; };
 		9315F4900D1ACEB0004FD7F8 /* Scratched.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Scratched.m; sourceTree = "<group>"; };
 		9315F4910D1ACEB0004FD7F8 /* Scratched.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Scratched.h; sourceTree = "<group>"; };
-		9315F4EA0D1AD044004FD7F8 /* pref-general.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pref-general.png"; sourceTree = "<group>"; };
 		931C55F60E0B25CC00DE1E7A /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		931C55F70E0B25E200DE1E7A /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localized.strings; sourceTree = "<group>"; };
 		931DD3730D64822500EC42A5 /* Preferenced.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Preferenced.h; sourceTree = "<group>"; };
@@ -78,10 +72,8 @@
 		93A0CB010D6348670091D950 /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
 		93A12B2B1541EB2600EC0E6B /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		93A12B2D15420C3B00EC0E6B /* Icon3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon3.icns; sourceTree = "<group>"; };
-		93BC53EE0DFCA474009A2895 /* deletepage.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = deletepage.tif; sourceTree = "<group>"; };
 		93BC86A90D77AD6900C258D1 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		93BC86AA0D77AD6C00C258D1 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		93BE76B80D65F1C0006BEB3E /* gear.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = gear.tiff; sourceTree = "<group>"; };
 		93F207CC0DF0422500606451 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,14 +160,10 @@
 				93A12B2D15420C3B00EC0E6B /* Icon3.icns */,
 				93A12B2B1541EB2600EC0E6B /* dsa_pub.pem */,
 				93216AEC0DFCA9C0004F254A /* Localized.strings */,
-				931279000D774CAF002732D6 /* exportNote.tif */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
-				9315F4EA0D1AD044004FD7F8 /* pref-general.png */,
-				93BC53EE0DFCA474009A2895 /* deletepage.tif */,
 				9390F21C0D84B62500953FEC /* showruler.tiff */,
-				93BE76B80D65F1C0006BEB3E /* gear.tiff */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -248,11 +236,7 @@
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				9315F4EB0D1AD044004FD7F8 /* pref-general.png in Resources */,
-				93BE76B90D65F1C0006BEB3E /* gear.tiff in Resources */,
-				931279010D774CAF002732D6 /* exportNote.tif in Resources */,
 				9390F21D0D84B62500953FEC /* showruler.tiff in Resources */,
-				93BC53EF0DFCA474009A2895 /* deletepage.tif in Resources */,
 				93216AED0DFCA9C0004F254A /* Localized.strings in Resources */,
 				93A12B2C1541EB2600EC0E6B /* dsa_pub.pem in Resources */,
 				93A12B2E15420C3B00EC0E6B /* Icon3.icns in Resources */,

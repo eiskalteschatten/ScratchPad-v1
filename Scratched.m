@@ -42,7 +42,7 @@
 	[toolbarItem setLabel:NSLocalizedStringFromTable(@"Preferences", @"Localized", @"Preferences toolbar label")];
 	[toolbarItem setPaletteLabel:NSLocalizedStringFromTable(@"Preferences", @"Localized", @"Preferences toolbar palette label")];
 	[toolbarItem setToolTip:NSLocalizedStringFromTable(@"Opens the application preferences", @"Localized", @"Preferences toolbar item tooltip")];
-	[toolbarItem setImage:[NSImage imageNamed:@"pref-general"]];
+	[toolbarItem setImage:[NSImage imageNamed:@"NSPreferencesGeneral"]];
 	[toolbarItem setTarget:self];
 	[toolbarItem setAction:@selector(openPrefs:)];
 	
@@ -81,8 +81,9 @@
 	[toolbarItem setLabel:NSLocalizedStringFromTable(@"Export", @"Localized", @"Export toolbar label")];
 	[toolbarItem setPaletteLabel:NSLocalizedStringFromTable(@"Export Page", @"Localized", @"Export toolbar palette label")];
 	[toolbarItem setToolTip:NSLocalizedStringFromTable(@"Export a page to a file", @"Localized", @"Export toolbar item tooltip")];
-	[toolbarItem setImage:[NSImage imageNamed:@"exportNote"]];
-	[toolbarItem setTarget:self];
+    [toolbarItem setView:exportButton];
+    [toolbarItem setMinSize:NSMakeSize(NSWidth([exportButton frame]),NSHeight([exportButton frame]))];
+    [toolbarItem setMaxSize:NSMakeSize(NSWidth([exportButton frame]),NSHeight([exportButton frame]))];
 	[toolbarItem setAction:@selector(exportNote:)];
 	
 	[items setObject:toolbarItem forKey:@"exportNote"];
@@ -90,14 +91,14 @@
 	[toolbarItem release];
 	
 	toolbarItem = [[NSToolbarItem alloc] initWithItemIdentifier:@"showRuler"];
-
+    
 	[toolbarItem setLabel:NSLocalizedStringFromTable(@"Ruler", @"Localized", @"Show Ruler toolbar label")];
 	[toolbarItem setPaletteLabel:NSLocalizedStringFromTable(@"Ruler", @"Localized", @"Show Ruler toolbar palette label")];
 	[toolbarItem setToolTip:NSLocalizedStringFromTable(@"Show or hide the ruler", @"Localized", @"Show Ruler toolbar item tooltip")];
 	[toolbarItem setImage:[NSImage imageNamed:@"showruler"]];
 	[toolbarItem setTarget:self];
 	[toolbarItem setAction:@selector(showRuler:)];
-	
+    
 	[items setObject:toolbarItem forKey:@"showRuler"];
 	
 	[toolbarItem release];	
@@ -107,7 +108,7 @@
 	[toolbarItem setLabel:NSLocalizedStringFromTable(@"Delete Page", @"Localized", @"Delete Page toolbar label")];
 	[toolbarItem setPaletteLabel:NSLocalizedStringFromTable(@"Delete Page", @"Localized", @"Delete Page toolbar palette label")];
 	[toolbarItem setToolTip:NSLocalizedStringFromTable(@"Delete the page", @"Localized", @"Delete Page toolbar item tooltip")];
-	[toolbarItem setImage:[NSImage imageNamed:@"deletepage"]];
+	[toolbarItem setImage:[NSImage imageNamed:@"NSTrashEmpty"]];
 	[toolbarItem setTarget:self];
 	[toolbarItem setAction:@selector(deleteNote:)];
 	

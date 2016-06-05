@@ -84,6 +84,7 @@
             </view>
             <connections>
                 <outlet property="delegate" destination="341" id="342"/>
+                <outlet property="exportButton" destination="as6-wB-M2d" id="Jez-Fc-TAQ"/>
                 <outlet property="goToPageNumber" destination="428" id="429"/>
                 <outlet property="navigateButtons" destination="Nwg-RQ-iXW" id="hKL-td-PaW"/>
                 <outlet property="pageNumber" destination="358" id="386"/>
@@ -859,18 +860,13 @@ CA
                                         <font key="font" metaFont="system"/>
                                         <menu key="menu" title="OtherViews" id="440">
                                             <items>
-                                                <menuItem hidden="YES" id="443"/>
+                                                <menuItem image="NSSmartBadgeTemplate" hidden="YES" id="443"/>
                                                 <menuItem title="Archiver la page" state="on" id="442"/>
                                                 <menuItem title="Supprimer la page" id="441"/>
                                             </items>
                                         </menu>
                                     </popUpButtonCell>
                                 </popUpButton>
-                                <imageView id="444">
-                                    <rect key="frame" x="9" y="4" width="14" height="18"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="axesIndependently" image="gear" id="513"/>
-                                </imageView>
                             </subviews>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
@@ -894,6 +890,14 @@ CA
                             <action selector="navigate:" target="21" id="t5s-fB-BJb"/>
                         </connections>
                     </segmentedControl>
+                    <button verticalHuggingPriority="750" id="as6-wB-M2d">
+                        <rect key="frame" x="76" y="270" width="47" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSShareTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Udj-hk-163">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
             </view>
         </window>
@@ -1248,6 +1252,7 @@ IFNVQ0ggREFNQUdFUy4KCgkJRU5EIE9GIFRFUk1TIEFORCBDT05ESVRJT05TA
     <resources>
         <image name="NSGoLeftTemplate" width="9" height="12"/>
         <image name="NSGoRightTemplate" width="9" height="12"/>
-        <image name="gear" width="14" height="18"/>
+        <image name="NSShareTemplate" width="11" height="16"/>
+        <image name="NSSmartBadgeTemplate" width="14" height="14"/>
     </resources>
 </document>

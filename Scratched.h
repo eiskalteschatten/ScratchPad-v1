@@ -14,6 +14,7 @@
 	IBOutlet id transSlider;
 	IBOutlet id transTextbox;
     IBOutlet id pageNumberBox;
+    IBOutlet id exportButton;
 	
 	NSMutableArray *rawnotes;
 	NSMutableArray *notes;
