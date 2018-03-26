@@ -3,548 +3,396 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93F588962068D7DD005767EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588952068D7DD005767EE /* AppDelegate.swift */; };
-		93F588982068D7DD005767EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588972068D7DD005767EE /* ViewController.swift */; };
-		93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F588992068D7DD005767EE /* Assets.xcassets */; };
-		93F5889D2068D7DD005767EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F5889B2068D7DD005767EE /* Main.storyboard */; };
-		93F588A92068D7DD005767EE /* ScratchPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588A82068D7DD005767EE /* ScratchPadTests.swift */; };
-		93F588B42068D7DD005767EE /* ScratchPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F588B32068D7DD005767EE /* ScratchPadUITests.swift */; };
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9315F4920D1ACEB0004FD7F8 /* Scratched.m in Sources */ = {isa = PBXBuildFile; fileRef = 9315F4900D1ACEB0004FD7F8 /* Scratched.m */; };
+		931DD3750D64822500EC42A5 /* Preferenced.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 931DD3730D64822500EC42A5 /* Preferenced.h */; };
+		931DD3760D64822500EC42A5 /* Preferenced.m in Sources */ = {isa = PBXBuildFile; fileRef = 931DD3740D64822500EC42A5 /* Preferenced.m */; };
+		93216AED0DFCA9C0004F254A /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93216AEC0DFCA9C0004F254A /* Localized.strings */; };
+		937022FE1541E86100AA3F0F /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937022FD1541E86100AA3F0F /* Sparkle.framework */; };
+		9390F21D0D84B62500953FEC /* showruler.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9390F21C0D84B62500953FEC /* showruler.tiff */; };
+		93A0CADD0D6347A30091D950 /* Window.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93A0CADB0D6347A30091D950 /* Window.h */; };
+		93A0CADE0D6347A30091D950 /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0CADC0D6347A30091D950 /* Window.m */; };
+		93A0CB020D6348670091D950 /* TextView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93A0CB000D6348670091D950 /* TextView.h */; };
+		93A0CB030D6348670091D950 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0CB010D6348670091D950 /* TextView.m */; };
+		93A12B2A1541E88100EC0E6B /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 937022FD1541E86100AA3F0F /* Sparkle.framework */; };
+		93A12B2C1541EB2600EC0E6B /* scratchpad.pem in Resources */ = {isa = PBXBuildFile; fileRef = 93A12B2B1541EB2600EC0E6B /* scratchpad.pem */; };
+		93A12B2E15420C3B00EC0E6B /* Icon3.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93A12B2D15420C3B00EC0E6B /* Icon3.icns */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		93F588A52068D7DD005767EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93F5888A2068D7DD005767EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93F588912068D7DD005767EE;
-			remoteInfo = ScratchPad;
+/* Begin PBXCopyFilesBuildPhase section */
+		9329A9950D627CF500B17637 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				93A0CADD0D6347A30091D950 /* Window.h in CopyFiles */,
+				93A0CB020D6348670091D950 /* TextView.h in CopyFiles */,
+				931DD3750D64822500EC42A5 /* Preferenced.h in CopyFiles */,
+				93A12B2A1541E88100EC0E6B /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F588B02068D7DD005767EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 93F5888A2068D7DD005767EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 93F588912068D7DD005767EE;
-			remoteInfo = ScratchPad;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		93F588922068D7DD005767EE /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F588952068D7DD005767EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93F588972068D7DD005767EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		93F588992068D7DD005767EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		93F5889C2068D7DD005767EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93F5889E2068D7DD005767EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93F5889F2068D7DD005767EE /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScratchPad.entitlements; sourceTree = "<group>"; };
-		93F588A42068D7DD005767EE /* ScratchPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F588A82068D7DD005767EE /* ScratchPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadTests.swift; sourceTree = "<group>"; };
-		93F588AA2068D7DD005767EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93F588AF2068D7DD005767EE /* ScratchPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F588B32068D7DD005767EE /* ScratchPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchPadUITests.swift; sourceTree = "<group>"; };
-		93F588B52068D7DD005767EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Scratchpad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scratchpad_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* ScratchPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9315F4900D1ACEB0004FD7F8 /* Scratched.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Scratched.m; sourceTree = "<group>"; };
+		9315F4910D1ACEB0004FD7F8 /* Scratched.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Scratched.h; sourceTree = "<group>"; };
+		931C55F60E0B25CC00DE1E7A /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Dutch; path = Dutch.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		931C55F70E0B25E200DE1E7A /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Dutch.lproj/Localized.strings; sourceTree = "<group>"; };
+		931DD3730D64822500EC42A5 /* Preferenced.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Preferenced.h; sourceTree = "<group>"; };
+		931DD3740D64822500EC42A5 /* Preferenced.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Preferenced.m; sourceTree = "<group>"; };
+		93216AEA0DFCA9B7004F254A /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localized.strings; sourceTree = "<group>"; };
+		93216AEE0DFCA9C4004F254A /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localized.strings; sourceTree = "<group>"; };
+		93216AEF0DFCA9C6004F254A /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Japanese.lproj/Localized.strings; sourceTree = "<group>"; };
+		93216AF00DFCA9C9004F254A /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localized.strings; sourceTree = "<group>"; };
+		9355A2F415404BCF00E2B2C9 /* ScratchPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ScratchPad.entitlements; sourceTree = "<group>"; };
+		937022FD1541E86100AA3F0F /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		9390F21C0D84B62500953FEC /* showruler.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = showruler.tiff; sourceTree = "<group>"; };
+		93A0CADB0D6347A30091D950 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		93A0CADC0D6347A30091D950 /* Window.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Window.m; sourceTree = "<group>"; };
+		93A0CB000D6348670091D950 /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		93A0CB010D6348670091D950 /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		93A12B2B1541EB2600EC0E6B /* scratchpad.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratchpad.pem; sourceTree = "<group>"; };
+		93A12B2D15420C3B00EC0E6B /* Icon3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon3.icns; sourceTree = "<group>"; };
+		93BC86A90D77AD6900C258D1 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		93BC86AA0D77AD6C00C258D1 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Japanese; path = Japanese.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		93F207CC0DF0422500606451 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		93F5888F2068D7DD005767EE /* Frameworks */ = {
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F588A12068D7DD005767EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F588AC2068D7DD005767EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				937022FE1541E86100AA3F0F /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		93F588892068D7DD005767EE = {
+		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				93F588942068D7DD005767EE /* ScratchPad */,
-				93F588A72068D7DD005767EE /* ScratchPadTests */,
-				93F588B22068D7DD005767EE /* ScratchPadUITests */,
-				93F588932068D7DD005767EE /* Products */,
+				9315F4910D1ACEB0004FD7F8 /* Scratched.h */,
+				9315F4900D1ACEB0004FD7F8 /* Scratched.m */,
+				93A0CADB0D6347A30091D950 /* Window.h */,
+				93A0CADC0D6347A30091D950 /* Window.m */,
+				93A0CB000D6348670091D950 /* TextView.h */,
+				93A0CB010D6348670091D950 /* TextView.m */,
+				931DD3730D64822500EC42A5 /* Preferenced.h */,
+				931DD3740D64822500EC42A5 /* Preferenced.m */,
 			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
-		93F588932068D7DD005767EE /* Products */ = {
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93F588922068D7DD005767EE /* ScratchPad.app */,
-				93F588A42068D7DD005767EE /* ScratchPadTests.xctest */,
-				93F588AF2068D7DD005767EE /* ScratchPadUITests.xctest */,
+				937022FD1541E86100AA3F0F /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* ScratchPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93F588942068D7DD005767EE /* ScratchPad */ = {
+		29B97314FDCFA39411CA2CEA /* Scratchpad */ = {
 			isa = PBXGroup;
 			children = (
-				93F588952068D7DD005767EE /* AppDelegate.swift */,
-				93F588972068D7DD005767EE /* ViewController.swift */,
-				93F588992068D7DD005767EE /* Assets.xcassets */,
-				93F5889B2068D7DD005767EE /* Main.storyboard */,
-				93F5889E2068D7DD005767EE /* Info.plist */,
-				93F5889F2068D7DD005767EE /* ScratchPad.entitlements */,
+				9355A2F415404BCF00E2B2C9 /* ScratchPad.entitlements */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			path = ScratchPad;
+			name = Scratchpad;
 			sourceTree = "<group>";
 		};
-		93F588A72068D7DD005767EE /* ScratchPadTests */ = {
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				93F588A82068D7DD005767EE /* ScratchPadTests.swift */,
-				93F588AA2068D7DD005767EE /* Info.plist */,
+				32CA4F630368D1EE00C91783 /* Scratchpad_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
-			path = ScratchPadTests;
+			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		93F588B22068D7DD005767EE /* ScratchPadUITests */ = {
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				93F588B32068D7DD005767EE /* ScratchPadUITests.swift */,
-				93F588B52068D7DD005767EE /* Info.plist */,
+				93A12B2D15420C3B00EC0E6B /* Icon3.icns */,
+				93A12B2B1541EB2600EC0E6B /* scratchpad.pem */,
+				93216AEC0DFCA9C0004F254A /* Localized.strings */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				9390F21C0D84B62500953FEC /* showruler.tiff */,
 			);
-			path = ScratchPadUITests;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93F588912068D7DD005767EE /* ScratchPad */ = {
+		8D1107260486CEB800E47090 /* ScratchPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F588B82068D7DD005767EE /* Build configuration list for PBXNativeTarget "ScratchPad" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ScratchPad" */;
 			buildPhases = (
-				93F5888E2068D7DD005767EE /* Sources */,
-				93F5888F2068D7DD005767EE /* Frameworks */,
-				93F588902068D7DD005767EE /* Resources */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				9329A9950D627CF500B17637 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ScratchPad;
-			productName = ScratchPad;
-			productReference = 93F588922068D7DD005767EE /* ScratchPad.app */;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Scratchpad;
+			productReference = 8D1107320486CEB800E47090 /* ScratchPad.app */;
 			productType = "com.apple.product-type.application";
-		};
-		93F588A32068D7DD005767EE /* ScratchPadTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93F588BB2068D7DD005767EE /* Build configuration list for PBXNativeTarget "ScratchPadTests" */;
-			buildPhases = (
-				93F588A02068D7DD005767EE /* Sources */,
-				93F588A12068D7DD005767EE /* Frameworks */,
-				93F588A22068D7DD005767EE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93F588A62068D7DD005767EE /* PBXTargetDependency */,
-			);
-			name = ScratchPadTests;
-			productName = ScratchPadTests;
-			productReference = 93F588A42068D7DD005767EE /* ScratchPadTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		93F588AE2068D7DD005767EE /* ScratchPadUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93F588BE2068D7DD005767EE /* Build configuration list for PBXNativeTarget "ScratchPadUITests" */;
-			buildPhases = (
-				93F588AB2068D7DD005767EE /* Sources */,
-				93F588AC2068D7DD005767EE /* Frameworks */,
-				93F588AD2068D7DD005767EE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93F588B12068D7DD005767EE /* PBXTargetDependency */,
-			);
-			name = ScratchPadUITests;
-			productName = ScratchPadUITests;
-			productReference = 93F588AF2068D7DD005767EE /* ScratchPadUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		93F5888A2068D7DD005767EE /* Project object */ = {
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Alex Seifert";
-				TargetAttributes = {
-					93F588912068D7DD005767EE = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					93F588A32068D7DD005767EE = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 93F588912068D7DD005767EE;
-					};
-					93F588AE2068D7DD005767EE = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 93F588912068D7DD005767EE;
-					};
-				};
+				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 93F5888D2068D7DD005767EE /* Build configuration list for PBXProject "ScratchPad" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Scratchpad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
 			knownRegions = (
-				en,
-				Base,
+				English,
+				Japanese,
+				French,
+				German,
+				Frencch,
+				Dutch,
+				Chinese,
 			);
-			mainGroup = 93F588892068D7DD005767EE;
-			productRefGroup = 93F588932068D7DD005767EE /* Products */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Scratchpad */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93F588912068D7DD005767EE /* ScratchPad */,
-				93F588A32068D7DD005767EE /* ScratchPadTests */,
-				93F588AE2068D7DD005767EE /* ScratchPadUITests */,
+				8D1107260486CEB800E47090 /* ScratchPad */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		93F588902068D7DD005767EE /* Resources */ = {
+		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F5889A2068D7DD005767EE /* Assets.xcassets in Resources */,
-				93F5889D2068D7DD005767EE /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F588A22068D7DD005767EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F588AD2068D7DD005767EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				9390F21D0D84B62500953FEC /* showruler.tiff in Resources */,
+				93216AED0DFCA9C0004F254A /* Localized.strings in Resources */,
+				93A12B2C1541EB2600EC0E6B /* scratchpad.pem in Resources */,
+				93A12B2E15420C3B00EC0E6B /* Icon3.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		93F5888E2068D7DD005767EE /* Sources */ = {
+		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F588982068D7DD005767EE /* ViewController.swift in Sources */,
-				93F588962068D7DD005767EE /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F588A02068D7DD005767EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93F588A92068D7DD005767EE /* ScratchPadTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F588AB2068D7DD005767EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93F588B42068D7DD005767EE /* ScratchPadUITests.swift in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				9315F4920D1ACEB0004FD7F8 /* Scratched.m in Sources */,
+				93A0CADE0D6347A30091D950 /* Window.m in Sources */,
+				93A0CB030D6348670091D950 /* TextView.m in Sources */,
+				931DD3760D64822500EC42A5 /* Preferenced.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		93F588A62068D7DD005767EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 93F588912068D7DD005767EE /* ScratchPad */;
-			targetProxy = 93F588A52068D7DD005767EE /* PBXContainerItemProxy */;
-		};
-		93F588B12068D7DD005767EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 93F588912068D7DD005767EE /* ScratchPad */;
-			targetProxy = 93F588B02068D7DD005767EE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		93F5889B2068D7DD005767EE /* Main.storyboard */ = {
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				93F5889C2068D7DD005767EE /* Base */,
+				089C165DFE840E0CC02AAC07 /* English */,
 			);
-			name = Main.storyboard;
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+				93BC86A90D77AD6900C258D1 /* German */,
+				93BC86AA0D77AD6C00C258D1 /* Japanese */,
+				93F207CC0DF0422500606451 /* French */,
+				931C55F60E0B25CC00DE1E7A /* Dutch */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		93216AEC0DFCA9C0004F254A /* Localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93216AEA0DFCA9B7004F254A /* English */,
+				93216AEE0DFCA9C4004F254A /* German */,
+				93216AEF0DFCA9C6004F254A /* Japanese */,
+				93216AF00DFCA9C9004F254A /* French */,
+				931C55F70E0B25E200DE1E7A /* Dutch */,
+			);
+			name = Localized.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		93F588B62068D7DD005767EE /* Debug */ = {
+		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ScratchPad.entitlements;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"\"$(SRCROOT)\"",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CODE_SIGN_FLAGS = "i386 x86_64";
+				PRODUCT_NAME = ScratchPad;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ScratchPad.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CODE_SIGN_FLAGS = "i386 x86_64";
+				PRODUCT_NAME = ScratchPad;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		93F588B72068D7DD005767EE /* Release */ = {
+		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-			};
-			name = Release;
-		};
-		93F588B92068D7DD005767EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ScratchPad/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPad";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		93F588BA2068D7DD005767EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ScratchPad/ScratchPad.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ScratchPad/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPad";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		93F588BC2068D7DD005767EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ScratchPadTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPadTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchPad.app/Contents/MacOS/ScratchPad";
-			};
-			name = Debug;
-		};
-		93F588BD2068D7DD005767EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ScratchPadTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPadTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchPad.app/Contents/MacOS/ScratchPad";
-			};
-			name = Release;
-		};
-		93F588BF2068D7DD005767EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ScratchPadUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPadUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = ScratchPad;
-			};
-			name = Debug;
-		};
-		93F588C02068D7DD005767EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ScratchPadUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Alex-Seifert.ScratchPadUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = ScratchPad;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93F5888D2068D7DD005767EE /* Build configuration list for PBXProject "ScratchPad" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "ScratchPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93F588B62068D7DD005767EE /* Debug */,
-				93F588B72068D7DD005767EE /* Release */,
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		93F588B82068D7DD005767EE /* Build configuration list for PBXNativeTarget "ScratchPad" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Scratchpad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93F588B92068D7DD005767EE /* Debug */,
-				93F588BA2068D7DD005767EE /* Release */,
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93F588BB2068D7DD005767EE /* Build configuration list for PBXNativeTarget "ScratchPadTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93F588BC2068D7DD005767EE /* Debug */,
-				93F588BD2068D7DD005767EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93F588BE2068D7DD005767EE /* Build configuration list for PBXNativeTarget "ScratchPadUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93F588BF2068D7DD005767EE /* Debug */,
-				93F588C02068D7DD005767EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 93F5888A2068D7DD005767EE /* Project object */;
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
